@@ -1,0 +1,226 @@
+.opportunity {
+  padding-block: 45px 122px;
+  font-family: Montserrat;
+  display: flex;
+  margin-inline: auto;
+  gap: 85px;
+  color: #000;
+  justify-content: space-between;
+  max-width: 1290px;
+  &__block {
+    display: flex;
+    max-width: 545px;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+      margin-bottom: 5px;
+      h1 {
+        color: #1e1e1c;
+
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      p {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 10px;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.87);
+
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+    h2 {
+      color: #000;
+
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      gap: 10px;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        color: rgba(0, 0, 0, 0.65);
+
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        &::before {
+          content: "●";
+          color: green;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template-areas:
+      "img1 img2 img2"
+      "img1 img3 img3"
+      "img1 img3 img3";
+    height: 100%;
+    width: 610px;
+    grid-template-rows: 383px 1fr;
+    grid-template-columns: 300px 1fr;
+    gap: 10px;
+    &_image1 {
+      width: 300px;
+      grid-area: img1;
+    }
+    &_image2 {
+      grid-area: img2;
+      width: 300px;
+    }
+    &_image3 {
+      width: 300px;
+      grid-area: img3;
+    }
+  }
+}
+@media screen and  (max-width: 1400px) {
+  .opportunity {
+    padding-block: 40px 112px;
+    padding-inline: 70px;
+    gap: 60px;
+  }
+}
+
+@media  screen and (max-width: 1270px) {
+  .opportunity {
+    padding-block: 40px 112px;
+    padding-inline: 50px;
+    gap: 50px;
+    &__block {
+      &_title {
+        h1 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .opportunity {
+    gap:30px;
+    &__block {
+      max-width: 545px;
+      &_list {
+        li {
+          padding-left: 20px;
+        }
+      }
+    }
+    &__gallery {
+      width: 500px;
+      grid-template-rows: 310px 1fr;
+      grid-template-columns: 245px 1fr;
+      gap: 10px;
+      &_image1 {
+        width: 245px;
+      }
+      &_image2 {
+        width: 245px;
+      }
+      &_image3 {
+        width: 245px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .opportunity {
+    gap:30px;
+    &__block {
+      max-width: 545px;
+      &_title {
+        h1 {
+          font-size: 28px;
+        }
+      }
+      h2 {
+        font-size: 16px;
+        padding-bottom: 15px;
+      }
+    }
+    &__gallery {
+      width: 304px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &_image1 {
+        width: 304px;
+      }
+      &_image2 {
+        width: 304px;
+      }
+      &_image3 {
+        width: 304px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .opportunity {
+    padding-inline: 20px;
+    gap:70px;
+    flex-direction: column;
+    &__block {
+      max-width: initial;
+      gap: 25px;
+      &_title {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    &__gallery {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &_image1 {
+        width: 100%;
+      }
+      &_image2 {
+        width: 100%;
+      }
+      &_image3 {
+        width: 100%;
+      }
+    }
+  }
+}

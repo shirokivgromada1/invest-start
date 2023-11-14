@@ -1,0 +1,110 @@
+.investment {
+  margin-bottom: 170px;
+  &__inner {
+    & > h2 {
+      color: #1e1e1c;
+      font-size: 48px;
+      font-family: Montserrat;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+    & > button {
+      float: right;
+      padding: 7px 35px;
+      background: #309c54;
+      box-shadow: 0px 1px 6px 0px rgba(55, 54, 54, 0.24);
+      color: #fff;
+      font-size: 16px;
+      font-family: Inter;
+      font-weight: 500;
+      border: 1px solid #309c54;
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: #309c54;
+        background-color: #fff;
+        border: 1px solid #309c54;
+        box-shadow: 0px 1px 6px 0px rgba(55, 54, 54, 0.24);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .investment {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 40px;
+      & > h2 {
+        width: 100%;
+      }
+      & > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+      & > button {
+        float: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .investment {
+    margin-bottom: 110px;
+    &__inner {
+      & > h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .investment {
+    &__inner {
+      padding: 0;
+      & > h2 {
+        text-align: center;
+        padding: 0 58px;
+      }
+      & > div {
+        padding: 0 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .investment {
+    margin-bottom: 90px;
+    &__inner {
+      & > div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 504px) {
+  .investment {
+    &__inner {
+      & > h2 {
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+  }
+}

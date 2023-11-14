@@ -1,0 +1,195 @@
+.prospective {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 130px;
+  &__inner {
+    display: grid;
+    grid-template-areas:
+			"img1 img2 text text text"
+			". img3 img4 img5 greenBlock";
+    column-gap: 15px;
+    row-gap: 25px;
+    &_slider {
+      display: none;
+    }
+    &_text {
+      grid-area: text;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      & > h1 {
+        color: #1e1e1c;
+        font-size: 48px;
+        font-family: Montserrat;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      & > p {
+        color: #282828;
+        font-size: 16px;
+        font-family: Montserrat;
+        max-width: 687px;
+        &:first-of-type {
+          padding-bottom: 10px;
+        }
+      }
+    }
+     div {
+      &:not(:nth-child(3)) {
+        max-width: 330px !important;
+        width: 330px;
+        height: 294px !important;
+      }
+      &:first-child {
+        grid-area: img1 !important;
+      }
+      &:nth-child(2) {
+        grid-area: img2 !important;
+      }
+      &:nth-child(4) {
+        grid-area: img3 !important;
+      }
+      &:nth-child(5) {
+        grid-area: img4 !important;
+      }
+      &:nth-child(6) {
+        grid-area: img5 !important;
+      }
+       &:nth-child(7) {
+         grid-area: greenBlock;
+       }
+    }
+  }
+}
+@media screen and (min-width: 1700px) {
+  .prospective {
+    &__inner {
+      column-gap: 18px;
+      row-gap: 17px;
+      div {
+        &:not(:nth-child(3)) {
+          max-width: 393px !important;
+          width: 393px;
+          height: 351px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .prospective {
+    display: block;
+    margin-bottom: 100px;
+    &__inner {
+      display: block;
+      grid-template-areas: unset;
+      div {
+        &:not(:nth-child(3)) {
+         display: none;
+        }
+      }
+      &_slider {
+        display: block;
+        position: relative;
+        padding-left: 40px;
+        div {
+          &:nth-of-type(3) {
+           div {
+             width: 400px !important;
+             height: 300px !important;
+           }
+          }
+        }
+        & img {
+          width: 400px !important;
+          height: 300px !important;
+        }
+        & button {
+          position: absolute;
+          & > svg {
+            fill: red;
+          }
+        }
+        &_leftController {
+          left: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        &_rightController {
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+      &_text {
+        & > h1 {
+          text-align: center;
+          font-size: 32px;
+        }
+        & > p {
+          max-width: 509px;
+          margin: auto;
+          text-align: center;
+          font-weight: 400;
+          &:nth-child(2) {
+            margin-bottom: 16px;
+          }
+          &:last-child {
+            margin-bottom: 80px;
+          }
+        }
+      }
+
+      & > img {
+        max-width: 393.5px !important ;
+        width: 393.5px !important;
+        height: 350.55px;
+        display: none;
+      }
+      & > div:nth-child(7) {
+        width: 393.5px !important;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .prospective {
+    &__inner {
+      &_text {
+        padding: 0 21px;
+        & > p {
+          min-width: 308px;
+          &:nth-child(2) {
+            margin-bottom: 7px;
+          }
+          &:last-child {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      &_slider {
+        padding-left: 20px;
+        div {
+          &:nth-of-type(3) {
+            div {
+              width: 300px !important;
+              height: 247px !important;
+            }
+          }
+        }
+        & img {
+          width: 300px !important;
+          height: 247px !important;
+        }
+      }
+    }
+  }
+}
