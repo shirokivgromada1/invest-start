@@ -12,8 +12,7 @@ components:
       Має дуже вигідне географічне розташування, усі важливі логістичні об’єкти
       знаходяться в радіусі 50 км.  Також через громаду проходить автошлях
       національного значення Н-08 Бориспіль-Дніпро-Запоріжжя.
-    image: >-
-      https://res.cloudinary.com/dthvndvla/image/upload/v1699629389/unsplash_ROWu7-XhPws_hdlfgu.png
+    image: /uploads/background.png
     _template: Community
   - title: ПЕРСПЕКТИВНЕ ПЕРЕДМІСТЯ
     sub1: >-
@@ -155,6 +154,7 @@ components:
         facebook: 'https://berehynia.ua/ua/'
     _template: LocalBusiness
 ---
+
 
 
 

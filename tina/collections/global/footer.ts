@@ -62,8 +62,8 @@ export const footer: TinaField = {
     },
     {
       type: "string",
-      label: "Headline",
-      name: "headline",
+      label: "Description",
+      name: "agency",
     },
     {
       type: "string",
@@ -77,13 +77,13 @@ export const footer: TinaField = {
     },
     {
       type: "string",
-      label: "Work time",
-      name: "workTime",
+      label: "Phone",
+      name: "phone",
     },
     {
       type: "string",
-      label: "Phone",
-      name: "phone",
+      label: "Email",
+      name: "email",
     },
   ],
 };
