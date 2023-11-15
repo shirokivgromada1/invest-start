@@ -41,7 +41,7 @@ components:
       передмісті.
     sub2: ' Наша громада має потенціал стати економічним центром регіону завдяки сприятливим умовам для підприємництва, доступній робочій силі та підтримці малого і середнього бізнесу зі сторони місцевої влади.'
     photo1: >-
-      https://res.cloudinary.com/dthvndvla/image/upload/v1699865999/img_u6zthl.jpg
+      /uploadshttps://res.cloudinary.com/dthvndvla/image/upload/v1699865999/img_u6zthl.jpg
     photo2: /uploads/img2.png
     photo3: /uploads/img3.png
     photo4: /uploads/img4.png
@@ -173,27 +173,4 @@ components:
         facebook: 'https://berehynia.ua/ua/'
     _template: LocalBusiness
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
