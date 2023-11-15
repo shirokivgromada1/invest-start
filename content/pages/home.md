@@ -14,6 +14,25 @@ components:
       національного значення Н-08 Бориспіль-Дніпро-Запоріжжя.
     image: /uploads/background.png
     _template: Community
+  - title: 'Транспортна мережа загального користування: 237 км'
+    settlements: 35
+    square: 477.4
+    population: 30000
+    _template: TransportNetwork
+  - stations:
+      - hText: 18 км
+        pText: 'Запорізький річковий порт '
+        icon: /uploads/ggg.svg
+      - hText: 20 км
+        pText: 'Залізнична станція «Дніпробуд-ll» '
+        icon: /uploads/gggg.svg
+      - hText: 32 км
+        pText: 'Залізнична станція «Запоріжжя-1» '
+        icon: /uploads/gggg.svg
+      - hText: 78 км
+        pText: Дніпро-Головний
+        icon: /uploads/ggggg.svg
+    _template: Road
   - title: ПЕРСПЕКТИВНЕ ПЕРЕДМІСТЯ
     sub1: >-
       Широківська громада розташована на півночі від м.Запоріжжя, що робить її

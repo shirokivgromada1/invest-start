@@ -8,6 +8,8 @@ import { Community } from "../components/blocks/Home/Community/Community";
 import { Opportunity } from "../components/blocks/Opportunity/Opportunity";
 import { Opportunity2 } from "../components/blocks/Opportunity2/Opportunity2";
 import { Opportunity3 } from "../components/blocks/Opportunity3/Opportunity3";
+import { Road } from "../components/blocks/Home/Road/Road";
+import { TransportNetwork } from "../components/blocks/Home/TransportNetwork/TransportNetwork";
 
 export const Components = (props: Omit<Page, "id">) => {
   return (
@@ -50,6 +52,10 @@ const Component = (component: PageComponents) => {
       return <Opportunity2 data={component} />;
     case "PageComponentsOpportunity3":
       return <Opportunity3 data={component} />;
+    case "PageComponentsRoad":
+      return <Road data={component} />;
+    case "PageComponentsTransportNetwork":
+      return <TransportNetwork data={component} />;
     default:
       return null;
   }

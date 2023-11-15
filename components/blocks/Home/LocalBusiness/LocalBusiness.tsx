@@ -32,7 +32,7 @@ export const LocalBusiness = ({
   };
 
   return (
-    <div className={styles.history}>
+    <div className={styles.history} id="local-businesses">
       <div className="container">
         <h2 data-tina-field={tinaField(data, "title")}>{title}</h2>
         <div className={styles.history__inner}>

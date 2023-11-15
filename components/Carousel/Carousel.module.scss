@@ -1,0 +1,50 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  &_inner {
+    height: 24px;
+    position: relative;
+    &__item {
+      transform: translateY(0px);
+      & > h1 {
+        color: #212529;
+        text-align: center;
+        font-size: 24px;
+        font-family: Montserrat;
+        font-weight: 700;
+        height: fit-content;
+      }
+      & > span {
+        color: #212529;
+        font-size: 16px;
+        font-family: Montserrat;
+        line-height: 29.9px;
+      }
+    }
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    min-width: 270px;
+    min-height: 73px;
+    border-right: 1px solid var(--border-color);
+    & h1 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    & > span {
+      font-size: 16px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

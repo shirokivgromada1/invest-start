@@ -14,71 +14,72 @@ export const header: TinaField = {
         component: "image",
       },
     },
+
     {
-      type: "string",
-      label: "Name",
-      name: "name",
-    },
-    {
-      type: "string",
-      label: "Color",
-      name: "color",
-      options: [
-        { label: "Default", value: "default" },
-        { label: "Primary", value: "primary" },
-      ],
-    },
-    {
+      label: "Links",
+      name: "links",
       type: "object",
-      label: "Nav Links",
-      name: "nav",
-      list: true,
       ui: {
         itemProps: (item) => {
           return { label: item?.label };
         },
-        defaultItem: {
-          href: "home",
-          label: "Home",
-        },
       },
       fields: [
         {
+          label: "Link №1 label",
+          name: "label1",
           type: "string",
-          label: "Link",
-          name: "href",
         },
+        { label: "Link №1 href", name: "href1", type: "string" },
         {
+          label: "Інвестиційний паспорт label",
+          name: "label2",
           type: "string",
-          label: "Label",
-          name: "label",
-          required: true,
         },
+        { label: "Інвестиційний паспорт href", name: "href2", type: "image" },
         {
-          type: "boolean",
-          label: "Modal",
-          name: "isModal",
+          label: "Link №3 label",
+          name: "label3",
+          type: "string",
         },
+        { label: "Link №3 href", name: "href3", type: "string" },
         {
-          label: "Links",
-          name: "links",
-          type: "object",
-          list: true,
-          ui: {
-            itemProps: (item) => {
-              return { label: item?.label };
-            },
-          },
-          fields: [
-            {
-              label: "Label",
-              name: "label",
-              type: "string",
-            },
-            { label: "Href", name: "href", type: "string" },
-          ],
+          label: "Link №4 label",
+          name: "label4",
+          type: "string",
         },
+        { label: "Link №4 href", name: "href4", type: "string" },
       ],
+    },
+    {
+      label: "Location",
+      name: "location",
+      type: "string",
+    },
+    {
+      label: "Phone",
+      name: "phone",
+      type: "string",
+    },
+    {
+      label: "Email",
+      name: "email",
+      type: "string",
+    },
+    {
+      label: "Instagram",
+      name: "instagram",
+      type: "string",
+    },
+    {
+      label: "Facebook",
+      name: "facebook",
+      type: "string",
+    },
+    {
+      label: "Telegram",
+      name: "telegram",
+      type: "string",
     },
   ],
 };

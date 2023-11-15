@@ -53,6 +53,7 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
+      id="investment"
     >
       <div className="container">
         <div className={styles.investment__inner}>

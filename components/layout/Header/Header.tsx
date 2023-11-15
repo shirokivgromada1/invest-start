@@ -1,178 +1,335 @@
 import styles from "./Header.module.scss";
-import Logo from "./../../../assets/logo.svg";
-import Eye from "./../../../assets/eye.svg";
-import Account from "./../../../assets/account.svg";
-import Search from "./../../../assets/search.svg";
-import NavLink from "./components/NavLink/NavLink";
 import { Dispatch, FC, useEffect, useState } from "react";
 import Link from "next/link";
-import SanitizeHTML from "./../../util/SanitizeHTML";
-import { Skeleton } from "@mui/material";
-import EyeModal from "./components/modals/Eye/EyeModal";
-import { AnimatePresence } from "framer-motion";
-// import { useTheme } from "@/context/ThemeContext";
-import SearchModal from "./components/modals/Search/SearchModal";
 import { GlobalHeader, Maybe } from "./../../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
-import { client } from "./../../../tina/__generated__/client";
-
+import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
+import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
+import LangSwitcher from "../../LangSwitcher/LangSwitcher";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Image from "next/image";
+import Instagram from "@/assets/inst-header.svg";
+import Facebook from "@/assets/facebook-header.svg";
+import Telegram from "@/assets/telegram-header.svg";
+const duration = 0.5;
 interface IHeader {
-  setMenuOpen: Dispatch<boolean>;
-  menuOpen: boolean;
   data: Maybe<GlobalHeader> | undefined;
 }
 
-const Header: FC<IHeader> = ({ setMenuOpen, menuOpen, data }) => {
-  const [activeIndex, setActive] = useState<number | null>(null);
-  const [isView, setView] = useState(false);
-  const [isLoading, setLoading] = useState(false);
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      delayChildren: duration,
+      translateX: {
+        ease: "easeInOut",
+        duration: 0.2,
+      },
+    },
+  },
+};
 
-  const [eyeView, setEyeView] = useState(false);
-  const [searchView, setSearchView] = useState(false);
-  // const { fontSize } = useTheme();
-
-  const handleMenuClick = () => {
-    window.scrollTo(0, 0);
-    setMenuOpen(!menuOpen);
-  };
+const item = {
+  hidden: {
+    transform: "translateX(100%)",
+  },
+  show: {
+    transform: "translateX(0%)",
+  },
+};
+const Header: FC<IHeader> = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const desktopMatch = useBetterMediaQuery("(min-width:950px)");
+  const mobileMatch = useBetterMediaQuery("(max-width:500px)");
+  const router = useRouter();
 
   useEffect(() => {
-    const body = document.querySelector("body");
-    if (body) {
-      if (eyeView || searchView) {
-        body.style.paddingRight = "17px";
-        body.style.overflow = "hidden";
-      } else
-        setTimeout(() => {
-          body.style.overflow = "visible";
-          body.style.paddingRight = "0px";
-        }, 200);
+    desktopMatch && setIsOpen(false);
+  }, [desktopMatch]);
+  const handleMenuClick = () => {
+    setIsOpen((prev) => !prev);
+  };
+  const handleLinkClick = (hash: any) => {
+    const { pathname } = router;
+
+    if (pathname === "/") {
+      scroll.scrollTo(hash, {
+        duration: 500,
+        smooth: "easeInOutQuart",
+        offset: -80,
+        cancelable: false,
+      });
+    } else {
+      router.push(`${hash}`);
     }
-  }, [eyeView, searchView]);
+
+    setIsOpen(false);
+  };
 
   return (
     <header className={styles.header}>
-      <div className="container">
-        <div className={styles.header__logo}>
-          {isLoading && (
-            <div className={styles.header__logo_load}>
-              <Skeleton variant="rounded" height={38} width={38} />
-              <Skeleton variant="text" sx={{ fontSize: "1rem" }} width={238} />
-            </div>
-          )}
-          {!isLoading && data && (
+      <div className="container-fluid">
+        <motion.div
+          className={styles.header__inner}
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+        >
+          <motion.button
+            className={styles.header__inner_burger}
+            onClick={handleMenuClick}
+          >
+            <motion.div>
+              <motion.svg
+                height="14"
+                viewBox="0 0 22 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ width: "100%" }}
+              >
+                <motion.path
+                  d="M1 1H21"
+                  stroke="#333333"
+                  strokeLinecap="round"
+                />
+                <motion.path
+                  d="M1 7H21"
+                  stroke="#333333"
+                  strokeLinecap="round"
+                />
+                <motion.path
+                  d="M1 13H21"
+                  stroke="#333333"
+                  strokeLinecap="round"
+                />
+              </motion.svg>
+            </motion.div>
+          </motion.button>
+          {data?.icon && (
             <Link href="/">
-              <a>
-                {data.icon && (
-                  <img
-                    data-tina-field={tinaField(data, "icon")}
-                    src={data.icon}
-                    alt="logo"
-                  />
-                )}
-                <span data-tina-field={tinaField(data, "name")}>
-                  {data.name}
-                </span>
+              <a className={styles.header__inner__logo}>
+                <Image
+                  src={data.icon}
+                  width={147}
+                  height={77}
+                  data-tina-field={tinaField(data, "icon")}
+                />
               </a>
             </Link>
           )}
-        </div>
-        <nav className={styles.header__nav}>
-          <ul>
-            {data &&
-              data.nav &&
-              data.nav.map(
-                (link, index) =>
-                  link && (
-                    <li
-                      key={link.label + index}
-                      data-tina-field={tinaField(link, "label")}
-                    >
-                      <NavLink
-                        setActive={() => {
-                          setActive(activeIndex === index ? null : index);
-                          setView(true);
-                        }}
-                        onBlur={() => {
-                          setActive(null);
-                          setView(false);
-                        }}
-                        activeIndex={activeIndex}
-                        index={index}
-                        hasDropDown={link.isModal}
-                        href={`/${link.href}`}
-                        isView={isView}
-                        links={link.isModal ? link.links : undefined}
-                      >
-                        <span>{link.label}</span>
-                      </NavLink>
-                    </li>
-                  )
-              )}
-          </ul>
-        </nav>
-        <div className={styles.header__options}>
-          <div className={styles.header__options_controllers}>
-            <>
-              <button type="button" onClick={() => setEyeView((prev) => !prev)}>
-                <Eye />
-              </button>
-              <EyeModal setEyeView={setEyeView} eyeView={eyeView} />
-            </>
-            <button type="button">
-              <Link href={"/dashboard"}>
-                <a>
-                  <Account />
-                </a>
-              </Link>
-            </button>
-            <>
-              <button
-                type="button"
-                onClick={() => setSearchView((prev) => !prev)}
-              >
-                <Search />
-              </button>
-              <SearchModal
-                setSearchView={setSearchView}
-                searchView={searchView}
-              />
-            </>
-            <button type="button">ua</button>
+
+          <div className={styles.header__inner__navigation}>
+            <nav className={styles.header__inner__navigation_nav}>
+              <ul>
+                <li>
+                  <ScrollLink
+                    to="history"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={() => handleLinkClick("#local-businesses")}
+                  >
+                    {data?.links?.label1}
+                  </ScrollLink>
+                </li>
+                <li>
+                  {data?.links?.href2 && (
+                    <a href={data?.links?.href2} target="_blank">
+                      {data?.links?.label2}
+                    </a>
+                  )}
+                </li>
+                <li>
+                  <ScrollLink
+                    to="info"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={() => handleLinkClick("#useful-information")}
+                  >
+                    {data?.links?.label3}
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink
+                    to="investment"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={() => handleLinkClick("#investment")}
+                  >
+                    {data?.links?.label4}
+                  </ScrollLink>
+                </li>
+              </ul>
+            </nav>
+            <LangSwitcher />
           </div>
-          <button
-            type="button"
-            className={styles.header__options_burger}
-            onClick={handleMenuClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="46"
-              height="14"
-              viewBox="0 0 46 14"
-              fill="none"
-              className={menuOpen ? styles.header__options_burger_active : ""}
-            >
-              <rect x="17.8384" width="28" height="2" rx="1" fill="#309C54" />
-              <rect
-                x="0.838379"
-                y="6"
-                width="45"
-                height="2"
-                rx="1"
-                fill="#309C54"
-              />
-              <rect
-                x="17.8384"
-                y="12"
-                width="28"
-                height="2"
-                rx="1"
-                fill="#309C54"
-              />
-            </svg>
-          </button>
-        </div>
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                className={styles.header__inner__menu}
+                initial={!mobileMatch ? { opacity: 0 } : { height: "0px" }}
+                animate={!mobileMatch ? { opacity: 1 } : { height: "100vh" }}
+                exit={!mobileMatch ? { opacity: 0 } : { height: "0px" }}
+                transition={{ duration: 1 }}
+                style={!mobileMatch ? { minHeight: "100vh" } : {}}
+              >
+                <motion.nav
+                  className={styles.header__inner__menu_nav}
+                  initial={mobileMatch ? { height: "0px" } : undefined}
+                  animate={mobileMatch ? { height: "fit-content" } : undefined}
+                  exit={mobileMatch ? { height: "0px" } : undefined}
+                  transition={{ duration: 1 }}
+                >
+                  <motion.div
+                    className={styles.header__inner__menu_nav_wrapper}
+                  >
+                    <motion.ul>
+                      <motion.li
+                        variants={container}
+                        initial={"hidden"}
+                        animate={"show"}
+                      >
+                        <motion.div variants={item}>
+                          <ScrollLink
+                            to="history"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onClick={() => handleLinkClick("#local-businesses")}
+                          >
+                            {data?.links?.label1}
+                          </ScrollLink>
+                        </motion.div>
+                      </motion.li>
+                      <motion.li
+                        variants={container}
+                        initial={"hidden"}
+                        animate={"show"}
+                      >
+                        <motion.div variants={item}>
+                          {data?.links?.href2 && (
+                            <a
+                              href={data?.links?.href2}
+                              target="_blank"
+                              onClick={() => handleLinkClick("/")}
+                            >
+                              {data?.links?.label2}
+                            </a>
+                          )}
+                        </motion.div>
+                      </motion.li>
+                      <motion.li
+                        variants={container}
+                        initial={"hidden"}
+                        animate={"show"}
+                      >
+                        <motion.div variants={item}>
+                          <ScrollLink
+                            to="info"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onClick={() =>
+                              handleLinkClick("#useful-information")
+                            }
+                          >
+                            {data?.links?.label3}
+                          </ScrollLink>
+                        </motion.div>
+                      </motion.li>
+                      <motion.li
+                        variants={container}
+                        initial={"hidden"}
+                        animate={"show"}
+                      >
+                        <motion.div variants={item}>
+                          <ScrollLink
+                            to="investment"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onClick={() => handleLinkClick("#investment")}
+                          >
+                            {data?.links?.label4}
+                          </ScrollLink>
+                        </motion.div>
+                      </motion.li>
+                    </motion.ul>
+                    {data?.location && (
+                      <div className={styles.header__inner__menu_address}>
+                        <h4>Адреса</h4>
+                        <span data-tina-field={tinaField(data, "location")}>
+                          {data.location}
+                        </span>
+                      </div>
+                    )}
+                    {data?.phone && (
+                      <div className={styles.header__inner__menu_tel}>
+                        <h4>Телефон</h4>
+                        <a
+                          href={`tel:${data.phone}`}
+                          data-tina-field={tinaField(data, "phone")}
+                        >
+                          {data.phone}
+                        </a>
+                      </div>
+                    )}
+                    {data?.email && (
+                      <div className={styles.header__inner__menu_mail}>
+                        <h4>Пошта</h4>
+                        <a
+                          href={`mailto:${data.email}`}
+                          data-tina-field={tinaField(data, "email")}
+                        >
+                          {data.email}
+                        </a>
+                      </div>
+                    )}
+                    <div className={styles.header__inner__menu_mobileSocials}>
+                      {data?.instagram && (
+                        <a
+                          href={data.instagram}
+                          data-tina-field={tinaField(data, "instagram")}
+                          target="_blank"
+                        >
+                          <Instagram
+                            className={
+                              styles.header__inner__menu_mobileSocials_instagram
+                            }
+                          />
+                        </a>
+                      )}
+                      {data?.facebook && (
+                        <a
+                          href={data?.facebook}
+                          target="_blank"
+                          data-tina-field={tinaField(data, "facebook")}
+                        >
+                          <Facebook
+                            className={
+                              styles.header__inner__menu_mobileSocials_facebook
+                            }
+                          />
+                        </a>
+                      )}
+                      {data?.telegram && (
+                        <a
+                          target="_blank"
+                          href={data?.telegram}
+                          data-tina-field={tinaField(data, "telegram")}
+                        >
+                          <Telegram />
+                        </a>
+                      )}
+                    </div>
+                  </motion.div>
+                </motion.nav>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </header>
   );

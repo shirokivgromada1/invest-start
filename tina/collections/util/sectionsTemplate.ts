@@ -8,6 +8,8 @@ import { communityComponentSchema } from "./../../../components/blocks/Home/Comm
 import { opportunityComponentSchema } from "./../../../components/blocks/Opportunity/Opportunity.schema";
 import { opportunity2ComponentSchema } from "./../../../components/blocks/Opportunity2/Opportunity2.schema";
 import { opportunity3ComponentSchema } from "./../../../components/blocks/Opportunity3/Opportunity3.schema";
+import { roadComponentSchema } from "./../../../components/blocks/Home/Road/Road.schema";
+import { transportNetworkComponentSchema } from "./../../../components/blocks/Home/TransportNetwork/TransportNetwork.schema";
 
 export const sectionsTemplate: TinaField = {
   type: "object",
@@ -27,5 +29,7 @@ export const sectionsTemplate: TinaField = {
     opportunityComponentSchema,
     opportunity2ComponentSchema,
     opportunity3ComponentSchema,
+    roadComponentSchema,
+    transportNetworkComponentSchema,
   ],
 };
