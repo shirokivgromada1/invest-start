@@ -1,0 +1,14 @@
+@media screen and (max-width: 1143px) {
+	.tablet_gap_2 {
+		gap: 120px !important;
+	}
+	.tablet_gap_3 {
+		gap: 15px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.tablet_gap_2 {
+		gap: 15px !important;
+	}
+}
