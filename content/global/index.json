@@ -1,6 +1,6 @@
 {
   "header": {
-    "icon": "/uploads/logo1.png",
+    "icon": "/uploads/background.png",
     "links": {
       "label1": "Локальні бізнеси",
       "label2": "Інвестиційний паспорт",
@@ -43,9 +43,5 @@
     "googleUrl": "https://www.google.com/maps/place/Rozental+St,+7,+Zaporizhzhia,+Zaporiz'ka+oblast,+Ukraine,+69000/@47.8602722,35.0099899,17z/data=!3m1!4b1!4m6!3m5!1s0x40dc63eafbf",
     "phone": "+380 (96) 962 88 21",
     "email": "shyroke.ad@gmail.com"
-  },
-  "theme": {
-    "font": "sans",
-    "darkMode": "system"
   }
 }
