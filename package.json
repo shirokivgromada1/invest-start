@@ -14,7 +14,7 @@
 		"@emotion/styled": "^11.11.0",
 		"@hookform/resolvers": "^3.3.2",
 		"@mui/material": "^5.14.8",
-		"@tinacms/auth": "^1.0.3",
+		"@tinacms/auth": "^1.0.4",
 		"@tinacms/form-builder": "^0.43.3",
 		"@types/react-scroll": "^1.8.10",
 		"@types/sanitize-html": "^2.9.0",
