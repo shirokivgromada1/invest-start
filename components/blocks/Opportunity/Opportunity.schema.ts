@@ -2,7 +2,7 @@ import { Template } from "tinacms";
 
 export const opportunityComponentSchema: Template = {
   name: "Opportunity",
-  label: "Opportunity",
+  label: "Opportunity variant 1",
   ui: {
     previewSrc: "/blocks/Opportunity/opportunity.png",
   },

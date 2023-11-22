@@ -1,5 +1,6 @@
 .history {
   margin-bottom: 130px;
+  padding-inline: 40px;
   & > div > h2 {
     text-align: left;
     color: #1e1e1c;
@@ -121,12 +122,9 @@
     }
   }
 }
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 704px) {
   .history {
-    &__inner {
-      padding: 0 40px;
-    }
+    padding-inline: 20px;
   }
 }
 
@@ -137,7 +135,6 @@
       text-align: center;
     }
     &__inner {
-      padding: 0 20px;
       grid-template-columns: 1fr;
       gap: 20px;
       margin: 0 auto;

@@ -1,11 +1,12 @@
 .footer {
   background-color: #309c54;
+  margin-top: 60px;
   &__inner {
     display: flex;
     //flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 105px;
-    padding: 55px 0 60px 0;
+    padding: 55px 0 90px 0;
     align-items: flex-end;
     &_agency {
       width: 353px;
@@ -15,7 +16,7 @@
           font-size: 14px;
           font-family: Montserrat;
           line-height: 18.4px;
-          margin-bottom: 12px;
+          margin-bottom: 20px;
         }
         &:nth-child(3) {
           color: #fff;
@@ -25,15 +26,17 @@
         }
       }
       & > a {
-        color: #fff;
-        font-size: 13px;
-        font-family: Montserrat;
-        font-weight: 600;
-        &:hover {
-          text-underline: #FFFFFF;
-          text-decoration: underline;
-          text-underline-offset: 3px;
-        }
+        color: #FFF;
+
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 115.023%;
+        padding: 10px 19px;
+        border-radius: 27px;
+        border: 1px solid #FFF;
+
       }
     }
     &_nav {
@@ -240,7 +243,11 @@
       &_agency {
         width: 280px;
         margin-bottom: 30px;
-
+        & > a {
+          font-size: 14px;
+          font-style: normal;
+          padding: 10px 17px;
+        }
       }
       &_nav {
         & > ul {

@@ -23,9 +23,16 @@
           grid-template-columns: repeat(4, 1fr);
           height: 100%;
           max-width: 62.5rem;
-          & > li {
+          & > a {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            //line-height: 41.4px;
+          }
+           li {
             cursor: pointer;
             display: flex;
+             color: var(--primary-color);
             align-items: center;
             justify-content: center;
             padding-inline: 15px;
@@ -37,16 +44,9 @@
             &:hover {
               border-bottom-color: var(--hover-color);
             }
-            &:hover > a {
-              color: var(--hover-color);
-            }
-            & > a {
-              text-align: center;
-              font-size: 16px;
-              font-weight: 500;
-              //line-height: 41.4px;
-              color: var(--primary-color);
-            }
+             &:hover {
+               color: var(--hover-color);
+             }
           }
         }
 
@@ -102,12 +102,6 @@
       &__logo {
         min-width: 210px;
         padding-left: 30px;
-      }
-      &__navigation {
-        &_nav {
-          & > ul {
-          }
-        }
       }
     }
   }
@@ -232,15 +226,19 @@
               width: fit-content;
               z-index: 1;
               overflow: hidden;
+              color: #1e1e1c;
+              &:hover {
+                color: var(--hover-color);
+              }
               & > div {
                 width: fit-content;
                 & > a {
-                  color: #1e1e1c;
                   font-size: 36px;
                   font-family: Montserrat;
                   font-style: normal;
                   font-weight: 500;
                   line-height: normal;
+                  color: #1e1e1c;
                   &:hover {
                     color: var(--hover-color);
                   }

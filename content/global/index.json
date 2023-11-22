@@ -6,7 +6,9 @@
       "label2": "Інвестиційний паспорт",
       "href2": "/uploads/Moiseyev_Kyrylo_IK-02_Lab_2.pdf",
       "label3": "Корисна інформація",
-      "label4": "Інвестиційні можливості "
+      "href3": "#useful-info",
+      "label4": "Інвестиційні можливості ",
+      "href4": "#investment"
     },
     "location": "м. Запоріжжя, вул. Розенталь, 7",
     "phone": "+380 (96) 962 88 21",
@@ -40,7 +42,7 @@
     "logo": "/uploads/footer/icon.svg",
     "agency": "© КУ “Агенція розвитку Широківської громади”, Широківська ТГ, 2018-2023. Всі права захищено.",
     "location": "м. Запоріжжя, вул. Розенталь, 7",
-    "googleUrl": "https://www.google.com/maps/place/Rozental+St,+7,+Zaporizhzhia,+Zaporiz'ka+oblast,+Ukraine,+69000/@47.8602722,35.0099899,17z/data=!3m1!4b1!4m6!3m5!1s0x40dc63eafbf",
+    "url": "/",
     "phone": "+380 (96) 962 88 21",
     "email": "shyroke.ad@gmail.com"
   },
