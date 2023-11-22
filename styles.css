@@ -33,6 +33,10 @@ button {
   max-width: 1290px;
   margin: 0 auto;
 }
+.container-footer {
+  max-width: 1290px;
+  margin: 0 auto;
+}
 
 .container-fluid {
   max-width: 2560px;
@@ -41,18 +45,18 @@ button {
 }
 
 @media screen and (max-width: 1290px) {
-  .container {
+  .container-footer {
     max-width: 1048px;
   }
 }
 
 @media screen and (max-width: 1080px) {
-  .container {
+  .container-footer {
     max-width: 920px;
   }
 }
 @media screen and (max-width: 991px) {
-  .container {
+  .container-footer {
     max-width: 100%;
   }
 }
@@ -71,5 +75,23 @@ button {
 @keyframes sign {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+#button {
+  position: fixed;
+  right: 2.5%;
+  bottom: 5%;
+  cursor: pointer;
+  border-radius: 50%;
+  width:46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 950px) {
+  #button {
+    display: none;
   }
 }

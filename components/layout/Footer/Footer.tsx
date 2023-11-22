@@ -8,12 +8,11 @@ import Instagram from "../../../assets/instagram.svg";
 import Telegram from "../../../assets/telegram.svg";
 const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
   if (data) {
-    const { logo, nav, location, googleUrl, phone, social, email, agency } =
-      data;
+    const { logo, nav, url, phone, social, email, agency } = data;
     if (logo)
       return (
         <footer className={styles.footer}>
-          <div className="container">
+          <div className="container-footer">
             <div className={styles.footer__inner}>
               <div className={styles.footer__inner_agency}>
                 <Image
@@ -24,13 +23,9 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
                   data-tina-field={tinaField(data, "logo")}
                 />
                 <p>{agency}</p>
-                <p>{location}</p>
-                {googleUrl && (
-                  <Link
-                    href={googleUrl}
-                    data-tina-field={tinaField(data, "googleUrl")}
-                  >
-                    <a target="_blank">Показати на мапі</a>
+                {url && (
+                  <Link href={url} data-tina-field={tinaField(data, "url")}>
+                    <a target="_blank">Сайт Широковської громади</a>
                   </Link>
                 )}
               </div>
@@ -40,7 +35,7 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
                     (link, index) =>
                       link &&
                       link.href && (
-                        <li>
+                        <li key={index}>
                           <a
                             href={link.href}
                             key={link.label + index}

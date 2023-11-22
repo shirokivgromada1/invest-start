@@ -31,6 +31,7 @@ export const Preview = ({ data }: { data: PageComponentsPreview }) => {
             autoPlay
             loop
             muted
+            playsInline
           ></video>
         </div>
         <div

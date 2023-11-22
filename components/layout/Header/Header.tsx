@@ -50,6 +50,13 @@ const Header: FC<IHeader> = ({ data }) => {
   const handleMenuClick = () => {
     setIsOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    const htmlElement = document.querySelector("html");
+    if (htmlElement) {
+      htmlElement.style.overflowY = isOpen ? "hidden" : "visible";
+    }
+  }, [isOpen]);
   const handleLinkClick = (hash: any) => {
     const { pathname } = router;
 
@@ -121,46 +128,38 @@ const Header: FC<IHeader> = ({ data }) => {
           <div className={styles.header__inner__navigation}>
             <nav className={styles.header__inner__navigation_nav}>
               <ul>
-                <li>
-                  <ScrollLink
-                    to="history"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleLinkClick("#local-businesses")}
-                  >
-                    {data?.links?.label1}
-                  </ScrollLink>
-                </li>
-                <li>
-                  {data?.links?.href2 && (
-                    <a href={data?.links?.href2} target="_blank">
-                      {data?.links?.label2}
-                    </a>
-                  )}
-                </li>
-                <li>
-                  <ScrollLink
-                    to="info"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleLinkClick("#useful-information")}
-                  >
-                    {data?.links?.label3}
-                  </ScrollLink>
-                </li>
-                <li>
-                  <ScrollLink
-                    to="investment"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => handleLinkClick("#investment")}
-                  >
-                    {data?.links?.label4}
-                  </ScrollLink>
-                </li>
+                <ScrollLink
+                  to="history"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => handleLinkClick("#local-businesses")}
+                >
+                  <li>{data?.links?.label1}</li>
+                </ScrollLink>
+                {data?.links?.href2 && (
+                  <a href={data?.links?.href2} target="_blank">
+                    <li>{data?.links?.label2}</li>
+                  </a>
+                )}
+                <ScrollLink
+                  to="info"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => handleLinkClick("#useful-information")}
+                >
+                  <li>{data?.links?.label3}</li>
+                </ScrollLink>
+                <ScrollLink
+                  to="investment"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => handleLinkClick("#investment")}
+                >
+                  <li>{data?.links?.label4}</li>
+                </ScrollLink>
               </ul>
             </nav>
             <LangSwitcher />

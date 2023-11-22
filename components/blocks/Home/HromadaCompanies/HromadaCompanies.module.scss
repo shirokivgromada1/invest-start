@@ -1,5 +1,6 @@
 .work {
   margin-bottom: 130px;
+  padding-inline: 40px;
   & > div > h2 {
     text-align: left;
     color: #1e1e1c;
@@ -82,7 +83,11 @@
     }
   }
 }
-
+@media screen and (max-width: 704px) {
+  .work {
+    padding-inline: 20px;
+  }
+}
 
 @media screen and (max-width: 630px) {
   .work {

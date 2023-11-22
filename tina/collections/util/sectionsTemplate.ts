@@ -10,6 +10,12 @@ import { opportunity2ComponentSchema } from "./../../../components/blocks/Opport
 import { opportunity3ComponentSchema } from "./../../../components/blocks/Opportunity3/Opportunity3.schema";
 import { roadComponentSchema } from "./../../../components/blocks/Home/Road/Road.schema";
 import { transportNetworkComponentSchema } from "./../../../components/blocks/Home/TransportNetwork/TransportNetwork.schema";
+import { usefulInfoComponentSchema } from "./../../../components/blocks/Home/UsefulInfo/UsefulInfo.schema";
+import { usefulInfo2ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo2/UsefulInfo.schema";
+import { usefulInfo3ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo3/UsefulInfo3.schema";
+import { usefulInfo4ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo4/UsefulInfo4.schema";
+import { usefulInfo5ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo5/UsefulInfo5.schema";
+import { usefulInfo6ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo6/UsefulInfo6.schema";
 
 export const sectionsTemplate: TinaField = {
   type: "object",
@@ -31,5 +37,11 @@ export const sectionsTemplate: TinaField = {
     opportunity3ComponentSchema,
     roadComponentSchema,
     transportNetworkComponentSchema,
+    usefulInfoComponentSchema,
+    usefulInfo2ComponentSchema,
+    usefulInfo3ComponentSchema,
+    usefulInfo4ComponentSchema,
+    usefulInfo5ComponentSchema,
+    usefulInfo6ComponentSchema,
   ],
 };

@@ -67,13 +67,8 @@ export const footer: TinaField = {
     },
     {
       type: "string",
-      label: "Location",
-      name: "location",
-    },
-    {
-      type: "string",
-      label: "Google посилання",
-      name: "googleUrl",
+      label: "Посилання на сайт",
+      name: "url",
     },
     {
       type: "string",
