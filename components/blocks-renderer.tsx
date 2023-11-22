@@ -14,7 +14,6 @@ import { UsefulInfo } from "../components/blocks/Home/UsefulInfo/UsefulInfo";
 import { UsefulInfo2 } from "../components/blocks/Home/UsefulInfo2/UsefulInfo2";
 import { UsefulInfo3 } from "../components/blocks/Home/UsefulInfo3/UsefulInfo3";
 import { UsefulInfo4 } from "../components/blocks/Home/UsefulInfo4/UsefulInfo4.";
-import { UsefulInfo5 } from "../components/blocks/Home/UsefulInfo5/UsefulInfo5";
 import { UsefulInfo6 } from "../components/blocks/Home/UsefulInfo6/UsefulInfo6";
 export const Components = (props: Omit<Page, "id">) => {
   return (
@@ -69,8 +68,6 @@ const Component = (component: PageComponents) => {
       return <UsefulInfo3 data={component} />;
     case "PageComponentsUsefulInfo4":
       return <UsefulInfo4 data={component} />;
-    case "PageComponentsUsefulInfo5":
-      return <UsefulInfo5 data={component} />;
     case "PageComponentsUsefulInfo6":
       return <UsefulInfo6 data={component} />;
     default:

@@ -14,7 +14,6 @@ import { usefulInfoComponentSchema } from "./../../../components/blocks/Home/Use
 import { usefulInfo2ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo2/UsefulInfo.schema";
 import { usefulInfo3ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo3/UsefulInfo3.schema";
 import { usefulInfo4ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo4/UsefulInfo4.schema";
-import { usefulInfo5ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo5/UsefulInfo5.schema";
 import { usefulInfo6ComponentSchema } from "./../../../components/blocks/Home/UsefulInfo6/UsefulInfo6.schema";
 
 export const sectionsTemplate: TinaField = {
@@ -41,7 +40,6 @@ export const sectionsTemplate: TinaField = {
     usefulInfo2ComponentSchema,
     usefulInfo3ComponentSchema,
     usefulInfo4ComponentSchema,
-    usefulInfo5ComponentSchema,
     usefulInfo6ComponentSchema,
   ],
 };
