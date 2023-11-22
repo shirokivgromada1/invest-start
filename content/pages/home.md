@@ -43,7 +43,7 @@ components:
     photo1: /uploads/карта 1.jpg
     photo2: /uploads/7.svg
     photo3: ''
-    photo4: /uploads/img4.png
+    photo4: /uploads/img.jpg
     photo5: /uploads/img5.png
     photo6: /uploads/img6.png
     _template: Prospective
