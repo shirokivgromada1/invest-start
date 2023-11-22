@@ -40,9 +40,9 @@ components:
       міського життя, але при цьому залишатися в спокійному та зеленому
       передмісті.
     sub2: ' Наша громада має потенціал стати економічним центром регіону завдяки сприятливим умовам для підприємництва, доступній робочій силі та підтримці малого і середнього бізнесу зі сторони місцевої влади.'
-    photo1: /uploads/88.jpg
-    photo2: /uploads/img2.png
-    photo3: /uploads/img3.png
+    photo1: /uploads/карта 1.jpg
+    photo2: ''
+    photo3: ''
     photo4: /uploads/img4.png
     photo5: /uploads/img5.png
     photo6: /uploads/img6.png
