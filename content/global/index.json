@@ -1,6 +1,6 @@
 {
   "header": {
-    "icon": "/uploads/logo1.png",
+    "icon": "/uploads/background.png",
     "links": {
       "label1": "Локальні бізнеси",
       "label2": "Інвестиційний паспорт",
@@ -45,9 +45,5 @@
     "url": "/",
     "phone": "+380 (96) 962 88 21",
     "email": "shyroke.ad@gmail.com"
-  },
-  "theme": {
-    "font": "sans",
-    "darkMode": "system"
   }
 }
