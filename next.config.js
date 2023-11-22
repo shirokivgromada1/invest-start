@@ -7,11 +7,11 @@ module.exports = {
   },
   images: {
     dangerouslyAllowSVG: true,
-    domains: ["res.cloudinary.com"],
+    domains: ["assets.tina.io"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
+        hostname: "assets.tina.io",
       },
     ],
   },
