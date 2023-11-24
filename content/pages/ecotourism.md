@@ -2,7 +2,7 @@
 title: ecotourism
 components:
   - title: ЕКОТУРИЗМ
-    titleEng: ECO TOURISM
+    titleEng: ECOTOURISM
     subtitle: "Рекреаційні комплекси, заміські відпочинкові зони, ставки,\_ тощо"
     subtitleEng: 'Recreation complexes, country recreation areas, ponds, etc'
     text: >+
