@@ -101,7 +101,7 @@ components:
           The Shirokiv community is located in a favorable location - the
           suburbs of Zaporizhzhia and runs along a highway of national
           importance...
-        link: /
+        link: logical-center
       - opportunityTitle: Житлове будівництво
         opportunityTitleEng: Housing
         desc: >-
@@ -579,17 +579,4 @@ components:
         contact3: (061)212-40-29
     _template: UsefulInfo6
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
 
