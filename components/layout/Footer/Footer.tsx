@@ -6,9 +6,13 @@ import Link from "next/link";
 import Facebook from "./../../../assets/facebook.svg";
 import Instagram from "../../../assets/instagram.svg";
 import Telegram from "../../../assets/telegram.svg";
+import { useContext } from "react";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   if (data) {
-    const { logo, nav, url, phone, social, email, agency } = data;
+    const { logo, nav, agencyEng, url, phone, social, email, agency } = data;
     if (logo)
       return (
         <footer className={styles.footer}>
@@ -22,10 +26,14 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
                   width={181}
                   data-tina-field={tinaField(data, "logo")}
                 />
-                <p>{agency}</p>
+                <p>{label === "UA" ? agency : agencyEng}</p>
                 {url && (
                   <Link href={url} data-tina-field={tinaField(data, "url")}>
-                    <a target="_blank">Сайт Широковської громади</a>
+                    <a target="_blank">
+                      {label === "UA"
+                        ? "Сайт Широковської громади"
+                        : "Shirokov community site"}
+                    </a>
                   </Link>
                 )}
               </div>
@@ -38,10 +46,10 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
                         <li key={index}>
                           <a
                             href={link.href}
-                            key={link.label + index}
+                            key={index}
                             data-tina-field={tinaField(link)}
                           >
-                            {link.label}
+                            {label === "UA" ? link.label : link.labelEng}
                           </a>
                         </li>
                       )
@@ -50,7 +58,11 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
               </nav>
               <div className={styles.footer__inner_cont_block}>
                 <div className={styles.footer__inner_contacts}>
-                  <p>Напишіть/зателефонуйте нам</p>
+                  <p>
+                    {label === "UA"
+                      ? "Напишіть/зателефонуйте нам"
+                      : "Write/call us"}
+                  </p>
                   <a
                     href={`mailto:${email}`}
                     data-tina-field={tinaField(data, "email")}
@@ -65,7 +77,9 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
                   </a>
                 </div>
                 <div className={styles.footer__inner_contacts_links}>
-                  <span>Соціальні мережі</span>
+                  <span>
+                    {label === "UA" ? "Соціальні мережі" : "Social networks"}
+                  </span>
                   <div>
                     {social?.instagram && (
                       <a

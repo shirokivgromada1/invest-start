@@ -1,15 +1,12 @@
 import { tinaField } from "tinacms/dist/react";
 import { PageComponentsUsefulInfo2 } from "@/tina/__generated__/types";
 import styles from "./UsefulInfo2.module.scss";
-import Image from "next/image";
-import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Minus from "./../../../../assets/minus.svg";
 import Plus from "./../../../../assets/plus.svg";
 import Arrow from "../../../../assets/arrow-list.svg";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
-  const match = useBetterMediaQuery("(max-width: 1050px)");
-  const isMobile = useBetterMediaQuery("(max-width: 550px)");
   const [openIndices, setOpenIndices] = useState<number[]>([]);
 
   const toggleIndex = (index: number) => {
@@ -19,8 +16,9 @@ export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
       setOpenIndices([...openIndices, index]);
     }
   };
-  const matches = useBetterMediaQuery("(max-width: 650px)");
-  const { title, itemTitle, itemNumber, list } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
+  const { title, itemTitle, titleEng, itemTitleEng, itemNumber, list } = data;
   function isPdf(url: string | undefined): boolean {
     return typeof url === "string" && url.toLowerCase().endsWith(".pdf");
   }
@@ -43,7 +41,11 @@ export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
     <section className={styles.info} id="useful-info">
       <div className="container">
         <div className={styles.info__inner}>
-          {title && <h1 data-tina-field={tinaField(data, "title")}>{title}</h1>}
+          {title && (
+            <h1 data-tina-field={tinaField(data, "title")}>
+              {label === "UA" ? title : titleEng}
+            </h1>
+          )}
           <div className={styles.info__inner_collapse}>
             <button
               onClick={() => toggleIndex(1)}
@@ -58,7 +60,7 @@ export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
               </h1>
               <div>
                 <h5 data-tina-field={tinaField(data, "itemTitle")}>
-                  {itemTitle}
+                  {label === "UA" ? itemTitle : itemTitleEng}
                 </h5>
               </div>
               <div>{openIndices.includes(1) ? <Minus /> : <Plus />}</div>
@@ -70,7 +72,7 @@ export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
                 }
               >
                 <div>
-                  <ul>
+                  <ul onClick={(e) => e.stopPropagation()}>
                     {list &&
                       list.map(
                         (item, index) =>
@@ -86,7 +88,9 @@ export const UsefulInfo2 = ({ data }: { data: PageComponentsUsefulInfo2 }) => {
                                   )}
                                   data-tina-field={tinaField(item, "title")}
                                 >
-                                  {item?.title}
+                                  {label === "UA"
+                                    ? item?.title
+                                    : item?.titleEng}
                                 </a>
                               ) : null}
                             </li>

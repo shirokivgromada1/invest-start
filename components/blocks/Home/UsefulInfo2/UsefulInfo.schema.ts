@@ -12,10 +12,19 @@ export const usefulInfo2ComponentSchema: Template = {
       name: "title",
       type: "string",
     },
-
+    {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
     {
       label: "Item title",
       name: "itemTitle",
+      type: "string",
+    },
+    {
+      label: "Item title Eng",
+      name: "itemTitleEng",
       type: "string",
     },
     {
@@ -37,6 +46,11 @@ export const usefulInfo2ComponentSchema: Template = {
         {
           label: "Title",
           name: "title",
+          type: "string",
+        },
+        {
+          label: "Title Eng",
+          name: "titleEng",
           type: "string",
         },
         {

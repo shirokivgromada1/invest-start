@@ -13,9 +13,19 @@ export const previewComponentSchema: Template = {
       type: "string",
     },
     {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
+    {
       type: "string",
       label: "Subtitle",
       name: "subtitle",
+    },
+    {
+      type: "string",
+      label: "Subtitle Eng",
+      name: "subtitleEng",
     },
     {
       type: "string",
@@ -26,6 +36,11 @@ export const previewComponentSchema: Template = {
       type: "string",
       label: "Description block",
       name: "descBlock",
+    },
+    {
+      type: "string",
+      label: "Description block Eng",
+      name: "descBlockEng",
     },
   ],
 };

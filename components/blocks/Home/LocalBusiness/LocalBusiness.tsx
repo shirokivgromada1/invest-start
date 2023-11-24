@@ -1,20 +1,21 @@
-import Link from "next/link";
 import styles from "./LocalBusiness.module.scss";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { PageComponentsLocalBusiness } from "@/tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
 import InstagramIcon from "../../../../assets/instagram.svg";
 import FacebookIcon from "../../../../assets/svg-facebook.svg";
 import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-
+import { LangContext } from "../../../LangSwitcher/LangSwitcher";
 export const LocalBusiness = ({
   data,
 }: {
   data: PageComponentsLocalBusiness;
 }) => {
-  const { title, list: list } = data;
+  const { title, titleEng, list: list } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   const isTablet = useBetterMediaQuery(
     "((min-width: 630px) and (max-width: 968px))"
   );
@@ -22,7 +23,6 @@ export const LocalBusiness = ({
   const [itemsToShow, setItemsToShow] = useState(
     isTablet ? 6 : isMobile ? 3 : list ? list.length : 0
   );
-
   useEffect(() => {
     setItemsToShow(isTablet ? 6 : isMobile ? 3 : list ? list.length : 0);
   }, [isTablet, list, isMobile]);
@@ -34,7 +34,9 @@ export const LocalBusiness = ({
   return (
     <div className={styles.history} id="local-businesses">
       <div className="container">
-        <h2 data-tina-field={tinaField(data, "title")}>{title}</h2>
+        <h2 data-tina-field={tinaField(data, "title")}>
+          {label === "UA" ? title : titleEng}
+        </h2>
         <div className={styles.history__inner}>
           {list &&
             list.slice(0, itemsToShow).map(
@@ -58,15 +60,17 @@ export const LocalBusiness = ({
                     )}
                     <div className={styles.history__inner__applicant_desc}>
                       <h3 data-tina-field={tinaField(l, "businessTitle")}>
-                        {l?.businessTitle}
+                        {label === "UA"
+                          ? l?.businessTitle
+                          : l?.businessTitleEng}
                       </h3>
                       <p data-tina-field={tinaField(l, "subtitle")}>
-                        {l?.subtitle}
+                        {label === "UA" ? l?.subtitle : l?.subtitleEng}
                       </p>
                       <p data-tina-field={tinaField(l, "desc")}>{l?.desc}</p>
                       {l?.websiteLink && (
                         <p>
-                          Веб-сайт:{" "}
+                          {label === "UA" ? "Веб-сайт:" : "Website:"}{" "}
                           <a
                             href={l?.websiteLink}
                             target="_blank"
@@ -107,7 +111,9 @@ export const LocalBusiness = ({
         </div>
         <>
           {(isTablet || isMobile) && list && list.length > itemsToShow && (
-            <button onClick={loadMoreItems}>Більше</button>
+            <button onClick={loadMoreItems}>
+              {label === "UA" ? "Більше" : "Load more"}
+            </button>
           )}
         </>
       </div>

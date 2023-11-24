@@ -1,27 +1,24 @@
-import Link from "next/link";
 import styles from "./HromadaCompanies.module.scss";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-
+import { useContext } from "react";
 import { PageComponentsHromadaCompanies } from "@/tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
-import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 
 export const HromadaCompanies = ({
   data,
 }: {
   data: PageComponentsHromadaCompanies;
 }) => {
-  const { title, list: list } = data;
-  const isTablet = useBetterMediaQuery(
-    "((min-width: 630px) and (max-width: 968px))"
-  );
-  const isMobile = useBetterMediaQuery("(max-width: 630px)");
-
+  const { title, titleEng, list: list } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <div className={styles.work}>
       <div className="container">
-        <h2 data-tina-field={tinaField(data, "title")}>{title}</h2>
+        <h2 data-tina-field={tinaField(data, "title")}>
+          {label === "UA" ? title : titleEng}
+        </h2>
         <div className={styles.work__inner}>
           {list &&
             list.map(

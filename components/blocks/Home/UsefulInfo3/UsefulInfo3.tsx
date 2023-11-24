@@ -3,10 +3,11 @@ import { PageComponentsUsefulInfo3 } from "@/tina/__generated__/types";
 import styles from "./UsefulInfo3.module.scss";
 import Image from "next/image";
 import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Minus from "./../../../../assets/minus.svg";
 import Plus from "./../../../../assets/plus.svg";
 import Arrow from "../../../../assets/arrow-list.svg";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
   const match = useBetterMediaQuery("(max-width: 1050px)");
   const isMobile = useBetterMediaQuery("(max-width: 550px)");
@@ -20,7 +21,7 @@ export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
     }
   };
   const matches = useBetterMediaQuery("(max-width: 650px)");
-  const { title, itemTitle, itemNumber, list } = data;
+  const { title, itemTitle, titleEng, itemTitleEng, itemNumber, list } = data;
   function isPdf(url: string | undefined): boolean {
     return typeof url === "string" && url.toLowerCase().endsWith(".pdf");
   }
@@ -38,12 +39,17 @@ export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
   function getDownload(date: string | undefined | null): boolean | undefined {
     return date === null || date === undefined || isPdf(date) || undefined;
   }
-
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <section className={styles.info} id="useful-info">
       <div className="container">
         <div className={styles.info__inner}>
-          {title && <h1 data-tina-field={tinaField(data, "title")}>{title}</h1>}
+          {title && (
+            <h1 data-tina-field={tinaField(data, "title")}>
+              {label === "UA" ? title : titleEng}
+            </h1>
+          )}
           <div className={styles.info__inner_collapse}>
             <button
               onClick={() => toggleIndex(1)}
@@ -58,7 +64,7 @@ export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
               </h1>
               <div>
                 <h5 data-tina-field={tinaField(data, "itemTitle")}>
-                  {itemTitle}
+                  {label === "UA" ? itemTitle : itemTitleEng}
                 </h5>
               </div>
               <div>{openIndices.includes(1) ? <Minus /> : <Plus />}</div>
@@ -70,15 +76,15 @@ export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
                 }
               >
                 <div>
-                  <ul>
+                  <ul onClick={(e) => e.stopPropagation()}>
                     {list &&
                       list.map(
                         (item, index) =>
                           !item?.hidden && (
                             <li key={index}>
-                              {item?.title && (
+                              {item?.title && item?.titleEng && (
                                 <h4 data-tina-field={tinaField(item, "title")}>
-                                  {item.title}
+                                  {label === "UA" ? item.title : item.titleEng}
                                 </h4>
                               )}
                               {item?.link || item?.url ? (
@@ -90,14 +96,18 @@ export const UsefulInfo3 = ({ data }: { data: PageComponentsUsefulInfo3 }) => {
                                   )}
                                   data-tina-field={tinaField(item, "kadastr")}
                                 >
-                                  {item?.kadastr}
+                                  {label === "UA"
+                                    ? item?.kadastr
+                                    : item?.kadastrEng}
                                 </a>
                               ) : null}
-                              {item?.descBlock && (
+                              {item?.descBlock && item?.descBlockEng && (
                                 <p
                                   data-tina-field={tinaField(item, "descBlock")}
                                 >
-                                  {item.descBlock}
+                                  {label === "UA"
+                                    ? item.descBlock
+                                    : item.descBlockEng}
                                 </p>
                               )}
                             </li>

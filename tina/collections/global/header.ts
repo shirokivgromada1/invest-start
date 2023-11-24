@@ -30,10 +30,20 @@ export const header: TinaField = {
           name: "label1",
           type: "string",
         },
+        {
+          label: "Link №1 label Eng",
+          name: "label1Eng",
+          type: "string",
+        },
         { label: "Link №1 href", name: "href1", type: "string" },
         {
           label: "Інвестиційний паспорт label",
           name: "label2",
+          type: "string",
+        },
+        {
+          label: "Інвестиційний паспорт label Eng",
+          name: "label2Eng",
           type: "string",
         },
         { label: "Інвестиційний паспорт href", name: "href2", type: "image" },
@@ -42,10 +52,20 @@ export const header: TinaField = {
           name: "label3",
           type: "string",
         },
+        {
+          label: "Link №3 label Eng",
+          name: "label3Eng",
+          type: "string",
+        },
         { label: "Link №3 href", name: "href3", type: "string" },
         {
           label: "Link №4 label",
           name: "label4",
+          type: "string",
+        },
+        {
+          label: "Link №4 label Eng",
+          name: "label4Eng",
           type: "string",
         },
         { label: "Link №4 href", name: "href4", type: "string" },
@@ -54,6 +74,11 @@ export const header: TinaField = {
     {
       label: "Location",
       name: "location",
+      type: "string",
+    },
+    {
+      label: "Location Eng",
+      name: "locationEng",
       type: "string",
     },
     {

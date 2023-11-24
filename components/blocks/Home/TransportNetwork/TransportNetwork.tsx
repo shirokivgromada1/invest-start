@@ -13,16 +13,20 @@ const generateArray = (start: number, step: number, end: number) => {
 };
 import { useInView } from "react-intersection-observer";
 import Carousel from "../../../../components/Carousel/Carousel";
+import { useContext } from "react";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 export const TransportNetwork = ({
   data,
 }: {
   data: PageComponentsTransportNetwork;
 }) => {
-  const { title, settlements, square, population } = data;
+  const { title, titleEng, settlements, square, population } = data;
   const [ref, inView] = useInView();
   const countOfSettlements = settlements && generateArray(1, 2, settlements);
   const countOfPopulation = population && generateArray(100, 100, population);
   const countOfSquare = square && generateArray(2.3, 3.3, square);
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <section ref={ref} className={styles.transportNetwork}>
       <div className="container">
@@ -32,7 +36,9 @@ export const TransportNetwork = ({
               <Carousel
                 itemArray={countOfSettlements}
                 inView={inView}
-                title="населених пунктів"
+                title={`${
+                  label === "UA" ? "населених пунктів" : "settlements"
+                } `}
               />
             )}
             {population && (
@@ -41,20 +47,22 @@ export const TransportNetwork = ({
                   (item) => `>${item}`
                 )}
                 inView={inView}
-                title="населення"
+                title={`${label === "UA" ? "населення" : "population"} `}
               />
             )}
             {square && (
               <Carousel
                 itemArray={(countOfSquare as number[]).map(
-                  (item) => `${item} км\u00B2`
+                  (item) => `${item} ${label === "UA" ? "км" : "km"}\u00B2`
                 )}
                 inView={inView}
-                title="площа громади"
+                title={`${
+                  label === "UA" ? "площа громади" : "community square"
+                } `}
               />
             )}
           </div>
-          <h1>{title}</h1>
+          <h1>{label === "UA" ? title : titleEng}</h1>
         </div>
       </div>
     </section>

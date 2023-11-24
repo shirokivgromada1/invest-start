@@ -12,10 +12,19 @@ export const usefulInfoComponentSchema: Template = {
       name: "title",
       type: "string",
     },
-
+    {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
     {
       label: "Item title",
       name: "itemTitle",
+      type: "string",
+    },
+    {
+      label: "Item title Eng",
+      name: "itemTitleEng",
       type: "string",
     },
     {
@@ -29,6 +38,11 @@ export const usefulInfoComponentSchema: Template = {
       name: "desc",
     },
     {
+      type: "rich-text",
+      label: "Description block Eng",
+      name: "descEng",
+    },
+    {
       label: "Contacts Block",
       type: "object",
       name: "contacts",
@@ -36,6 +50,11 @@ export const usefulInfoComponentSchema: Template = {
         {
           label: "Title",
           name: "title",
+          type: "string",
+        },
+        {
+          label: "Title Eng",
+          name: "titleEng",
           type: "string",
         },
         {
@@ -55,8 +74,18 @@ export const usefulInfoComponentSchema: Template = {
               type: "string",
             },
             {
+              label: "Name Eng",
+              name: "nameEng",
+              type: "string",
+            },
+            {
               label: "Description",
               name: "description",
+              type: "string",
+            },
+            {
+              label: "Description Eng",
+              name: "descriptionEng",
               type: "string",
             },
           ],

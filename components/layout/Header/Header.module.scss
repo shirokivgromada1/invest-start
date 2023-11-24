@@ -2,6 +2,8 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    gap: 30px;
     &__menu {
       display: none;
     }
@@ -9,9 +11,9 @@
       display: none;
     }
     &__logo {
-      padding: 12px 0 16px 41px;
+      margin: 12px 0 16px 41px;
       border-bottom: 1px solid var(--border-color);
-      min-width:250px;
+      width:147px;
     }
     &__navigation {
       display: flex;
@@ -59,7 +61,7 @@
   .header {
     &__inner {
       &__logo {
-        padding-left:60px;
+        margin-left:60px;
       }
       &__navigation {
         &_nav {
@@ -79,7 +81,7 @@
   .header {
     &__inner {
       &__logo {
-        padding: 12px 0 12px 41px;
+        margin: 12px 0 12px 41px;
         border-bottom: 1px solid var(--border-color);
       }
     }
@@ -89,23 +91,13 @@
   .header {
     &__inner {
       &__logo {
-        padding-block: 12px 11px;
+        margin-block: 12px 11px;
       }
 
     }
   }
 }
 
-@media (max-width: 850px) {
-  .header {
-    &__inner {
-      &__logo {
-        min-width: 210px;
-        padding-left: 30px;
-      }
-    }
-  }
-}
 @media only screen and (max-width: 950px) {
   .header {
     &__inner {
@@ -127,9 +119,10 @@
       &__logo {
         grid-area: logo;
         margin: 0 auto;
-        padding-inline: 0;
         border-bottom: none;
-        min-width: initial;
+        margin-top: 10px;
+        width: 138px;
+
         img {
           width: 138px !important;
           height: 73px !important;
@@ -360,7 +353,7 @@
 
 @media only screen and (max-width: 500px) {
   .header__inner__logo {
-    height: 85px;
+    width: 125px;
     img {
       width: 125px !important;
       height: 66px !important;
