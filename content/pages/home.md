@@ -112,7 +112,7 @@ components:
           The construction of residential apartment buildings and residential
           complexes with townhouses in the Shirokivska community is a profitable
           and relevant project as of 2023-2028...
-        link: /
+        link: housing
       - opportunityTitle: Гіпермаркет
         opportunityTitleEng: Hypermarket
         desc: >-
@@ -124,7 +124,7 @@ components:
           supermarkets, shopping centers in Shirokivska hromada opens wide
           opportunities for the development of the commercial sector in the
           region...
-        link: /
+        link: hypermarket
       - opportunityTitle: Крематорій
         opportunityTitleEng: Crematorium
         desc: >-
@@ -135,7 +135,7 @@ components:
           The construction of a crematorium in Shirokivska hromada is a
           promising project, since currently the nearest crematoriums are in
           Kharkiv and Odesa...
-        link: /
+        link: crematorium
       - opportunityTitle: 'Агросфера, крафтове виробництво'
         opportunityTitleEng: 'Agrosphere, craft production'
         desc: >-
@@ -146,7 +146,7 @@ components:
           The Shirokiv community is located in the region, where black soils are
           known for their fertility. Qualified specialists in the fields of
           agriculture and cattle breeding live here...
-        link: /
+        link: agrosphere-craft-production
       - opportunityTitle: Переробка сільгосппродукції
         opportunityTitleEng: Processing of agricultural products
         desc: >-
@@ -157,7 +157,7 @@ components:
           The Shirokiv community is an ideal place for opening an enterprise for
           the processing of agricultural products. Close proximity to major
           cities, location along...
-        link: /
+        link: processing-of-agricultural-products
       - opportunityTitle: Автозаправні станції та СТО
         opportunityTitleEng: Gas stations and service stations
         desc: >-
@@ -168,7 +168,7 @@ components:
           Our community is located along the highway of national importance N-08
           (Boryspil-Dnipro-Zaporizhia) between two regional centers and has a
           number of advantages that allow us to provide...
-        link: /
+        link: auto-fuel-stations-and-service-stations
       - opportunityTitle: Екотуризм
         opportunityTitleEng: Ecotourism
         desc: >-
