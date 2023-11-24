@@ -9,13 +9,28 @@ export const prospectiveComponentSchema: Template = {
   fields: [
     { type: "string", label: "Block title", name: "title" },
     {
+      label: "Block title Eng",
+      name: "titleEng",
+      type: "string",
+    },
+    {
       label: "Subtitle block 1",
       name: "sub1",
       type: "string",
     },
     {
+      label: "Subtitle block 1 Eng",
+      name: "sub1Eng",
+      type: "string",
+    },
+    {
       label: "Subtitle block 2",
       name: "sub2",
+      type: "string",
+    },
+    {
+      label: "Subtitle block 2 Eng",
+      name: "sub2Eng",
       type: "string",
     },
     {

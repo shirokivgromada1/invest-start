@@ -9,6 +9,11 @@ export const hromadaCompaniesComponentSchema: Template = {
   fields: [
     { type: "string", label: "Block title", name: "title" },
     {
+      label: "Block title Eng",
+      name: "titleEng",
+      type: "string",
+    },
+    {
       type: "object",
       label: "List of companies",
       name: "list",

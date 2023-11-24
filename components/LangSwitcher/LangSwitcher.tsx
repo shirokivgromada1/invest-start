@@ -1,15 +1,31 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import styles from "./LangSwitcher.module.scss";
 
-const LangSwitcher = () => {
-  const [lang, setLang] = useState({ code: "ua", label: "UA" });
-  const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
-  const [translation, setTranslation] = useState(null);
+interface Lang {
+  code: string;
+  label: string;
+}
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+interface LangContextType {
+  lang: Lang;
+  changeLanguage: (language: Lang) => void;
+}
+
+const defaultLang: Lang = { code: "ua", label: "UA" };
+
+export const LangContext = createContext<LangContextType>({
+  lang: defaultLang,
+  changeLanguage: () => {},
+});
+
+export const LangSwitcherProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  const [lang, setLang] = useState<Lang>(defaultLang);
+
+  const changeLanguage = (language: Lang) => {
+    setLang(language);
+    localStorage.setItem("language", language.label);
   };
 
   useEffect(() => {
@@ -17,41 +33,29 @@ const LangSwitcher = () => {
     if (storedLanguage) {
       if (storedLanguage === "UA") setLang({ code: "ua", label: "UA" });
       if (storedLanguage === "EN") setLang({ code: "en", label: "EN" });
-      i18n.changeLanguage(storedLanguage);
-      // Automatically translate the label
-      translateLabel(storedLanguage);
     }
   }, []);
 
-  const translateLabel = async (languageCode: any) => {
-    const apiKey = "YOUR_GOOGLE_TRANSLATE_API_KEY";
-    const endpoint = "https://translation.googleapis.com/language/translate/v2";
+  return (
+    <LangContext.Provider value={{ lang, changeLanguage }}>
+      {children}
+    </LangContext.Provider>
+  );
+};
+const LangSwitcher: React.FC = () => {
+  const { lang, changeLanguage } = useContext(LangContext)!;
+  const [isOpen, setIsOpen] = useState(false);
 
-    const response = await fetch(
-      `${endpoint}?key=${apiKey}&q=${lang.label}&source=${lang.code}&target=${languageCode}`
-    );
-
-    const data = await response.json();
-
-    if (
-      data &&
-      data.data &&
-      data.data.translations &&
-      data.data.translations.length > 0
-    ) {
-      setTranslation(data.data.translations[0].translatedText);
-    }
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
-
-  const handleLanguageChange = (language: any) => {
-    setLang(language);
-    i18n.changeLanguage(language.label);
-    localStorage.setItem("language", language.label);
+  console.log(lang);
+  const handleLanguageChange = (language: Lang) => {
+    changeLanguage(language);
     setIsOpen(false);
-    translateLabel(language.code);
   };
 
-  const languageOptions = [
+  const languageOptions: Lang[] = [
     { code: "ua", label: "UA" },
     { code: "en", label: "EN" },
   ];
@@ -68,9 +72,7 @@ const LangSwitcher = () => {
   return (
     <div className={styles.langSwitcher}>
       <div className={styles.langSwitcher__button} onClick={toggleDropdown}>
-        <span className={styles.langSwitcher__label}>
-          {translation || lang.label}
-        </span>
+        <span className={styles.langSwitcher__label}>{lang.label}</span>
       </div>
       {isOpen && (
         <ul className={styles.langSwitcher__menu}>

@@ -1,23 +1,33 @@
 import styles from "./Prospective.module.scss";
 import { PageComponentsProspective } from "@/tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
-import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import classes from "./swiper.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
-import img1 from "../../../../assets/test-back.png";
 import Image from "next/image";
 import LeftArrow from "../../../../assets/arrow-left.svg";
 import RightArrow from "../../../../assets/arrow-right.svg";
+import { useContext } from "react";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 export const Prospective = ({ data }: { data: PageComponentsProspective }) => {
-  const { title, sub1, sub2, photo1, photo2, photo3, photo4, photo5, photo6 } =
-    data;
-  const isTablet = useBetterMediaQuery(
-    "((min-width: 705px) and (max-width: 890px))"
-  );
-  const isMobile = useBetterMediaQuery("(max-width: 704px)");
+  const {
+    title,
+    titleEng,
+    sub1Eng,
+    sub2Eng,
+    sub1,
+    sub2,
+    photo1,
+    photo2,
+    photo3,
+    photo4,
+    photo5,
+    photo6,
+  } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <section className={styles.prospective}>
       <div className="container-fluid">
@@ -47,9 +57,15 @@ export const Prospective = ({ data }: { data: PageComponentsProspective }) => {
             )}
           </div>
           <div className={styles.prospective__inner_text}>
-            <h1 data-tina-field={tinaField(data, "title")}>{title}</h1>
-            <p data-tina-field={tinaField(data, "sub1")}>{sub1}</p>
-            <p data-tina-field={tinaField(data, "sub2")}>{sub2}</p>
+            <h1 data-tina-field={tinaField(data, "title")}>
+              {label === "UA" ? title : titleEng}
+            </h1>
+            <p data-tina-field={tinaField(data, "sub1")}>
+              {label === "UA" ? sub1 : sub1Eng}
+            </p>
+            <p data-tina-field={tinaField(data, "sub2")}>
+              {label === "UA" ? sub2 : sub2Eng}
+            </p>
           </div>
           <div>
             {photo3 && (
@@ -123,58 +139,70 @@ export const Prospective = ({ data }: { data: PageComponentsProspective }) => {
             speed={500}
           >
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_1"
-                data-tina-field={tinaField(data, "photo1")}
-              />
+              {photo1 && (
+                <Image
+                  src={photo1}
+                  width={400}
+                  height={300}
+                  alt="img_1"
+                  data-tina-field={tinaField(data, "photo1")}
+                />
+              )}
             </SwiperSlide>
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_2"
-                data-tina-field={tinaField(data, "photo2")}
-              />
+              {photo2 && (
+                <Image
+                  src={photo2}
+                  width={400}
+                  height={300}
+                  alt="img_2"
+                  data-tina-field={tinaField(data, "photo2")}
+                />
+              )}
             </SwiperSlide>
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_3"
-                data-tina-field={tinaField(data, "photo3")}
-              />
+              {photo3 && (
+                <Image
+                  src={photo3}
+                  width={400}
+                  height={300}
+                  alt="img_3"
+                  data-tina-field={tinaField(data, "photo3")}
+                />
+              )}
             </SwiperSlide>
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_4"
-                data-tina-field={tinaField(data, "photo4")}
-              />
+              {photo4 && (
+                <Image
+                  src={photo4}
+                  width={400}
+                  height={300}
+                  alt="img_4"
+                  data-tina-field={tinaField(data, "photo4")}
+                />
+              )}
             </SwiperSlide>
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_5"
-                data-tina-field={tinaField(data, "photo5")}
-              />
+              {photo5 && (
+                <Image
+                  src={photo5}
+                  width={400}
+                  height={300}
+                  alt="img_5"
+                  data-tina-field={tinaField(data, "photo5")}
+                />
+              )}
             </SwiperSlide>
             <SwiperSlide className={classes.swiper_slide}>
-              <Image
-                src={img1}
-                width={400}
-                height={300}
-                alt="img_6"
-                data-tina-field={tinaField(data, "photo6")}
-              />
+              {photo6 && (
+                <Image
+                  src={photo6}
+                  width={400}
+                  height={300}
+                  alt="img_6"
+                  data-tina-field={tinaField(data, "photo6")}
+                />
+              )}
             </SwiperSlide>
           </Swiper>
         </div>

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import styles from "./Investment.module.scss";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PageComponentsInvestment } from "@/tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
 import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
 import { Card } from "@/components/blocks/Home/Investment/Card/Card";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 
 export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
   const [showMore, setShowMore] = useState(false);
@@ -13,7 +14,7 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
   const handleMoreClick = () => {
     setShowMore((prevShowMore) => !prevShowMore);
   };
-  const { title, list } = data;
+  const { title, list, titleEng } = data;
   const isTablet = useBetterMediaQuery(
     "((min-width: 705px) and (max-width: 1080px))"
   );
@@ -47,6 +48,8 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
     visible: { opacity: 1, y: 0 },
   };
 
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <motion.section
       className={styles.investment}
@@ -57,7 +60,9 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
     >
       <div className="container">
         <div className={styles.investment__inner}>
-          <h2 data-tina-field={tinaField(data, "title")}>{title}</h2>
+          <h2 data-tina-field={tinaField(data, "title")}>
+            {label === "UA" ? title : titleEng}
+          </h2>
           <div>
             <AnimatePresence>
               {itemsToShow &&
@@ -79,13 +84,17 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
                           transition={{ duration: 0.2 }}
                           data-tina-field={tinaField(item)}
                         >
-                          {item.opportunityTitle && item.desc && (
-                            <Card
-                              title={item.opportunityTitle}
-                              description={item.desc}
-                              index={index + 1}
-                            />
-                          )}
+                          {item.opportunityTitle &&
+                            item.desc &&
+                            item.descEng && (
+                              <Card
+                                title={item.opportunityTitle}
+                                description={
+                                  label === "UA" ? item.desc : item.descEng
+                                }
+                                index={index + 1}
+                              />
+                            )}
                         </motion.div>
                       </Link>
                     )
@@ -102,7 +111,13 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
               exit="hidden"
               transition={{ duration: 0.4 }}
             >
-              {showMore ? "Менше" : "Більше"}
+              {showMore
+                ? label === "UA"
+                  ? "Менше"
+                  : "Less"
+                : label === "UA"
+                ? "Більше"
+                : "More"}
             </motion.button>
           )}
         </div>

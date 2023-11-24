@@ -1,12 +1,12 @@
 import styles from "./Header.module.scss";
-import { Dispatch, FC, useEffect, useState } from "react";
+import { Dispatch, FC, useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { GlobalHeader, Maybe } from "./../../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-import LangSwitcher from "../../LangSwitcher/LangSwitcher";
+import LangSwitcher, { LangContext } from "../../LangSwitcher/LangSwitcher";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import Instagram from "@/assets/inst-header.svg";
@@ -43,7 +43,8 @@ const Header: FC<IHeader> = ({ data }) => {
   const desktopMatch = useBetterMediaQuery("(min-width:950px)");
   const mobileMatch = useBetterMediaQuery("(max-width:500px)");
   const router = useRouter();
-
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   useEffect(() => {
     desktopMatch && setIsOpen(false);
   }, [desktopMatch]);
@@ -135,11 +136,19 @@ const Header: FC<IHeader> = ({ data }) => {
                   duration={500}
                   onClick={() => handleLinkClick("#local-businesses")}
                 >
-                  <li>{data?.links?.label1}</li>
+                  <li>
+                    {label === "UA"
+                      ? data?.links?.label1
+                      : data?.links?.label1Eng}
+                  </li>
                 </ScrollLink>
                 {data?.links?.href2 && (
                   <a href={data?.links?.href2} target="_blank">
-                    <li>{data?.links?.label2}</li>
+                    <li>
+                      {label === "UA"
+                        ? data?.links?.label2
+                        : data?.links?.label2Eng}
+                    </li>
                   </a>
                 )}
                 <ScrollLink
@@ -149,7 +158,11 @@ const Header: FC<IHeader> = ({ data }) => {
                   duration={500}
                   onClick={() => handleLinkClick("#useful-information")}
                 >
-                  <li>{data?.links?.label3}</li>
+                  <li>
+                    {label === "UA"
+                      ? data?.links?.label3
+                      : data?.links?.label3Eng}
+                  </li>
                 </ScrollLink>
                 <ScrollLink
                   to="investment"
@@ -158,7 +171,11 @@ const Header: FC<IHeader> = ({ data }) => {
                   duration={500}
                   onClick={() => handleLinkClick("#investment")}
                 >
-                  <li>{data?.links?.label4}</li>
+                  <li>
+                    {label === "UA"
+                      ? data?.links?.label4
+                      : data?.links?.label4Eng}
+                  </li>
                 </ScrollLink>
               </ul>
             </nav>
@@ -198,7 +215,9 @@ const Header: FC<IHeader> = ({ data }) => {
                             duration={500}
                             onClick={() => handleLinkClick("#local-businesses")}
                           >
-                            {data?.links?.label1}
+                            {label === "UA"
+                              ? data?.links?.label1
+                              : data?.links?.label1Eng}
                           </ScrollLink>
                         </motion.div>
                       </motion.li>
@@ -214,7 +233,9 @@ const Header: FC<IHeader> = ({ data }) => {
                               target="_blank"
                               onClick={() => handleLinkClick("/")}
                             >
-                              {data?.links?.label2}
+                              {label === "UA"
+                                ? data?.links?.label2
+                                : data?.links?.label2Eng}
                             </a>
                           )}
                         </motion.div>
@@ -234,7 +255,9 @@ const Header: FC<IHeader> = ({ data }) => {
                               handleLinkClick("#useful-information")
                             }
                           >
-                            {data?.links?.label3}
+                            {label === "UA"
+                              ? data?.links?.label3
+                              : data?.links?.label3Eng}
                           </ScrollLink>
                         </motion.div>
                       </motion.li>
@@ -251,22 +274,24 @@ const Header: FC<IHeader> = ({ data }) => {
                             duration={500}
                             onClick={() => handleLinkClick("#investment")}
                           >
-                            {data?.links?.label4}
+                            {label === "UA"
+                              ? data?.links?.label4
+                              : data?.links?.label4Eng}
                           </ScrollLink>
                         </motion.div>
                       </motion.li>
                     </motion.ul>
                     {data?.location && (
                       <div className={styles.header__inner__menu_address}>
-                        <h4>Адреса</h4>
+                        <h4>{label === "UA" ? "Адреса" : "Address"}</h4>
                         <span data-tina-field={tinaField(data, "location")}>
-                          {data.location}
+                          {label === "UA" ? data.location : data.locationEng}
                         </span>
                       </div>
                     )}
                     {data?.phone && (
                       <div className={styles.header__inner__menu_tel}>
-                        <h4>Телефон</h4>
+                        <h4>{label === "UA" ? "Телефон" : "Phone"}</h4>
                         <a
                           href={`tel:${data.phone}`}
                           data-tina-field={tinaField(data, "phone")}
@@ -277,7 +302,7 @@ const Header: FC<IHeader> = ({ data }) => {
                     )}
                     {data?.email && (
                       <div className={styles.header__inner__menu_mail}>
-                        <h4>Пошта</h4>
+                        <h4>{label === "UA" ? "Пошта" : "Email"}</h4>
                         <a
                           href={`mailto:${data.email}`}
                           data-tina-field={tinaField(data, "email")}

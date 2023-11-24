@@ -29,7 +29,11 @@ export const footer: TinaField = {
           type: "string",
           label: "Label",
           name: "label",
-          required: true,
+        },
+        {
+          type: "string",
+          label: "Label Eng",
+          name: "labelEng",
         },
       ],
     },
@@ -64,6 +68,11 @@ export const footer: TinaField = {
       type: "string",
       label: "Description",
       name: "agency",
+    },
+    {
+      type: "string",
+      label: "Description Eng",
+      name: "agencyEng",
     },
     {
       type: "string",

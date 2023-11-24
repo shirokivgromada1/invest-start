@@ -1,16 +1,21 @@
 {
   "header": {
-    "icon": "/uploads/7.jpg",
+    "icon": "/uploads/header/logo.png",
     "links": {
       "label1": "Локальні бізнеси",
+      "label1Eng": "Local businesses",
       "label2": "Інвестиційний паспорт",
+      "label2Eng": "Investment passport",
       "href2": "/uploads/Moiseyev_Kyrylo_IK-02_Lab_2.pdf",
       "label3": "Корисна інформація",
+      "label3Eng": "Useful Information",
       "href3": "#useful-info",
       "label4": "Інвестиційні можливості ",
+      "label4Eng": "Investment opportunities",
       "href4": "#investment"
     },
     "location": "м. Запоріжжя, вул. Розенталь, 7",
+    "locationEng": "Zaporizhzhia, st. Rosenthal, 7",
     "phone": "+380 (96) 962 88 21",
     "email": "shyroke.ad@gmail.com",
     "instagram": "/",
@@ -20,27 +25,32 @@
     "nav": [
       {
         "href": "home",
-        "label": "Головна сторінка"
+        "label": "Головна сторінка",
+        "labelEng": "Home page"
       },
       {
         "href": "success-stories",
-        "label": "Історії успіху"
+        "label": "Історії успіху",
+        "labelEng": " Success stories"
       },
       {
         "href": "useful-information",
-        "label": "Корисна інформація"
+        "label": "Корисна інформація",
+        "labelEng": "Useful Information"
       },
       {
         "href": "investment-opportunities",
-        "label": "Інвестиційні можливості "
+        "label": "Інвестиційні можливості ",
+        "labelEng": "Investment opportunities"
       }
     ],
     "social": {
       "facebook": "/",
       "instagram": "/"
     },
-    "logo": "/uploads/footer/icon.svg",
+    "logo": "/uploads/footer/logo.png",
     "agency": "© КУ “Агенція розвитку Широківської громади”, Широківська ТГ, 2018-2023. Всі права захищено.",
+    "agencyEng": "© CU \"Syrokivska Community Development Agency\", Shirokivska TG, 2018-2023. All rights reserved.",
     "url": "/",
     "phone": "+380 (96) 962 88 21",
     "email": "shyroke.ad@gmail.com"

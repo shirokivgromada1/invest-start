@@ -13,9 +13,19 @@ export const communityComponentSchema: Template = {
       type: "string",
     },
     {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
+    {
       type: "string",
       label: "Subtitle",
       name: "subtitle",
+    },
+    {
+      type: "string",
+      label: "Subtitle Eng",
+      name: "subtitleEng",
     },
     {
       type: "image",

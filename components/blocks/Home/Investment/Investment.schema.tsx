@@ -8,6 +8,7 @@ export const investmentComponentSchema: Template = {
   },
   fields: [
     { type: "string", label: "Block title", name: "title" },
+    { type: "string", label: "Block title Eng", name: "titleEng" },
     {
       type: "object",
       label: "List of opportunities",
@@ -25,8 +26,18 @@ export const investmentComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Title Eng",
+          name: "opportunityTitleEng",
+          type: "string",
+        },
+        {
           label: "Description",
           name: "desc",
+          type: "string",
+        },
+        {
+          label: "Description Eng",
+          name: "descEng",
           type: "string",
         },
         {

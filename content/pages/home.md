@@ -2,218 +2,558 @@
 title: home
 components:
   - title: Широківська громада
-    subtitle: Перспективне передміст
+    titleEng: Shirokiv community
+    subtitle: Перспективне передмістя
+    subtitleEng: Prospective suburb
+    video: >-
+      https://drive.google.com/file/d/1OJ4KSqY8_FMJXneY6fxXNwB19PKPiZt-/view?usp=sharing
     descBlock: >-
       Широківська громада була заснована 13 жовтня 2016 року та наразі об’єднує
       35 населених пунктів, що знаходяться на півночі Запорізької області
+    descBlockEng: >-
+      The Shirokiv community was founded on October 13, 2016 and currently
+      unites 35 settlements located in the north of the Zaporizhia region
     _template: preview
   - title: Широківська громада
+    titleEng: Shirokiv community
     subtitle: >-
       Має дуже вигідне географічне розташування, усі важливі логістичні об’єкти
       знаходяться в радіусі 50 км.  Також через громаду проходить автошлях
       національного значення Н-08 Бориспіль-Дніпро-Запоріжжя.
-    image: /uploads/background.png
+    subtitleEng: >-
+      It has a very favorable geographical location, all important logistics
+      facilities are within a radius of 50 km. The H-08 highway of national
+      importance Boryspil-Dnipro-Zaporizhia also passes through the community.
+    image: /uploads/home/background.png
     _template: Community
   - title: 'Транспортна мережа загального користування: 237 км'
+    titleEng: 'Public transport network: 237 km'
     settlements: 35
     square: 477.4
     population: 30000
     _template: TransportNetwork
   - stations:
       - hText: 18 км
+        hTextEng: 18 km
         pText: 'Запорізький річковий порт '
-        icon: /uploads/ggg.svg
+        pTextEng: Zaporozhye river port
+        icon: /uploads/home/port.svg
       - hText: 20 км
+        hTextEng: 20 km
         pText: 'Залізнична станція «Дніпробуд-ll» '
-        icon: /uploads/gggg.svg
+        pTextEng: Dniprobud-ll railway station
+        icon: /uploads/home/station-1.svg
       - hText: 32 км
+        hTextEng: 32 km
         pText: 'Залізнична станція «Запоріжжя-1» '
-        icon: /uploads/gggg.svg
+        pTextEng: ' Zaporizhzhia-1 railway station'
+        icon: /uploads/home/station-2.svg
       - hText: 78 км
+        hTextEng: 78 km
         pText: Дніпро-Головний
-        icon: /uploads/ggggg.svg
+        pTextEng: Dnipro-Holovny
+        icon: /uploads/home/station-e.svg
     _template: Road
   - title: ПЕРСПЕКТИВНЕ ПЕРЕДМІСТЯ
+    titleEng: PROSPECTIVE SUBURB
     sub1: >-
       Широківська громада розташована на півночі від м.Запоріжжя, що робить її
       ідеальним місцем для тих, хто бажає насолоджуватися всіма перевагами
       міського життя, але при цьому залишатися в спокійному та зеленому
       передмісті.
+    sub1Eng: >-
+      The Shirokiv community is located to the north of Zaporozhye, which makes
+      it an ideal place for those who want to enjoy all the advantages of city
+      life, but at the same time remain in a calm and green suburb.
     sub2: ' Наша громада має потенціал стати економічним центром регіону завдяки сприятливим умовам для підприємництва, доступній робочій силі та підтримці малого і середнього бізнесу зі сторони місцевої влади.'
-    photo1: /uploads/карта 1.jpg
-    photo2: /uploads/7.svg
-    photo3: ''
-    photo4: /uploads/img.jpg
-    photo5: /uploads/img5.png
-    photo6: /uploads/img6.png
+    sub2Eng: >-
+      Our community has the potential to become the economic center of the
+      region thanks to favorable conditions for entrepreneurship, available
+      labor force and support of small and medium-sized businesses from the
+      local government.
+    photo1: /uploads/home/prospect-1.png
+    photo2: /uploads/home/prospect-2.png
+    photo3: /uploads/home/prospect-3.png
+    photo4: /uploads/home/prospect-4.png
+    photo5: /uploads/home/prospect-5.png
+    photo6: /uploads/home/prospect-6.png
     _template: Prospective
   - title: 'Інвестиційні можливості '
+    titleEng: Investment opportunities
     list:
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
       - opportunityTitle: Сонячні панелі
+        opportunityTitleEng: Solar panels
         desc: >-
           Можливість будівництва станції сонячних панелей в Широківській громаді
           є привабливим бізнес-планом, заснованим на вигідних факторах клімату
           та потенціалу сонячної енергії...
-        link: home
+        descEng: >-
+          The possibility of building a solar panel station in Shirokivska
+          hromada is an attractive business plan based on favorable climate
+          factors and the potential of solar energy...
+        link: solar-panels
       - opportunityTitle: Логістичні центри
+        opportunityTitleEng: Logistics centers
         desc: >-
           Широківська громада знаходиться у вигідному місці - передмісті
           Запоріжжя та пролягає вздовж траси національного значення...
-        link: home
+        descEng: >-
+          The Shirokiv community is located in a favorable location - the
+          suburbs of Zaporizhzhia and runs along a highway of national
+          importance...
+        link: /
       - opportunityTitle: Житлове будівництво
+        opportunityTitleEng: Housing
         desc: >-
           Будівництво житлових багатоквартирних будинків та житлових комплексів
           з таунхаусами в Широківській громаді є вигідним та актуальним проєктом
           станом на 2023-2028 роки...
-        link: home
+        descEng: >-
+          The construction of residential apartment buildings and residential
+          complexes with townhouses in the Shirokivska community is a profitable
+          and relevant project as of 2023-2028...
+        link: /
       - opportunityTitle: Гіпермаркет
+        opportunityTitleEng: Hypermarket
         desc: >-
           Будівництво гіпермаркетів будівельних товарів та продуктових
           супермаркетів, шопінг центрів в Широківській громаді відкриває широкі
           можливості для розвитку комерційного сектору в регіоні...
-        link: home
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
+        descEng: >-
+          The construction of construction goods hypermarkets and grocery
+          supermarkets, shopping centers in Shirokivska hromada opens wide
+          opportunities for the development of the commercial sector in the
+          region...
+        link: /
+      - opportunityTitle: Крематорій
+        opportunityTitleEng: Crematorium
         desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
+          Будівництво крематорію в Широківській громаді є перспективним
+          проектом, оскільки в даний час найближчі крематорії знаходяться в
+          Харкові та Одесі...
+        descEng: >-
+          The construction of a crematorium in Shirokivska hromada is a
+          promising project, since currently the nearest crematoriums are in
+          Kharkiv and Odesa...
+        link: /
+      - opportunityTitle: 'Агросфера, крафтове виробництво'
+        opportunityTitleEng: 'Agrosphere, craft production'
         desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-      - opportunityTitle: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
+          Широківська громада розташована в області, де чорноземи відомі своєю
+          родючістю. Тут проживають кваліфіковані спеціалісти у галузях
+          землеробства та скотарства...
+        descEng: >-
+          The Shirokiv community is located in the region, where black soils are
+          known for their fertility. Qualified specialists in the fields of
+          agriculture and cattle breeding live here...
+        link: /
+      - opportunityTitle: Переробка сільгосппродукції
+        opportunityTitleEng: Processing of agricultural products
         desc: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
-        link: >-
-          showMore ? list : isTablet ? isMobile ? list?.slice(0, 4) :
-          list?.slice(0, 6) : list?.slice(0, 9)
+          Широківська громада - ідеальне місце для відкриття підприємства
+          переробки сільськогосподарської продукції. Безпосередня близькість до
+          великих міст, розташування вздовж...
+        descEng: >-
+          The Shirokiv community is an ideal place for opening an enterprise for
+          the processing of agricultural products. Close proximity to major
+          cities, location along...
+        link: /
+      - opportunityTitle: Автозаправні станції та СТО
+        opportunityTitleEng: Gas stations and service stations
+        desc: >-
+          Наша громада розташована вздовж траси національного значення Н-08
+          (Бориспіль-Дніпро-Запоріжжя) між двома обласними центрами та має ряд
+          переваг, які дозволяють забезпечувати...
+        descEng: >-
+          Our community is located along the highway of national importance N-08
+          (Boryspil-Dnipro-Zaporizhia) between two regional centers and has a
+          number of advantages that allow us to provide...
+        link: /
+      - opportunityTitle: Екотуризм
+        opportunityTitleEng: Ecotourism
+        desc: >-
+          Протягом останніх 10 років, спостерігається зростаючий попит на
+          відпочинок, що співіснує з природою Люди прагнуть зменшити рівень
+          навантаження на нервову систему...
+        descEng: >-
+          Over the past 10 years, there has been a growing demand for recreation
+          that coexists with nature. People seek to reduce the level of stress
+          on the nervous system...
+        link: /
     _template: Investment
   - title: На території громади працюють
+    titleEng: Operate on the territory of the community
     list:
-      - image: /uploads/1.svg
-      - image: /uploads/2.svg
-      - image: /uploads/3.svg
-      - image: /uploads/4.svg
-      - image: /uploads/5.svg
-      - image: /uploads/6.svg
-      - image: /uploads/7.svg
+      - image: /uploads/home/company-1.svg
+      - image: /uploads/home/company-2.svg
+      - image: /uploads/home/company-3.svg
+      - image: /uploads/home/company-4.svg
+      - image: /uploads/home/company-5.svg
+      - image: /uploads/home/company-6.svg
+      - image: /uploads/home/company-7.svg
+      - image: /uploads/home/company-12.svg
+      - image: /uploads/home/company-8.svg
+      - image: /uploads/home/company-9.svg
+      - image: /uploads/home/company-10.svg
+      - image: /uploads/home/company-11.svg
     _template: HromadaCompanies
   - title: Локальні бізнеси
+    titleEng: Local businesses
     list:
-      - image: /uploads/test.png
-      - businessTitle: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
-        image: /uploads/test.png
-        subtitle: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
-        desc: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
-        inst: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
-        facebook: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
-      - image: /uploads/test.png
-      - image: /uploads/test.png
-      - image: /uploads/image 8.svg
       - businessTitle: ПП "АФ "СЛАВУТИЧ"
-        image: /uploads/test.png
+        businessTitleEng: PE "AF "SLAVUTYCH"
+        image: /uploads/home/photo-1.png
         subtitle: 'Вирощування зернових, бобових, насіння олійних культур.'
+        subtitleEng: 'Cultivation of cereals, legumes, oilseeds.'
         desc: Єлизавета Марич +38 066 808-85-89
-        inst: gogle.com
-        facebook: gogle.com
+        descEng: Elizaveta Marich +38 066 808-85-89
+        inst: /
+        facebook: /
+      - businessTitle: ТОВ "ОРІС-НИВА ШИРОКЕ
+        businessTitleEng: LLC "ORIS-NIVA SHYROKE
+        image: /uploads/home/photo-2.png
+        subtitle: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
+        subtitleEng: 'Cultivation of cereals, legumes, oilseeds.'
+        inst: /
+        facebook: /
+      - businessTitle: ТОВ"НАІ"
+        businessTitleEng: LLC "NAI"
+        image: /uploads/home/photo-3.png
+        subtitle: Вирощування зернових та соняшнику.
+        subtitleEng: Cultivation of cereals and sunflower.
+        desc: Володимир Котелюк
+        descEng: Volodymyr Kotelyuk
+        inst: /
+        facebook: /
+      - businessTitle: ПрАТ "Сонячне 2007"
+        businessTitleEng: PJSC "Sonyachne 2007"
+        image: /uploads/home/photo-4.png
+        subtitle: 'Вирощування зернових, бобових, насіння олійних культур.'
+        subtitleEng: 'Cultivation of cereals, legumes, oilseeds.'
+        desc: Роман Тарасевич +38 099 079-49-89
+        descEng: Roman Tarasevich +38 099 079-49-89
+        inst: /
+        facebook: /
       - businessTitle: ПП "ЕЛТІЗ"
-        image: /uploads/test.png
+        businessTitleEng: PE "ELTIZ"
+        image: /uploads/home/photo-5.png
         subtitle: 'Виробництво електродвигунів, генераторів і трансформаторів.'
+        subtitleEng: 'Production of electric motors, generators and transformers.'
         websiteName: eltiz.ua
         websiteLink: 'https://eltiz.ua/uk/golovna/'
-        inst: 'https://eltiz.ua/uk/golovna/'
-        facebook: 'https://eltiz.ua/uk/golovna/'
+        inst: /
+        facebook: /
+      - businessTitle: ТОВ "СКІФ ДЕВЕЛОПМЕНТ"
+        businessTitleEng: SKIF DEVELOPMENT LLC
+        image: /uploads/home/photo-6.png
+        subtitle: Будівництво житлових і нежитлових будівель.
+        subtitleEng: Construction of residential and non-residential buildings.
+        inst: /
+        facebook: /
+      - businessTitle: СТ "СВІТАНОК"
+        businessTitleEng: ST "SVITANOK"
+        image: /uploads/home/photo-7.png
+        subtitle: Роздрібна торгівля продуктами харчування.
+        subtitleEng: Retail trade of food products.
+        inst: /
+        facebook: /
+      - businessTitle: ТОВ "ГЛОБАЛ-НЕТ ЗАПОРІЖЖЯ"
+        businessTitleEng: '"GLOBAL-NET ZAPORIZHYA" LLC'
+        image: /uploads/home/photo-8.png
+        subtitle: Інтернет провайдер.
+        subtitleEng: Internet provider.
+        websiteName: 'http://www.globalnet.zp.ua'
+        websiteLink: 'http://www.globalnet.zp.ua/'
+        inst: /
+        facebook: /
       - businessTitle: ПП "БЕРЕГИНЯ"
-        image: /uploads/test.png
+        businessTitleEng: PE "BEREGHYNYA"
+        image: /uploads/home/photo-9.png
         subtitle: Меблева фабрика.
+        subtitleEng: Furniture factory.
         desc: (050) 454-85-60
+        descEng: (050) 454-85-60
         websiteName: 'https://berehynia.ua'
         websiteLink: 'https://berehynia.ua/ua/'
-        inst: 'https://berehynia.ua/ua/'
-        facebook: 'https://berehynia.ua/ua/'
+        inst: /
+        facebook: /
     _template: LocalBusiness
   - title: Корисна інформація
+    titleEng: Useful Information
     itemTitle: >-
       Алгоритм реєстрації юридичних осіб та фізичних осіб-підприємців у
       Широківській громаді
+    itemTitleEng: >-
+      Algorithm for registration of legal entities and individual entrepreneurs
+      in Shirokivska hromada
     itemNumber: '01'
-    desc: "Пропонуємо суб'єктам господарювання, які працюють на території нашої громади, здійснити реєстрацію/перереєстрацію підприємства за фактичним місцем ведення діяльності або за місцем розташування офісу, відповідно до Цивільного кодексу України.\n\nПорядок державної реєстрації встановлено Законом України від 15.05.2003 р. № 755-ІV «Про державну реєстрацію юридичних осіб, фізичних осіб-підприємців та громадських формувань»\n\n### ЮРИДИЧНИМ ОСОБАМ\n\nДля державної реєстрації змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, у тому числі змін до установчих документів юридичної особи, подаються такі документи:\n\n1\\. Заява про державну реєстрацію змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, встановленої форми\n\n2\\. Один примірник оригіналу (нотаріально засвідчена копія) рішення\\* уповноваженого органу управління юридичної особи про зміни, що вносяться до Єдиного державного реєстру\\*Рішення уповноваженого органу управління оформляється рішенням або протоколом відповідно до Статуту (вимоги визначені Цивільним кодексом України та Господарським кодексом України)\n\n3\\. Установчий документ юридичної особи в новій редакції (якщо місцезнаходження вказане у Статуті юридичної особи) нотаріально засвідчений установчий документ\n\n4\\. Документ про сплату адміністративного збору - у випадках,\_ передбачених\_ статтею 36 Закону про державну реєстрацію\n\nЗВЕРНІТЬ УВАГУ!\n\nЯкщо юридична особа потребує нового окремого приміщення для розміщення офісу, наша громада може надати таке приміщення (або його частину) в оренду відповідно до Закону України «Про оренду державного та комунального майна» на підставі укладеного договору.\n\nПРОЦЕДУРА ПЕРЕРЕЄСТРАЦІЇ:\n\nПідприємство\_ звертається через «Центр надання адміністративних послуг» виконавчого комітету Широківської сільської ради до державного реєстратора, або (при реєстрації в іншій області) до ЦНАП за попереднім місцезнаходженням, або до ЦНАП у м. Запоріжжі, або до нотаріуса, що має право вчиняти реєстраційні дії, та подає документи на здійснення реєстрації зміни місцезнаходження та змін до установчих документів згідно з вказаним переліком.\n\nНа підтвердження перереєстрації юридична особа отримує витяг з Єдиного державного реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань.\n\nПро зміну місця реєстрації необхідно проінформувати податкову інспекцію та інші контролюючі органи (перелік залежить від видів діяльності та місця реєстрації / обліку підприємства).\n"
+    desc: "Пропонуємо суб'єктам господарювання, які працюють на території нашої громади, здійснити реєстрацію/перереєстрацію підприємства за фактичним місцем ведення діяльності або за місцем розташування офісу, відповідно до Цивільного кодексу України.\n\nПорядок державної реєстрації встановлено Законом України від 15.05.2003 р. № 755-ІV «Про державну реєстрацію юридичних осіб, фізичних осіб-підприємців та громадських формувань»\n\n### ЮРИДИЧНИМ ОСОБАМ\n\nДля державної реєстрації змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, у тому числі змін до установчих документів юридичної особи, подаються такі документи:\n\n1\\. Заява про державну реєстрацію змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, встановленої форми\n\n2\\. Один примірник оригіналу (нотаріально засвідчена копія) рішення\\* уповноваженого органу управління юридичної особи про зміни, що вносяться до Єдиного державного реєстру\\*Рішення уповноваженого органу управління оформляється рішенням або протоколом відповідно до Статуту (вимоги визначені Цивільним кодексом України та Господарським кодексом України)\n\n3\\. Установчий документ юридичної особи в новій редакції (якщо місцезнаходження вказане у Статуті юридичної особи) нотаріально засвідчений установчий документ\n\n4\\. Документ про сплату адміністративного збору - у випадках,\_ передбачених\_ статтею 36 Закону про державну реєстрацію\n\n### ЗВЕРНІТЬ УВАГУ!\n\nЯкщо юридична особа потребує нового окремого приміщення для розміщення офісу, наша громада може надати таке приміщення (або його частину) в оренду відповідно до Закону України «Про оренду державного та комунального майна» на підставі укладеного договору.\n\n### ПРОЦЕДУРА ПЕРЕРЕЄСТРАЦІЇ:\n\nПідприємство\_ звертається через «Центр надання адміністративних послуг» виконавчого комітету Широківської сільської ради до державного реєстратора, або (при реєстрації в іншій області) до ЦНАП за попереднім місцезнаходженням, або до ЦНАП у м. Запоріжжі, або до нотаріуса, що має право вчиняти реєстраційні дії, та подає документи на здійснення реєстрації зміни місцезнаходження та змін до установчих документів згідно з вказаним переліком.\n\nНа підтвердження перереєстрації юридична особа отримує витяг з Єдиного державного реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань.\n\nПро зміну місця реєстрації необхідно проінформувати податкову інспекцію та інші контролюючі органи (перелік залежить від видів діяльності та місця реєстрації / обліку підприємства).\n"
+    descEng: >
+      We offer business entities operating on the territory of our community to
+      register/re-register the enterprise at the actual place of business or at
+      the location of the office, in accordance with the Civil Code of Ukraine.
+
+
+      The state registration procedure is established by the Law of Ukraine
+      dated 15.05.2003 No. 755-IV "On State Registration of Legal Entities,
+      Individual Entrepreneurs and Public Organizations"
+
+
+      ### LEGAL ENTITIES
+
+
+      For state registration of changes to information about a legal entity
+      contained in the Unified State Register, including changes to the founding
+      documents of a legal entity, the following documents are submitted:
+
+
+      For state registration of changes to information about a legal entity
+      contained in the Unified State Register, including changes to the founding
+      documents of a legal entity, the following documents are submitted:
+
+
+      1\. Application for state registration of changes to information about a
+      legal entity contained in the Unified State Register, in the prescribed
+      form
+
+
+      2\. One copy of the original (notarized copy) of the decision\* of the
+      authorized management body of the legal entity on changes made to the
+      Unified State Register\* The decision of the authorized management body is
+      formalized by a decision or protocol in accordance with the Statute
+      (requirements are defined by the Civil Code of Ukraine and the Economic
+      Code of Ukraine)
+
+
+      3\. Founding document of the legal entity in the new version (if the
+      location is specified in the Statute of the legal entity) notarized
+      founding document
+
+
+      4\. Document on the payment of the administrative fee - in the cases
+      provided for by Article 36 of the Law on State Registration
+
+
+      ### PAY ATTENTION!
+
+
+      If a legal entity needs a new separate office space, our community can
+      provide such space (or part of it) for rent in accordance with the Law of
+      Ukraine "On Leasing of State and Communal Property" on the basis of a
+      signed contract.
+
+
+      ### REGISTRATION PROCEDURE:
+
+
+      The enterprise applies through the "Center for the provision of
+      administrative services" of the executive committee of the Shirokiv
+      village council to the state registrar, or (when registering in another
+      region) to the TsNAP at the previous location, or to the TsNAP in the city
+      of Zaporizhzhia, or to the notary who has the right to perform
+      registration actions , and submits documents for the registration of the
+      change of location and changes to the founding documents in accordance
+      with the specified list.
+
+
+      To confirm re-registration, a legal entity receives an extract from the
+      Unified State Register of Legal Entities, Individual Entrepreneurs and
+      Public Organizations.
+
+
+      It is necessary to inform the tax inspectorate and other controlling
+      bodies about the change of the place of registration (the list depends on
+      the types of activities and the place of registration / accounting of the
+      enterprise).
     contacts:
       title: 'КОНТАКТИ:'
+      titleEng: 'CONTACTS:'
       contactsList:
         - name: 'Центр надання адміністративних послуг:'
+          nameEng: 'Center for provision of administrative services:'
           description: (061)286-21-38
+          descriptionEng: (061)286-21-38
         - name: 'Юридичний відділ Широківської громади:'
+          nameEng: 'Legal Department of the Shirokiv community:'
           description: '(050)900-07-15 (Жанна Литвиненко, начальниця відділу)'
+          descriptionEng: '(050) 900-07-15 (Zhanna Lytvynenko, head of department)'
         - name: 'Фактична адреса сільської ради:'
+          nameEng: 'Actual address of the village council:'
           description: '69089, м. Запоріжжя, вул. Розенталь, 7 (Верхня Хортиця)'
+          descriptionEng: '69089, Zaporizhzhia, str. Rosenthal, 7 (Upper Khortytsia)'
     _template: UsefulInfo
-  - itemTitle: Державні програми підтримки бізнесу
-    itemNumber: '03'
-    _template: UsefulInfo2
-  - itemTitle: Місцеві податки та збори
-    itemNumber: '04'
-    _template: UsefulInfo2
   - itemTitle: "Програми підтримки бізнесу\_ в Широківській громаді"
+    itemTitleEng: Business support programs in Shirokivska hromada
     itemNumber: '02'
     list:
-      - title: Програма місцевого економічного розвитку в Широківській громаді
-        link: /uploads/Prohrama-MER.docx
+      - title: >-
+          Програма місцевого економічного розвитку в Широківській
+          громадіелефонний довідник
+        titleEng: Program of local economic development in Shirokivska hromada
+        link: /uploads/home/Prohrama-MER.docx
+    _template: UsefulInfo2
+  - itemTitle: Державні програми підтримки бізнесу
+    itemTitleEng: State business support programs
+    itemNumber: '03'
+    list:
+      - title: Державна програма «Доступні кредити 5-7-9»
+        titleEng: State program "Affordable loans 5-7-9"
+        url: /
+      - title: >-
+          Підтримка малого і середнього підприємництва на міжнародному рівні
+          (міжнародні кредитні лінії)
+        titleEng: >-
+          Support of small and medium-sized enterprises at the international
+          level (international credit lines)
+        url: >-
+          https://www.me.gov.ua/Documents/Detail?lang=uk-UA&id=1606ea27-a3c5-429d-b164-7c5a8026ba67&title=PidtrimkaMalogoISerednogoPidprimnitstvaNaMizhnarodnomuRivni-mizhnarodniKreditniLinii-
+      - title: Послуги з розвитку бізнесу EU4Business
+        titleEng: EU4Business business development services
+        url: 'https://eu4business.org.ua/business-services-development/'
+      - title: Карта можливостей для малого та середнього бізнесу
+        titleEng: Map of opportunities for small and medium-sized businesses
+        url: 'https://covid-19-ukraine.eu4business.eu/'
+      - title: Бізнес-кейси для бажаючих відкрити власний бізнес
+        titleEng: Business cases for those wishing to open their own business
+        url: 'https://sbc.regulation.gov.ua/'
+      - title: Компенсація за працевлаштування ВПО
+        titleEng: Compensation for employment of IDPs
+        url: 'https://diia.gov.ua/services/kompensaciya-za-pracevlashtuvannya-vpo'
+      - title: Державна допомога релокованому бізнесу
+        titleEng: State aid to relocated businesses
+        url: 'https://prozorro.sale/marketplace_landing-page/'
+      - title: Урядова грантова програма єРобота
+        titleEng: The government grant program eRobota
+        url: 'https://diia.gov.ua/services/categories/biznesu/yerobota'
+      - title: Маркетплейс фінансових можливостей на Дія
+        titleEng: Marketplace of financial opportunities for Action
+        url: 'https://business.diia.gov.ua/marketplace/finansuvanna'
+      - title: Фінансування українських експорті
+        titleEng: Financing of Ukrainian exports
+        url: 'https://export.gov.ua/financing_of_exporters'
+    _template: UsefulInfo2
+  - itemTitle: Місцеві податки та збори
+    itemTitleEng: Local taxes and fees
+    itemNumber: '04'
+    list:
+      - title: Єдиний податок
+        titleEng: Single tax
+        url: >-
+          https://drive.google.com/file/d/1_2xX-uqct2lRcq_eKg2mTbq9MG2SPv-K/view?usp=sharing
+      - title: Туристичний табір
+        titleEng: Tourist camp
+        url: 'https://drive.google.com/file/d/1CfHVpcVCthEvoUg0VWkdYOiW8rOh34OT/view'
+      - title: Транспортний податок
+        titleEng: Transport tax
+        url: 'https://drive.google.com/file/d/1_2xX-uqct2lRcq_eKg2mTbq9MG2SPv-K/view'
+      - title: Ставки земельного податку
+        titleEng: Land tax rates
+        url: 'https://drive.google.com/file/d/1akJRlIF0ci1VaUIrQ9Z6PCx2IoOEGGJq/view'
+      - title: Податок на нерухоме майно
+        titleEng: Real estate tax
+        url: 'https://drive.google.com/file/d/1b4ijC3KSWhCpdD3wcQvbOtqWo3QFkiv8/view'
+      - title: Орендна плата за землю
+        titleEng: Land rent
+        link: ''
+        url: 'https://drive.google.com/file/d/129LrbQ8HIXLWAO97w-uGxr59rpyobAsN/view'
     _template: UsefulInfo2
   - itemTitle: Вільні земельні ділянки
+    itemTitleEng: Vacant plots of land
     itemNumber: '05'
     list:
       - title: '1. Ділянка 2,5 га'
+        titleEng: 1. Plot of 2.5 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0003'
-        url: '788'
+        kadastrEng: 'Cadastral number 2322188800:07:002:0003'
+        url: 'https://kadastr.live/parcel/2322188800:07:002:0003'
         descBlock: >-
           Для розташування та функціонування ремонтно-будівельної бази з
           будівництва об'єктів для сільського господарства.
+        descBlockEng: >-
+          For the location and functioning of the repair and construction base
+          for the construction of objects for agriculture.
       - title: '2. Ділянка 2,44 га'
+        titleEng: 2. Plot of 2.44 ha
         kadastr: 'Кадастровий номер 2322188800:07:001:0062'
-        url: '888'
+        kadastrEng: 'Cadastral number 2322188800:07:001:0062'
+        url: 'https://kadastr.live/parcel/2322188800:07:001:0062'
         descBlock: Для будівництва та обслуговування торговельно-складського комплексу.
-      - {}
+        descBlockEng: For the construction and maintenance of a trade and warehouse complex.
+      - title: '3. Ділянка 4,5 га'
+        titleEng: 3. The plot is 4.5 ha
+        kadastr: 'Кадастровий номер 2322188800:08:001:0016'
+        kadastrEng: 'Cadastral number 2322188800:08:001:0016'
+        url: 'https://kadastr.live/parcel/2322188800:08:001:0016'
+        descBlock: Для будівництва та функціонування салону по продажу автомобілів.
+        descBlockEng: For the construction and operation of a car dealership.
+      - title: 4. Ділянка 1 га
+        titleEng: 4. The plot is 1 ha
+        kadastr: 'Кадастровий номер 2322181600:02:002:0461'
+        kadastrEng: 'The plot is 1 hectare Cadastral number 2322181600:02:002:0461'
+        url: 'https://kadastr.live/parcel/2322181600:02:002:0461'
+        descBlock: Для будівництва та функціонування промислово-торгівельного центру.
+        descBlockEng: >-
+          For the construction and operation of the industrial and commercial
+          center.
+      - title: '5. Ділянка 0,981 га'
+        titleEng: 5. The plot is 0.981 ha
+        kadastr: 'Кадастровий номер 2322188800:07:001:0165'
+        kadastrEng: 'Cadastral number 2322188800:07:001:0165'
+        url: 'https://kadastr.live/parcel/2322188800:07:001:0165'
+        descBlock: >-
+          Для будівництва та експлуатації багатофункціонального
+          торгівельно-виставочного та логістичного комплексу (об'єкту
+          пов'язаного з обслуговуванням жителів територіальної громади району).
+        descBlockEng: >-
+          For the construction and operation of a multifunctional
+          trade-exhibition and logistics complex (an object related to the
+          service of residents of the territorial community of the district).
+      - title: '6. Ділянка 0,91 га'
+        titleEng: 6. The plot is 0.91 ha
+        kadastr: 'Кадастровий номер 2322188800:08:001:0015'
+        kadastrEng: 'Cadastral number 2322188800:08:001:0015'
+        url: 'https://kadastr.live/parcel/2322188800:08:001:0015'
+        descBlock: Для розміщення станції технічного обслуговування.
+        descBlockEng: To accommodate a maintenance station.
+      - title: '7. Ділянка 0,1383 га'
+        titleEng: 7. The plot is 0.1383 ha
+        kadastr: 'Кадастровий номер 2322181600:09:003:1245'
+        kadastrEng: 'Cadastral number 2322181600:09:003:1245'
+        url: 'https://kadastr.live/parcel/2322181600:09:003:1245'
+        descBlock: >-
+          Для будівництва і обслуговування житлового будинку, господарських
+          будівель і споруд (присадибна ділянка).
+        descBlockEng: >-
+          For the construction and maintenance of a residential building, farm
+          buildings and structures (homestead).
+      - title: '8. Ділянка 1,89 га'
+        titleEng: 8. The plot is 1.89 hectares
+        kadastr: 'Кадастровий номер 2322188800:07:002:0004'
+        kadastrEng: 'Cadastral number 2322188800:07:002:0004'
+        url: 'https://kadastr.live/parcel/2322188800:07:002:0004'
+        descBlock: >-
+          Для розташування комплексу з надання послуг населенню територіальної
+          громади по переробці сільськогосподарської продукції.
+        descBlockEng: >-
+          For the location of the complex for the provision of services to the
+          population of the territorial community for the processing of
+          agricultural products.
+      - title: '9. Ділянка 0,49 га'
+        titleEng: 9. The plot is 0.49 ha
+        kadastr: 'Кадастровий номер 2322181300:08:001:0043'
+        kadastrEng: 'Cadastral number 2322181300:08:001:0043'
+        url: >-
+          https://www.google.com/maps/place/48%C2%B000'54.8%22N+34%C2%B057'05.7%22E/@48.01523,34.951588,17z/data=!3m1!4b1!4m4!3m3!8m2!3d48.01523!4d34.951588?entry=ttu
+        descBlock: Для розміщення та постійної діяльності органів і підрозділів ДСНС.
+        descBlockEng: >-
+          For the placement and permanent operation of bodies and subdivisions
+          of the State Emergency Service.
     _template: UsefulInfo3
+  - itemTitle: Оренда комунального майна
+    itemNumber: '06'
+    list:
+      - {}
+    _template: UsefulInfo4
   - itemTitle: Телефонний довідник
     itemNumber: '07'
     list:
@@ -239,4 +579,17 @@ components:
         contact3: (061)212-40-29
     _template: UsefulInfo6
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 

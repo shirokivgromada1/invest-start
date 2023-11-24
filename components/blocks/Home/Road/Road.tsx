@@ -6,9 +6,10 @@ import FullRoad from "./FullRoad/FullRoad";
 import MobileRoad from "./MobileRoad/MobileRoad";
 import TabletRoad from "./TabletRoad/TabletRoad";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Station from "./components/Station/Station";
 import Image from "next/image";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 
 export const Road = ({ data }: { data: PageComponentsRoad }) => {
   const match = useBetterMediaQuery("(max-width: 700px)");
@@ -19,7 +20,8 @@ export const Road = ({ data }: { data: PageComponentsRoad }) => {
     "(max-width: 1143px) and (min-width: 767px)"
   );
   const matchesMobile = useBetterMediaQuery("(max-width: 767px)");
-
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   useEffect(() => {
     matchesDesktop && setVisible(0);
     matchesTablet && setVisible(1);
@@ -63,14 +65,16 @@ export const Road = ({ data }: { data: PageComponentsRoad }) => {
             stations.slice(0, 4).map(
               (s, index) =>
                 s &&
+                s?.hTextEng &&
                 s?.hText &&
+                s?.pTextEng &&
                 s?.pText &&
                 s?.icon && (
                   <Station
                     key={s.hText + index}
                     className={styles.road__inner_station}
-                    hText={s.hText}
-                    pText={s.pText}
+                    hText={label === "UA" ? s.hText : s.hTextEng}
+                    pText={label === "UA" ? s.pText : s.pTextEng}
                     isOrdered={index % 2 != 0 && true}
                     index={index}
                   >

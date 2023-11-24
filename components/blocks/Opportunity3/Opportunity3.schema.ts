@@ -13,9 +13,19 @@ export const opportunity3ComponentSchema: Template = {
       type: "string",
     },
     {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
+    {
       type: "string",
       label: "Subtitle",
       name: "subtitle",
+    },
+    {
+      type: "string",
+      label: "Subtitle Eng",
+      name: "subtitleEng",
     },
     {
       type: "rich-text",
@@ -23,9 +33,19 @@ export const opportunity3ComponentSchema: Template = {
       name: "text",
     },
     {
+      type: "rich-text",
+      label: "Description block Eng",
+      name: "textEng",
+    },
+    {
       type: "string",
       label: "List title",
       name: "listTitle",
+    },
+    {
+      type: "string",
+      label: "List title Eng",
+      name: "listTitleEng",
     },
     {
       type: "string",
@@ -41,6 +61,11 @@ export const opportunity3ComponentSchema: Template = {
       type: "string",
       label: "Location",
       name: "location",
+    },
+    {
+      type: "string",
+      label: "Location Eng",
+      name: "locationEng",
     },
     {
       type: "image",

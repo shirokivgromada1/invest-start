@@ -8,6 +8,7 @@ export const localBusinessComponentSchema: Template = {
   },
   fields: [
     { type: "string", label: "Block title", name: "title" },
+    { type: "string", label: "Block title Eng", name: "titleEng" },
     {
       type: "object",
       label: "List of businesses",
@@ -15,13 +16,18 @@ export const localBusinessComponentSchema: Template = {
       list: true,
       ui: {
         itemProps: (item) => {
-          return { label: item.buinessTitle };
+          return { label: item.businessTitle };
         },
       },
       fields: [
         {
           label: "Title",
           name: "businessTitle",
+          type: "string",
+        },
+        {
+          label: "Title Eng",
+          name: "businessTitleEng",
           type: "string",
         },
         {
@@ -35,8 +41,18 @@ export const localBusinessComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Subtitle Eng",
+          name: "subtitleEng",
+          type: "string",
+        },
+        {
           label: "Text description",
           name: "desc",
+          type: "string",
+        },
+        {
+          label: "Text description Eng",
+          name: "descEng",
           type: "string",
         },
         {

@@ -12,10 +12,19 @@ export const usefulInfo3ComponentSchema: Template = {
       name: "title",
       type: "string",
     },
-
+    {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
     {
       label: "Item title",
       name: "itemTitle",
+      type: "string",
+    },
+    {
+      label: "Item title Eng",
+      name: "itemTitleEng",
       type: "string",
     },
     {
@@ -40,8 +49,18 @@ export const usefulInfo3ComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Title Eng",
+          name: "titleEng",
+          type: "string",
+        },
+        {
           label: "Kadastr number",
           name: "kadastr",
+          type: "string",
+        },
+        {
+          label: "Kadastr number Eng",
+          name: "kadastrEng",
           type: "string",
         },
         {
@@ -57,6 +76,11 @@ export const usefulInfo3ComponentSchema: Template = {
         {
           label: "Description",
           name: "descBlock",
+          type: "string",
+        },
+        {
+          label: "Description Eng",
+          name: "descBlockEng",
           type: "string",
         },
         {

@@ -24,8 +24,18 @@ export const roadComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Distance Eng",
+          name: "hTextEng",
+          type: "string",
+        },
+        {
           label: "Name",
           name: "pText",
+          type: "string",
+        },
+        {
+          label: "Name Eng",
+          name: "pTextEng",
           type: "string",
         },
         { label: "Icon", name: "icon", type: "image" },

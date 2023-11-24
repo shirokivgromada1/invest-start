@@ -1,16 +1,13 @@
 import { tinaField } from "tinacms/dist/react";
 import { PageComponentsUsefulInfo } from "@/tina/__generated__/types";
 import styles from "./UsefulInfo.module.scss";
-import Image from "next/image";
-import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Minus from "./../../../../assets/minus.svg";
 import Plus from "./../../../../assets/plus.svg";
 import { motion } from "framer-motion";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 
 export const UsefulInfo = ({ data }: { data: PageComponentsUsefulInfo }) => {
-  const match = useBetterMediaQuery("(max-width: 1050px)");
-  const isMobile = useBetterMediaQuery("(max-width: 550px)");
   const [openIndices, setOpenIndices] = useState<number[]>([]);
 
   const toggleIndex = (index: number) => {
@@ -20,14 +17,29 @@ export const UsefulInfo = ({ data }: { data: PageComponentsUsefulInfo }) => {
       setOpenIndices([...openIndices, index]);
     }
   };
-  const matches = useBetterMediaQuery("(max-width: 650px)");
-  const { title, itemTitle, itemNumber, desc, contacts } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
+  const {
+    title,
+    titleEng,
+    itemTitleEng,
+    descEng,
+    itemTitle,
+    itemNumber,
+    desc,
+    contacts,
+  } = data;
 
   return (
     <section className={styles.info} id="useful-info">
       <div className="container">
         <div className={styles.info__inner}>
-          {title && <h1 data-tina-field={tinaField(data, "title")}>{title}</h1>}
+          {title && (
+            <h1 data-tina-field={tinaField(data, "title")}>
+              {" "}
+              {label === "UA" ? title : titleEng}
+            </h1>
+          )}
           <div className={styles.info__inner_collapse}>
             <button
               onClick={() => toggleIndex(1)}
@@ -42,7 +54,7 @@ export const UsefulInfo = ({ data }: { data: PageComponentsUsefulInfo }) => {
               </h1>
               <div>
                 <h5 data-tina-field={tinaField(data, "itemTitle")}>
-                  {itemTitle}
+                  {label === "UA" ? itemTitle : itemTitleEng}
                 </h5>
               </div>
               <div>{openIndices.includes(1) ? <Minus /> : <Plus />}</div>
@@ -54,51 +66,84 @@ export const UsefulInfo = ({ data }: { data: PageComponentsUsefulInfo }) => {
                 }
               >
                 <div>
-                  {desc?.children.map((annItem: any, annIndex: number) => {
-                    if (annItem.type.startsWith("h"))
-                      return annItem.children.map((text: any) => (
-                        <annItem.type
-                          key={"announceHeadline" + annIndex}
-                          style={{
-                            fontWeight: text.bold && "bold",
-                            fontStyle: text.italic && "italic",
-                          }}
-                          data-tina-field={tinaField(data, "desc")}
-                        >
-                          {text.text}
-                        </annItem.type>
-                      ));
-                    if (annItem.type.startsWith("p"))
-                      return annItem.children.map((text: any) => (
-                        <p
-                          key={"announceParagraph" + annIndex}
-                          style={{
-                            fontWeight: text.bold && "bold",
-                            fontStyle: text.italic && "italic",
-                          }}
-                          data-tina-field={tinaField(data, "desc")}
-                        >
-                          {text.text}
-                        </p>
-                      ));
-                    return null;
-                  })}
+                  {label === "UA"
+                    ? desc?.children.map((annItem: any, annIndex: number) => {
+                        if (annItem.type.startsWith("h"))
+                          return annItem.children.map((text: any) => (
+                            <annItem.type
+                              key={"announceHeadline" + annIndex}
+                              style={{
+                                fontWeight: text.bold && "bold",
+                                fontStyle: text.italic && "italic",
+                              }}
+                              data-tina-field={tinaField(data, "desc")}
+                            >
+                              {text.text}
+                            </annItem.type>
+                          ));
+                        if (annItem.type.startsWith("p"))
+                          return annItem.children.map((text: any) => (
+                            <p
+                              key={"announceParagraph" + annIndex}
+                              style={{
+                                fontWeight: text.bold && "bold",
+                                fontStyle: text.italic && "italic",
+                              }}
+                              data-tina-field={tinaField(data, "desc")}
+                            >
+                              {text.text}
+                            </p>
+                          ));
+                        return null;
+                      })
+                    : descEng?.children.map(
+                        (annItem: any, annIndex: number) => {
+                          if (annItem.type.startsWith("h"))
+                            return annItem.children.map((text: any) => (
+                              <annItem.type
+                                key={"announceHeadline" + annIndex}
+                                style={{
+                                  fontWeight: text.bold && "bold",
+                                  fontStyle: text.italic && "italic",
+                                }}
+                              >
+                                {text.text}
+                              </annItem.type>
+                            ));
+                          if (annItem.type.startsWith("p"))
+                            return annItem.children.map((text: any) => (
+                              <p
+                                key={"announceParagraph" + annIndex}
+                                style={{
+                                  fontWeight: text.bold && "bold",
+                                  fontStyle: text.italic && "italic",
+                                }}
+                              >
+                                {text.text}
+                              </p>
+                            ));
+                          return null;
+                        }
+                      )}
+
                   {contacts && (
                     <ul>
                       <h3 data-tina-field={tinaField(contacts, "title")}>
-                        {contacts.title}
+                        {label === "UA" ? contacts.title : contacts.titleEng}
                       </h3>
                       {contacts?.contactsList &&
                         contacts.contactsList.map(
                           (c, index) =>
                             c && (
                               <li key={index} data-tina-field={tinaField(c)}>
-                                {c?.name && (
+                                {c?.name && c?.nameEng && (
                                   <span data-tina-field={tinaField(c, "name")}>
-                                    {c.name}{" "}
+                                    {label === "UA" ? c.name : c.nameEng}{" "}
                                   </span>
                                 )}
-                                {c?.description}
+                                {label === "UA"
+                                  ? c?.description
+                                  : c?.descriptionEng}
                               </li>
                             )
                         )}
