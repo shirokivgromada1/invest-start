@@ -179,7 +179,7 @@ components:
           Over the past 10 years, there has been a growing demand for recreation
           that coexists with nature. People seek to reduce the level of stress
           on the nervous system...
-        link: /
+        link: ecotourism
     _template: Investment
   - title: На території громади працюють
     titleEng: Operate on the territory of the community
