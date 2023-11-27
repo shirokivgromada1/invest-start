@@ -1,10 +1,10 @@
 import { Template } from "tinacms";
 
-export const usefulInfo6ComponentSchema: Template = {
-  name: "UsefulInfo6",
-  label: "UsefulInfo variant 6",
+export const usefulInfo5ComponentSchema: Template = {
+  name: "UsefulInfo5",
+  label: "UsefulInfo variant 5",
   ui: {
-    previewSrc: "/blocks/UsefulInfo7/useful-info.png",
+    previewSrc: "/blocks/UsefulInfo6/useful-info.png",
   },
   fields: [
     {
@@ -12,10 +12,19 @@ export const usefulInfo6ComponentSchema: Template = {
       name: "title",
       type: "string",
     },
-
+    {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
     {
       label: "Item title",
       name: "itemTitle",
+      type: "string",
+    },
+    {
+      label: "Item title Eng",
+      name: "itemTitleEng",
       type: "string",
     },
     {
@@ -40,33 +49,38 @@ export const usefulInfo6ComponentSchema: Template = {
           type: "string",
         },
         {
-          label: "Subtitle",
-          name: "subtitle",
+          label: "Title Eng",
+          name: "titleEng",
           type: "string",
         },
         {
-          label: "Position",
-          name: "position",
+          label: "Location",
+          name: "location",
           type: "string",
         },
         {
-          label: "Fullname",
-          name: "fullname",
+          label: "Location Eng",
+          name: "locationEng",
           type: "string",
         },
         {
-          label: "Phone 1",
-          name: "contact1",
+          label: "Square",
+          name: "square",
           type: "string",
         },
         {
-          label: "Phone 2",
-          name: "contact2",
+          label: "Square Eng",
+          name: "squareEng",
           type: "string",
         },
         {
-          label: "Phone 3",
-          name: "contact3",
+          label: "Need repair",
+          name: "repair",
+          type: "string",
+        },
+        {
+          label: "Need repair Eng",
+          name: "repairEng",
           type: "string",
         },
         {

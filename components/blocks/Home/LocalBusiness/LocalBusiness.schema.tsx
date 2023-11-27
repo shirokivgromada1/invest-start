@@ -4,7 +4,7 @@ export const localBusinessComponentSchema: Template = {
   name: "LocalBusiness",
   label: "Local Business",
   ui: {
-    previewSrc: "/blocks/Home/LocalBusiness/local-business.png",
+    previewSrc: "/blocks/Home/LocalBusiness/local-businesses.png",
   },
   fields: [
     { type: "string", label: "Block title", name: "title" },

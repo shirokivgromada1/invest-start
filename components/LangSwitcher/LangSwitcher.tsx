@@ -49,7 +49,6 @@ const LangSwitcher: React.FC = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  console.log(lang);
   const handleLanguageChange = (language: Lang) => {
     changeLanguage(language);
     setIsOpen(false);

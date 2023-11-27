@@ -5,7 +5,6 @@ import { Global } from "../../tina/__generated__/types";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./Footer/Footer";
-import { useRouter } from "next/router";
 import styles from "./layout.module.scss";
 import { LangSwitcherProvider } from "@/components/LangSwitcher/LangSwitcher";
 

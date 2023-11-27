@@ -4,7 +4,7 @@ export const usefulInfo3ComponentSchema: Template = {
   name: "UsefulInfo3",
   label: "UsefulInfo variant 3",
   ui: {
-    previewSrc: "/blocks/UsefulInfo3/useful-info.png",
+    previewSrc: "/blocks/UsefulInfo5/useful-info.png",
   },
   fields: [
     {

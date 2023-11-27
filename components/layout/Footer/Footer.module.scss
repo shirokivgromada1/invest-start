@@ -148,8 +148,8 @@
 @media (max-width: 950px) {
   .footer {
     &__inner {
-      //padding: 30px 0 40px 0;
-      column-gap: 35px;
+      column-gap: 10px;
+      justify-content: space-between;
       &_agency {
         width: 300px;
       }

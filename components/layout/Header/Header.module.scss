@@ -371,9 +371,10 @@
   .header {
     height: 85px;
     &__inner__logo {
-      svg {
-        width: 116px;
-        max-height: 61px;
+      width: 116px;
+      img {
+        width: 116px !important;
+        max-height: 61px !important;
       }
     }
     .header__inner_burger {

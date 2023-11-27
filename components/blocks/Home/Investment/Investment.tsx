@@ -15,9 +15,7 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
     setShowMore((prevShowMore) => !prevShowMore);
   };
   const { title, list, titleEng } = data;
-  const isTablet = useBetterMediaQuery(
-    "((min-width: 705px) and (max-width: 1080px))"
-  );
+  const isTablet = useBetterMediaQuery("(min-width: 705px)");
   const isMobile = useBetterMediaQuery("(max-width: 704px)");
   const numItemsToShow = showMore
     ? list?.length ?? 0
@@ -25,7 +23,7 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
     ? 6
     : isMobile
     ? 4
-    : 9;
+    : list?.length;
 
   const [itemsToShow, setItemsToShow] = useState(
     list?.slice(0, numItemsToShow) ?? []
@@ -71,37 +69,43 @@ export const Investment = ({ data }: { data: PageComponentsInvestment }) => {
                     item &&
                     !item.isHidden &&
                     item.link && (
-                      <Link
-                        href={item.link}
-                        key={"card" + index}
-                        data-tina-field={tinaField(item, "link")}
-                      >
-                        <motion.div
-                          variants={cardVariants}
-                          initial="hidden"
-                          animate="visible"
-                          exit="hidden"
-                          transition={{ duration: 0.2 }}
-                          data-tina-field={tinaField(item)}
-                        >
-                          {item.opportunityTitle &&
-                            item.desc &&
-                            item.descEng && (
-                              <Card
-                                title={item.opportunityTitle}
-                                description={
-                                  label === "UA" ? item.desc : item.descEng
-                                }
-                                index={index + 1}
-                              />
+                      <Link href={item.link} key={"card" + index} passHref>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <motion.div
+                            data-tina-field={tinaField(
+                              item,
+                              "opportunityTitle"
                             )}
-                        </motion.div>
+                            variants={cardVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            transition={{ duration: 0.2 }}
+                          >
+                            {item.opportunityTitle &&
+                              item.opportunityTitleEng &&
+                              item.desc &&
+                              item.descEng && (
+                                <Card
+                                  title={
+                                    label === "UA"
+                                      ? item.opportunityTitle
+                                      : item.opportunityTitleEng
+                                  }
+                                  description={
+                                    label === "UA" ? item.desc : item.descEng
+                                  }
+                                  index={index + 1}
+                                />
+                              )}
+                          </motion.div>
+                        </a>
                       </Link>
                     )
                 )}
             </AnimatePresence>
           </div>
-          {list && list?.length > (isTablet ? (isMobile ? 4 : 6) : 9) && (
+          {list && list?.length > (isTablet ? 6 : 4) && (
             <motion.button
               type="button"
               onClick={handleMoreClick}

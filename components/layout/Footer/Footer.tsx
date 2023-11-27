@@ -8,6 +8,7 @@ import Instagram from "../../../assets/instagram.svg";
 import Telegram from "../../../assets/telegram.svg";
 import { useContext } from "react";
 import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
+import { Link as ScrollLink } from "react-scroll/modules";
 const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
   const { lang } = useContext(LangContext);
   const { label } = lang;
@@ -39,21 +40,34 @@ const Footer = ({ data }: { data: Maybe<GlobalFooter> | undefined }) => {
               </div>
               <nav className={styles.footer__inner_nav}>
                 <ul>
-                  {nav?.map(
-                    (link, index) =>
-                      link &&
-                      link.href && (
-                        <li key={index}>
-                          <a
-                            href={link.href}
-                            key={index}
-                            data-tina-field={tinaField(link)}
-                          >
-                            {label === "UA" ? link.label : link.labelEng}
-                          </a>
-                        </li>
-                      )
+                  <li>
+                    <a href="/#local-businesses">
+                      {label === "UA" ? data.nav?.label1 : data.nav?.label1Eng}
+                    </a>
+                  </li>
+                  {data?.nav?.href2 && (
+                    <li>
+                      <a
+                        href={data?.nav?.href2}
+                        target="_blank"
+                        data-tina-field={tinaField(data, "nav")}
+                      >
+                        {label === "UA"
+                          ? data?.nav?.label2
+                          : data?.nav?.label2Eng}
+                      </a>
+                    </li>
                   )}
+                  <li>
+                    <a href="/#useful-info">
+                      {label === "UA" ? data.nav?.label3 : data.nav?.label3Eng}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#investment">
+                      {label === "UA" ? data.nav?.label4 : data.nav?.label4Eng}
+                    </a>
+                  </li>
                 </ul>
               </nav>
               <div className={styles.footer__inner_cont_block}>

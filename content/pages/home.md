@@ -550,10 +550,122 @@ components:
           of the State Emergency Service.
     _template: UsefulInfo3
   - itemTitle: Оренда комунального майна
+    itemTitleEng: Lease of communal property
     itemNumber: '06'
     list:
-      - {}
-    _template: UsefulInfo4
+      - title: >-
+          Нежитлова будівля літ А1 Виконавчого комітету Широківської сільської
+          ради
+        titleEng: >-
+          A1 non-residential building of the Executive Committee of the Shirokiv
+          village council
+        location: 'с. Августинівка, вул. Дніпровська, 52'
+        locationEng: 'v. Augustynivka, st. Dniprovska, 52'
+        square: '111,7 кв.м.'
+        squareEng: 111.7 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Нежитлова будівля літ А1 Колишня бібліотека
+        titleEng: 'Non-residential building, let A1 Former library'
+        location: 'с. Августинівка, вул. Миру, 48'
+        locationEng: 'v. Augustynivka, st. Myru, 48'
+        square: '53,6 кв.м.'
+        squareEng: 53.6 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: "Житловий будинок\_"
+        titleEng: Residential house
+        location: 'с. Августинівка, вул. Миру, 66'
+        locationEng: 'v. Augustynivka, st. Myru, 66'
+        square: '69,0 кв.м.'
+        squareEng: 69.0 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Житловий будинок
+        titleEng: Residential house
+        location: "с. Августинівка, вул. Садова, 27\_"
+        locationEng: 'v. Augustynivka, st. Sadova, 27'
+        square: '78,9 кв.м.'
+        squareEng: 78.9 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: >-
+          Приміщення «кладовка» площею 11.1 перший поверх Адміністративна
+          будівля літ А2
+        titleEng: >-
+          Premises "storage" with an area of ​​11.1, first floor, Administrative
+          building, let A2
+        location: 'с. Миколай-Поле, вул. Центральна, 76'
+        locationEng: 'v. Mykolay-Pole, str. Tsentralna, 76'
+        square: '11,1 кв.м.'
+        squareEng: 11.1 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: "Приміщення № 2\_Виробничий будинок з господарськими спорудами"
+        titleEng: Premises No. 2 Manufacturing building with outbuildings
+        location: 'с. Миколай-Поле, вул. Центральна, 97'
+        locationEng: 'v. Mykolay-Pole, str. Tsentralna, 97'
+        square: '80,3 кв.м.'
+        squareEng: 80.3 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Житловий будинок
+        titleEng: Residential house
+        location: "с. Ручаївка, вул. Шевченко, 57\_"
+        locationEng: 'v. Ruchaivka, str. Shevchenko, 57'
+        square: '43,7 кв.м.'
+        squareEng: 43.7 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: "Житловий будинок\_"
+        titleEng: Residential house
+        location: 'с. Лукашеве, вул. 8 березня, 7а'
+        locationEng: 'v. Lukasheve, str. March 8, 7a'
+        square: '38,7 кв.м.'
+        squareEng: 38.7 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Будівля колишнього магазину
+        titleEng: The building of the former store
+        location: 'с. Петропавлівка, вул. Центральна, 58'
+        locationEng: 'v. Petropavlivka, st. Tsentralna, 58'
+        square: '126,9 кв.м.'
+        squareEng: 126.9 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Житловий будинок
+        titleEng: Residential house
+        location: 'с. Широке, вул. Садова, 1а'
+        locationEng: 'v. Shiroke, st. Sadova, 1a'
+        square: '52,9 кв.м.'
+        squareEng: 52.9 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Нежитлова будівля
+        titleEng: Nonresidential building
+        location: 'м. Запоріжжя, вул Розенталь, 7а'
+        locationEng: 'Zaporizhzhia, Rosenthal St., 7a'
+        square: '235,9 кв.м.'
+        squareEng: 235.9 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: "Нежитлова будівля літ. А\_"
+        titleEng: Non-residential building AND
+        location: 'с. Червоний Яр, вул. Райдужна, 25б'
+        locationEng: 'v. Krasnyy Yar, str. Raiduzhna, 25b'
+        square: '345,1 кв.м.'
+        squareEng: 345.1 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: Нежитлова будівля А
+        titleEng: Non-residential building A
+        location: 'с. Веселе, вул. Центральна, 74'
+        locationEng: 'v. Vesele, str. Tsentralna, 74'
+        square: '89,2 кв.м.'
+        squareEng: 89.2 sq.m.
+        repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+    _template: UsefulInfo5
   - itemTitle: Телефонний довідник
     itemNumber: '07'
     list:
@@ -579,4 +691,7 @@ components:
         contact3: (061)212-40-29
     _template: UsefulInfo6
 ---
+
+
+
 

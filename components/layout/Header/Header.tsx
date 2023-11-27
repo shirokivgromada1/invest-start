@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import { Dispatch, FC, useContext, useEffect, useState } from "react";
+import { FC, useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { GlobalHeader, Maybe } from "./../../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
@@ -39,10 +39,10 @@ const item = {
   },
 };
 const Header: FC<IHeader> = ({ data }) => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const desktopMatch = useBetterMediaQuery("(min-width:950px)");
   const mobileMatch = useBetterMediaQuery("(max-width:500px)");
-  const router = useRouter();
   const { lang } = useContext(LangContext);
   const { label } = lang;
   useEffect(() => {
@@ -58,23 +58,9 @@ const Header: FC<IHeader> = ({ data }) => {
       htmlElement.style.overflowY = isOpen ? "hidden" : "visible";
     }
   }, [isOpen]);
-  const handleLinkClick = (hash: any) => {
-    const { pathname } = router;
-
-    if (pathname === "/") {
-      scroll.scrollTo(hash, {
-        duration: 500,
-        smooth: "easeInOutQuart",
-        offset: -80,
-        cancelable: false,
-      });
-    } else {
-      router.push(`${hash}`);
-    }
-
-    setIsOpen(false);
+  const handleLinkClick = () => {
+    setIsOpen(isOpen ? !isOpen : isOpen);
   };
-
   return (
     <header className={styles.header}>
       <div className="container-fluid">
@@ -129,19 +115,13 @@ const Header: FC<IHeader> = ({ data }) => {
           <div className={styles.header__inner__navigation}>
             <nav className={styles.header__inner__navigation_nav}>
               <ul>
-                <ScrollLink
-                  to="history"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  onClick={() => handleLinkClick("#local-businesses")}
-                >
+                <a href="/#local-businesses">
                   <li>
                     {label === "UA"
                       ? data?.links?.label1
                       : data?.links?.label1Eng}
                   </li>
-                </ScrollLink>
+                </a>
                 {data?.links?.href2 && (
                   <a href={data?.links?.href2} target="_blank">
                     <li>
@@ -151,32 +131,20 @@ const Header: FC<IHeader> = ({ data }) => {
                     </li>
                   </a>
                 )}
-                <ScrollLink
-                  to="info"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  onClick={() => handleLinkClick("#useful-information")}
-                >
+                <a href="/#useful-info">
                   <li>
                     {label === "UA"
                       ? data?.links?.label3
                       : data?.links?.label3Eng}
                   </li>
-                </ScrollLink>
-                <ScrollLink
-                  to="investment"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  onClick={() => handleLinkClick("#investment")}
-                >
+                </a>
+                <a href="/#investment">
                   <li>
                     {label === "UA"
                       ? data?.links?.label4
                       : data?.links?.label4Eng}
                   </li>
-                </ScrollLink>
+                </a>
               </ul>
             </nav>
             <LangSwitcher />
@@ -208,17 +176,14 @@ const Header: FC<IHeader> = ({ data }) => {
                         animate={"show"}
                       >
                         <motion.div variants={item}>
-                          <ScrollLink
-                            to="history"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onClick={() => handleLinkClick("#local-businesses")}
+                          <a
+                            href="/#local-businesses"
+                            onClick={() => handleLinkClick()}
                           >
                             {label === "UA"
                               ? data?.links?.label1
                               : data?.links?.label1Eng}
-                          </ScrollLink>
+                          </a>
                         </motion.div>
                       </motion.li>
                       <motion.li
@@ -231,7 +196,7 @@ const Header: FC<IHeader> = ({ data }) => {
                             <a
                               href={data?.links?.href2}
                               target="_blank"
-                              onClick={() => handleLinkClick("/")}
+                              onClick={() => handleLinkClick()}
                             >
                               {label === "UA"
                                 ? data?.links?.label2
@@ -246,19 +211,14 @@ const Header: FC<IHeader> = ({ data }) => {
                         animate={"show"}
                       >
                         <motion.div variants={item}>
-                          <ScrollLink
-                            to="info"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onClick={() =>
-                              handleLinkClick("#useful-information")
-                            }
+                          <a
+                            href="/#useful-info"
+                            onClick={() => handleLinkClick()}
                           >
                             {label === "UA"
                               ? data?.links?.label3
                               : data?.links?.label3Eng}
-                          </ScrollLink>
+                          </a>
                         </motion.div>
                       </motion.li>
                       <motion.li
@@ -267,17 +227,14 @@ const Header: FC<IHeader> = ({ data }) => {
                         animate={"show"}
                       >
                         <motion.div variants={item}>
-                          <ScrollLink
-                            to="investment"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            onClick={() => handleLinkClick("#investment")}
+                          <a
+                            href="/#investment"
+                            onClick={() => handleLinkClick()}
                           >
                             {label === "UA"
                               ? data?.links?.label4
                               : data?.links?.label4Eng}
-                          </ScrollLink>
+                          </a>
                         </motion.div>
                       </motion.li>
                     </motion.ul>

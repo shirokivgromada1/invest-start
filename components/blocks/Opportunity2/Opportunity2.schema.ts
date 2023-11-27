@@ -4,7 +4,7 @@ export const opportunity2ComponentSchema: Template = {
   name: "Opportunity2",
   label: "Opportunity variant 2",
   ui: {
-    previewSrc: "/blocks/Opportunity2/opportunity2.png",
+    previewSrc: "/blocks/Opportunity2/opportunity.png",
   },
   fields: [
     {

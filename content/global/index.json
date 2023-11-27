@@ -6,13 +6,11 @@
       "label1Eng": "Local businesses",
       "label2": "Інвестиційний паспорт",
       "label2Eng": "Investment passport",
-      "href2": "/uploads/Moiseyev_Kyrylo_IK-02_Lab_2.pdf",
+      "href2": "/uploads/home/Prohrama-MER.docx",
       "label3": "Корисна інформація",
       "label3Eng": "Useful Information",
-      "href3": "#useful-info",
       "label4": "Інвестиційні можливості ",
-      "label4Eng": "Investment opportunities",
-      "href4": "#investment"
+      "label4Eng": "Investment opportunities"
     },
     "location": "м. Запоріжжя, вул. Розенталь, 7",
     "locationEng": "Zaporizhzhia, st. Rosenthal, 7",
@@ -22,28 +20,17 @@
     "facebook": "/"
   },
   "footer": {
-    "nav": [
-      {
-        "href": "home",
-        "label": "Головна сторінка",
-        "labelEng": "Home page"
-      },
-      {
-        "href": "success-stories",
-        "label": "Історії успіху",
-        "labelEng": " Success stories"
-      },
-      {
-        "href": "useful-information",
-        "label": "Корисна інформація",
-        "labelEng": "Useful Information"
-      },
-      {
-        "href": "investment-opportunities",
-        "label": "Інвестиційні можливості ",
-        "labelEng": "Investment opportunities"
-      }
-    ],
+    "nav": {
+      "label1": "Локальні бізнеси",
+      "label1Eng": "Local businesses",
+      "label2": "Інвестиційний паспорт",
+      "label2Eng": "Investment passport",
+      "href2": "/uploads/home/Prohrama-MER.docx",
+      "label3": "Корисна інформація",
+      "label3Eng": "Useful Information",
+      "label4": "Інвестиційні можливості ",
+      "label4Eng": "Investment opportunities"
+    },
     "social": {
       "facebook": "/",
       "instagram": "/"

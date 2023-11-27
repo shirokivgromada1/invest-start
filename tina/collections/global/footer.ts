@@ -9,7 +9,6 @@ export const footer: TinaField = {
       type: "object",
       label: "Nav Links",
       name: "nav",
-      list: true,
       ui: {
         itemProps: (item) => {
           return { label: item?.label };
@@ -21,19 +20,45 @@ export const footer: TinaField = {
       },
       fields: [
         {
+          label: "Link №1 label",
+          name: "label1",
           type: "string",
-          label: "Link",
-          name: "href",
         },
         {
+          label: "Link №1 label Eng",
+          name: "label1Eng",
           type: "string",
-          label: "Label",
-          name: "label",
         },
         {
+          label: "Інвестиційний паспорт label",
+          name: "label2",
           type: "string",
-          label: "Label Eng",
-          name: "labelEng",
+        },
+        {
+          label: "Інвестиційний паспорт label Eng",
+          name: "label2Eng",
+          type: "string",
+        },
+        { label: "Інвестиційний паспорт href", name: "href2", type: "image" },
+        {
+          label: "Link №3 label",
+          name: "label3",
+          type: "string",
+        },
+        {
+          label: "Link №3 label Eng",
+          name: "label3Eng",
+          type: "string",
+        },
+        {
+          label: "Link №4 label",
+          name: "label4",
+          type: "string",
+        },
+        {
+          label: "Link №4 label Eng",
+          name: "label4Eng",
+          type: "string",
         },
       ],
     },
