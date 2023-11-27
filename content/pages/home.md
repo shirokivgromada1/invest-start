@@ -667,30 +667,60 @@ components:
         repairEng: Needs major repairs
     _template: UsefulInfo5
   - itemTitle: Телефонний довідник
+    itemTitleEng: Phone directory
     itemNumber: '07'
     list:
       - title: Приймальня голови
+        titleEng: Reception of the head
         fullname: Коротенка Дениса Олександровича
+        fullnameEng: Korotentko Denys Oleksandrovych
         contact1: (061)286-21-20
       - title: КУ "Агенція розвитку Широківської громади"
+        titleEng: CU "Agency for development of Shirokivska hromada"
         position: Директорка
+        positionEng: Director
         fullname: Носкова Юлія Ігорівна
+        fullnameEng: Yulia Igorivna Noskova
         contact1: (096)962-88-21
-      - title: Центр надання адміністративних послуг («ЦНАП»)
-        subtitle: 'м.Запоріжжя, вул.Героїв 37 батальйону, 12'
+      - title: Відділ земельних відносин та агропромислового комплексу
+        titleEng: Department of land relations and agro-industrial complex
+        position: Спеціалістка відділу
+        positionEng: Department specialist
+        fullname: Ковтун Ірина Анатоліївна
+        fullnameEng: Kovtun Iryna Anatolyivna
+        contact1: (050)182-21-40
+      - title: Юридичний відділ
+        titleEng: Legal Department
         position: Начальниця відділу
+        positionEng: Head of department
+        fullname: Литвиненко Жанна Миколаївна
+        fullnameEng: Lytvynenko Zhanna Mykolayivna
+        contact1: (097)364-70-16
+      - title: Центр надання адміністративних послуг («ЦНАП»)
+        titleEng: Center for the provision of administrative services ("TsNAP")
+        subtitle: 'м.Запоріжжя, вул.Героїв 37 батальйону, 12'
+        subtitleEng: 'Zaporizhzhia, 12 Heroiv St., 37 Battalion'
+        position: Начальниця відділу
+        positionEng: Head of department
         fullname: Головань Лариса Семенівна
+        fullnameEng: Larisa Semenivna Golovan
         contact1: (099)044-97-64
         contact2: (098)902-03-41
       - title: >-
           Запорізька державна податкова інспекція Головного управління ДПС у
           Запорізькій області
+        titleEng: >-
+          Zaporizhzhia State Tax Inspectorate of the Main Directorate of the DPS
+          in the Zaporizhzhia region
         subtitle: 'м. Запоріжжя, вул. Богдана Ступки, буд. 8'
+        subtitleEng: 'Zaporizhzhia, st. Bohdana Stupka, building 8'
         contact1: (061)212-40-29
         contact2: (061)212-40-29
         contact3: (061)212-40-29
     _template: UsefulInfo6
 ---
+
+
 
 
 

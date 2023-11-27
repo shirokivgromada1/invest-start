@@ -160,11 +160,11 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 20px;
-    max-width: 700px;
+    max-width: 800px;
     &_fullname {
 
       display: flex;
-      width: 69%;
+      width: 74%;
       justify-content: flex-start;
       p {
         color: #FFF;
@@ -177,12 +177,16 @@
         &:first-of-type {
           width: 18rem;
         }
+        &:nth-of-type(2) {
+          width: 16rem;
+        }
       }
     }
     &_contacts {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      width: 8rem;
       p {
         text-align: start;
 
@@ -225,25 +229,27 @@
           border-top: 1px #c9c9c9 solid;
 
           h4 {
-            color: #fff;
-            font-family: Montserrat;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-bottom: 20px;
-            display: flex;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0px;
             gap: 3px;
           }
 
-          div {
+         & > div {
             align-items: flex-start;
             flex-direction: column;
             gap: 20px;
-
-            p {
+            div {
               display: flex;
-              align-items: center;
+              width: 100%;
+              p:first-of-type {
+                width: 50%;
+              }
+              p:nth-of-type(2) {
+                width: 50%;
+              }
+            }
+            p {
               gap: 20px;
               color: #FFF;
 
@@ -258,9 +264,6 @@
                 min-height: 25px;
               }
 
-              &:first-of-type {
-                width: 100%;
-              }
             }
           }
         }
@@ -301,9 +304,8 @@
   .show {
     min-height: 0px;
     max-height: initial;
-    div {
-      margin-top: 20px;
-      width: 90%;
+    & > div {
+      width: 92% !important;
     }
   }
 }
@@ -342,15 +344,16 @@
   .show {
     min-height: 0px;
     max-height: initial;
-    div {
-      width: 90%;
-      margin-inline: 0;
-
+    & > div {
+width: 90% !important;
       ul {
         gap: 20px;
         li {
+          p {
+            font-size: 13px;
+          }
           h4 {
-            font-size: 13px !important;
+            font-size: 15px !important;
           }
           div {
             p {
@@ -374,6 +377,28 @@
         }
       }
     }
+    .show {
+      min-height: 0px;
+      max-height: initial;
+      div {
+
+        ul {
+          gap: 20px;
+          li {
+            & > div {
+              div {
+                flex-direction: column;
+                gap: 10px;
+                p {
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+
+          }
+        }
+      }
   }
 }
 @media screen and (max-width: 470px) {
@@ -387,9 +412,8 @@
       }
     }
     .show {
-      div {
-        margin-top: 20px;
-        width: 85%;
+      & > div {
+        width: 85% !important;
       }
     }
   }

@@ -12,10 +12,19 @@ export const usefulInfo6ComponentSchema: Template = {
       name: "title",
       type: "string",
     },
-
+    {
+      label: "Title Eng",
+      name: "titleEng",
+      type: "string",
+    },
     {
       label: "Item title",
       name: "itemTitle",
+      type: "string",
+    },
+    {
+      label: "Item title Eng",
+      name: "itemTitleEng",
       type: "string",
     },
     {
@@ -23,6 +32,7 @@ export const usefulInfo6ComponentSchema: Template = {
       name: "itemNumber",
       type: "string",
     },
+
     {
       label: "List of items",
       type: "object",
@@ -40,8 +50,18 @@ export const usefulInfo6ComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Title Eng",
+          name: "titleEng",
+          type: "string",
+        },
+        {
           label: "Subtitle",
           name: "subtitle",
+          type: "string",
+        },
+        {
+          label: "Subtitle Eng",
+          name: "subtitleEng",
           type: "string",
         },
         {
@@ -50,8 +70,18 @@ export const usefulInfo6ComponentSchema: Template = {
           type: "string",
         },
         {
+          label: "Position Eng",
+          name: "positionEng",
+          type: "string",
+        },
+        {
           label: "Fullname",
           name: "fullname",
+          type: "string",
+        },
+        {
+          label: "Fullname Eng",
+          name: "fullnameEng",
           type: "string",
         },
         {

@@ -1,17 +1,11 @@
 import { tinaField } from "tinacms/dist/react";
 import { PageComponentsUsefulInfo6 } from "@/tina/__generated__/types";
 import styles from "./UsefulInfo6.module.scss";
-import Image from "next/image";
-import useBetterMediaQuery from "@/hooks/useBetterMediaQuery";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Minus from "./../../../../assets/minus.svg";
 import Plus from "./../../../../assets/plus.svg";
-import House from "../../../../assets/house.svg";
-import Square from "../../../../assets/square.svg";
-import Location from "../../../../assets/location.svg";
+import { LangContext } from "@/components/LangSwitcher/LangSwitcher";
 export const UsefulInfo6 = ({ data }: { data: PageComponentsUsefulInfo6 }) => {
-  const match = useBetterMediaQuery("(max-width: 1050px)");
-  const isMobile = useBetterMediaQuery("(max-width: 550px)");
   const [openIndices, setOpenIndices] = useState<number[]>([]);
 
   const toggleIndex = (index: number) => {
@@ -21,14 +15,19 @@ export const UsefulInfo6 = ({ data }: { data: PageComponentsUsefulInfo6 }) => {
       setOpenIndices([...openIndices, index]);
     }
   };
-  const matches = useBetterMediaQuery("(max-width: 650px)");
-  const { title, itemTitle, itemNumber, list } = data;
 
+  const { title, titleEng, itemTitleEng, itemTitle, itemNumber, list } = data;
+  const { lang } = useContext(LangContext);
+  const { label } = lang;
   return (
     <section className={styles.info} id="useful-info">
       <div className="container">
         <div className={styles.info__inner}>
-          {title && <h1 data-tina-field={tinaField(data, "title")}>{title}</h1>}
+          {title && titleEng && (
+            <h1 data-tina-field={tinaField(data, "title")}>
+              {label === "UA" ? title : titleEng}
+            </h1>
+          )}
           <div className={styles.info__inner_collapse}>
             <button
               onClick={() => toggleIndex(1)}
@@ -43,7 +42,7 @@ export const UsefulInfo6 = ({ data }: { data: PageComponentsUsefulInfo6 }) => {
               </h1>
               <div>
                 <h5 data-tina-field={tinaField(data, "itemTitle")}>
-                  {itemTitle}
+                  {label === "UA" ? itemTitle : itemTitleEng}
                 </h5>
               </div>
               <div>{openIndices.includes(1) ? <Minus /> : <Plus />}</div>
@@ -61,39 +60,45 @@ export const UsefulInfo6 = ({ data }: { data: PageComponentsUsefulInfo6 }) => {
                         (item, index) =>
                           !item?.hidden && (
                             <li key={index}>
-                              {item?.title && (
+                              {item?.title && item?.titleEng && (
                                 <h4 data-tina-field={tinaField(item, "title")}>
-                                  {item.title}
+                                  {label === "UA" ? item.title : item.titleEng}
                                 </h4>
                               )}
-                              {item?.subtitle && (
+                              {item?.subtitle && item?.subtitleEng && (
                                 <p
                                   data-tina-field={tinaField(item, "subtitle")}
                                 >
-                                  {item.subtitle}
+                                  {label === "UA"
+                                    ? item.subtitle
+                                    : item.subtitleEng}
                                 </p>
                               )}
                               <div className={styles.show__bio}>
                                 {item?.position || item?.fullname ? (
                                   <div className={styles.show__bio_fullname}>
-                                    {item?.position && (
+                                    {item?.position && item?.positionEng && (
                                       <p
                                         data-tina-field={tinaField(
                                           item,
                                           "position"
                                         )}
                                       >
-                                        {item.position}
+                                        {label === "UA"
+                                          ? item.position
+                                          : item.positionEng}
                                       </p>
                                     )}
-                                    {item?.fullname && (
+                                    {item?.fullname && item?.fullnameEng && (
                                       <p
                                         data-tina-field={tinaField(
                                           item,
                                           "fullname"
                                         )}
                                       >
-                                        {item.fullname}
+                                        {label === "UA"
+                                          ? item.fullname
+                                          : item.fullnameEng}
                                       </p>
                                     )}
                                   </div>
