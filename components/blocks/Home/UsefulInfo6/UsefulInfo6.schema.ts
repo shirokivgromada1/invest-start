@@ -2,7 +2,7 @@ import { Template } from "tinacms";
 
 export const usefulInfo6ComponentSchema: Template = {
   name: "UsefulInfo6",
-  label: "UsefulInfo variant 6",
+  label: "Useful Info variant 6",
   ui: {
     previewSrc: "/blocks/UsefulInfo7/useful-info.png",
   },

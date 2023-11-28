@@ -46,6 +46,7 @@ export const Preview = ({ data }: { data: PageComponentsPreview }) => {
             loop
             muted
             playsInline
+            preload="false"
           ></video>
         </div>
         <div
