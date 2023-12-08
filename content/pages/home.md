@@ -6,7 +6,7 @@ components:
     subtitle: Перспективне передмістя
     subtitleEng: Prospective suburb
     video: >-
-      https://drive.google.com/file/d/1OJ4KSqY8_FMJXneY6fxXNwB19PKPiZt-/view?usp=drive_link
+      https://drive.google.com/file/d/1yhxdCbMqii2AI7N0OR_K3n5-KSRIEL8l/view?usp=sharing
     descBlock: >-
       Широківська громада була заснована 13 жовтня 2016 року та наразі об’єднує
       35 населених пунктів, що знаходяться на півночі Запорізької області
