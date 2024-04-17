@@ -98,7 +98,7 @@ components:
           Широківська громада знаходиться у вигідному місці - передмісті
           Запоріжжя та пролягає вздовж траси національного значення...
         descEng: >-
-          The Shirokiv community is located in a favorable location - the
+          The Shyrokivska community is located in a favorable location - the
           suburbs of Zaporizhzhia and runs along a highway of national
           importance...
         link: logical-center
