@@ -15,7 +15,7 @@ components:
       unites 35 settlements located in the north of the Zaporizhzhia region
     _template: preview
   - title: Широківська громада
-    titleEng: Shirokiv community
+    titleEng: Shyrokivska community
     subtitle: >-
       Має дуже вигідне географічне розташування, усі важливі логістичні об’єкти
       знаходяться в радіусі 50 км.  Також через громаду проходить автошлях
@@ -23,7 +23,7 @@ components:
     subtitleEng: >-
       It has a very favorable geographical location, all important logistics
       facilities are within a radius of 50 km. The H-08 highway of national
-      importance Boryspil-Dnipro-Zaporizhia also passes through the community.
+      importance Boryspil-Dnipro-Zaporizhizha also passes through the community.
     image: /uploads/home/background.png
     _template: Community
   - title: 'Транспортна мережа загального користування: 237 км'
