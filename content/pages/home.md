@@ -143,8 +143,8 @@ components:
           родючістю. Тут проживають кваліфіковані спеціалісти у галузях
           землеробства та скотарства...
         descEng: >-
-          The Shirokiv community is located in the region, where black soils are
-          known for their fertility. Qualified specialists in the fields of
+          The Shyrokivska community is located in the region, where black soils
+          are known for their fertility. Qualified specialists in the fields of
           agriculture and cattle breeding live here...
         link: agrosphere-craft-production
       - opportunityTitle: Переробка сільгосппродукції
