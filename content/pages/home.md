@@ -121,7 +121,7 @@ components:
           можливості для розвитку комерційного сектору в регіоні...
         descEng: >-
           The construction of construction goods hypermarkets and grocery
-          supermarkets, shopping centers in Shirokivska hromada opens wide
+          supermarkets, shopping centers in Shyrokivska hromada opens wide
           opportunities for the development of the commercial sector in the
           region...
         link: hypermarket
