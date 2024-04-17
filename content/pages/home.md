@@ -110,7 +110,7 @@ components:
           станом на 2023-2028 роки...
         descEng: >-
           The construction of residential apartment buildings and residential
-          complexes with townhouses in the Shirokivska community is a profitable
+          complexes with townhouses in the Shyrokivska community is a profitable
           and relevant project as of 2023-2028...
         link: housing
       - opportunityTitle: Гіпермаркет
