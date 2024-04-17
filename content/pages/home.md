@@ -36,7 +36,7 @@ components:
       - hText: 18 км
         hTextEng: 18 km
         pText: 'Запорізький річковий порт '
-        pTextEng: Zaporozhye river port
+        pTextEng: Zaporizhzhia river port
         icon: /uploads/home/port.svg
       - hText: 20 км
         hTextEng: 20 km
