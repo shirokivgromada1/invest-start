@@ -88,7 +88,7 @@ components:
           є привабливим бізнес-планом, заснованим на вигідних факторах клімату
           та потенціалу сонячної енергії...
         descEng: >-
-          The possibility of building a solar panel station in Shirokivska
+          The possibility of building a solar panel station in Shyrokivska
           hromada is an attractive business plan based on favorable climate
           factors and the potential of solar energy...
         link: solar-panels
