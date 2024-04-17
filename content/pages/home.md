@@ -132,7 +132,7 @@ components:
           проектом, оскільки в даний час найближчі крематорії знаходяться в
           Харкові та Одесі...
         descEng: >-
-          The construction of a crematorium in Shirokivska hromada is a
+          The construction of a crematorium in Shyrokivska hromada is a
           promising project, since currently the nearest crematoriums are in
           Kharkiv and Odesa...
         link: crematorium
