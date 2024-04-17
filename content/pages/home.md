@@ -166,7 +166,7 @@ components:
           переваг, які дозволяють забезпечувати...
         descEng: >-
           Our community is located along the highway of national importance N-08
-          (Boryspil-Dnipro-Zaporizhia) between two regional centers and has a
+          (Boryspil-Dnipro-Zaporizhzhia) between two regional centers and has a
           number of advantages that allow us to provide...
         link: auto-fuel-stations-and-service-stations
       - opportunityTitle: Екотуризм
