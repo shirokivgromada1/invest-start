@@ -154,8 +154,8 @@ components:
           переробки сільськогосподарської продукції. Безпосередня близькість до
           великих міст, розташування вздовж...
         descEng: >-
-          The Shirokiv community is an ideal place for opening an enterprise for
-          the processing of agricultural products. Close proximity to major
+          The Shyrokivska community is an ideal place for opening an enterprise
+          for the processing of agricultural products. Close proximity to major
           cities, location along...
         link: processing-of-agricultural-products
       - opportunityTitle: Автозаправні станції та СТО
