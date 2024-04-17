@@ -12,7 +12,7 @@ components:
       35 населених пунктів, що знаходяться на півночі Запорізької області
     descBlockEng: >-
       The Shyrokivska community was founded on October 13, 2016 and currently
-      unites 35 settlements located in the north of the Zaporizhia region
+      unites 35 settlements located in the north of the Zaporizhzhia region
     _template: preview
   - title: Широківська громада
     titleEng: Shirokiv community
