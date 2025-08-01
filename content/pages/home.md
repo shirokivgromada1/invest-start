@@ -284,7 +284,7 @@ components:
       Широківській громаді
     itemTitleEng: >-
       Algorithm for registration of legal entities and individual entrepreneurs
-      in Shirokivska hromada
+      in Shyroke hromada
     itemNumber: '01'
     desc: "Пропонуємо суб'єктам господарювання, які працюють на території нашої громади, здійснити реєстрацію/перереєстрацію підприємства за фактичним місцем ведення діяльності або за місцем розташування офісу, відповідно до Цивільного кодексу України.\n\nПорядок державної реєстрації встановлено Законом України від 15.05.2003 р. № 755-ІV «Про державну реєстрацію юридичних осіб, фізичних осіб-підприємців та громадських формувань»\n\n### ЮРИДИЧНИМ ОСОБАМ\n\nДля державної реєстрації змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, у тому числі змін до установчих документів юридичної особи, подаються такі документи:\n\n1\\. Заява про державну реєстрацію змін до відомостей про юридичну особу, що містяться в Єдиному державному реєстрі, встановленої форми\n\n2\\. Один примірник оригіналу (нотаріально засвідчена копія) рішення\\* уповноваженого органу управління юридичної особи про зміни, що вносяться до Єдиного державного реєстру\\*Рішення уповноваженого органу управління оформляється рішенням або протоколом відповідно до Статуту (вимоги визначені Цивільним кодексом України та Господарським кодексом України)\n\n3\\. Установчий документ юридичної особи в новій редакції (якщо місцезнаходження вказане у Статуті юридичної особи) нотаріально засвідчений установчий документ\n\n4\\. Документ про сплату адміністративного збору - у випадках,\_ передбачених\_ статтею 36 Закону про державну реєстрацію\n\n### ЗВЕРНІТЬ УВАГУ!\n\nЯкщо юридична особа потребує нового окремого приміщення для розміщення офісу, наша громада може надати таке приміщення (або його частину) в оренду відповідно до Закону України «Про оренду державного та комунального майна» на підставі укладеного договору.\n\n### ПРОЦЕДУРА ПЕРЕРЕЄСТРАЦІЇ:\n\nПідприємство\_ звертається через «Центр надання адміністративних послуг» виконавчого комітету Широківської сільської ради до державного реєстратора, або (при реєстрації в іншій області) до ЦНАП за попереднім місцезнаходженням, або до ЦНАП у м. Запоріжжі, або до нотаріуса, що має право вчиняти реєстраційні дії, та подає документи на здійснення реєстрації зміни місцезнаходження та змін до установчих документів згідно з вказаним переліком.\n\nНа підтвердження перереєстрації юридична особа отримує витяг з Єдиного державного реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань.\n\nПро зміну місця реєстрації необхідно проінформувати податкову інспекцію та інші контролюючі органи (перелік залежить від видів діяльності та місця реєстрації / обліку підприємства).\n"
     descEng: >
@@ -346,13 +346,13 @@ components:
 
 
       The enterprise applies through the "Center for the provision of
-      administrative services" of the executive committee of the Shirokiv
-      village council to the state registrar, or (when registering in another
-      region) to the TsNAP at the previous location, or to the TsNAP in the city
-      of Zaporizhzhia, or to the notary who has the right to perform
-      registration actions , and submits documents for the registration of the
-      change of location and changes to the founding documents in accordance
-      with the specified list.
+      administrative services" of the executive committee of the Shyroke village
+      council to the state registrar, or (when registering in another region) to
+      the TSNAP at the previous location, or to the TSNAP in the city of
+      Zaporizhzhia, or to the notary who has the right to perform registration
+      actions , and submits documents for the registration of the change of
+      location and changes to the founding documents in accordance with the
+      specified list.
 
 
       To confirm re-registration, a legal entity receives an extract from the
