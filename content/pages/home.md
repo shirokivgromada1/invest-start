@@ -2,17 +2,17 @@
 title: home
 components:
   - title: Широківська громада
-    titleEng: Shyrokivska community
+    titleEng: Shyroke community
     subtitle: Перспективне передмістя
     subtitleEng: Prospective suburb
     video: >-
-      https://drive.google.com/file/d/1OJ4KSqY8_FMJXneY6fxXNwB19PKPiZt-/view?usp=sharing
+      https://drive.google.com/file/d/1nklZhnTfyogS9WvbC68NrAhRZhHrncK1/view?usp=sharing
     descBlock: >-
       Широківська громада була заснована 13 жовтня 2016 року та наразі об’єднує
       35 населених пунктів, що знаходяться на півночі Запорізької області
     descBlockEng: >-
-      The Shyrokivska community was founded on October 13, 2016 and currently
-      unites 35 settlements located in the north of the Zaporizhzhia region
+      The Shyroke community was founded on October 13, 2016 and currently unites
+      35 settlements located in the north of the Zaporizhzhia region
     _template: preview
   - title: Широківська громада
     titleEng: Shyrokivska community
