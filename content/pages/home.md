@@ -382,13 +382,13 @@ components:
           descriptionEng: '69089, Zaporizhzhia, str. Rosenthal, 7 (Upper Khortytsia)'
     _template: UsefulInfo
   - itemTitle: "Програми підтримки бізнесу\_ в Широківській громаді"
-    itemTitleEng: Business support programs in Shirokivska hromada
+    itemTitleEng: Business support programs in Shyroke community
     itemNumber: '02'
     list:
       - title: >-
           Програма місцевого економічного розвитку в Широківській
           громадіелефонний довідник
-        titleEng: Program of local economic development in Shirokivska hromada
+        titleEng: Program of local economic development in Shyroke community
         link: /uploads/home/Prohrama-MER.docx
     _template: UsefulInfo2
   - itemTitle: Державні програми підтримки бізнесу
