@@ -390,6 +390,7 @@ components:
           громадіелефонний довідник
         titleEng: Program of local economic development in Shyroke community
         link: /uploads/home/Prohrama-MER.docx
+        url: 'https://shtg.gov.ua/current-programs'
     _template: UsefulInfo2
   - itemTitle: Державні програми підтримки бізнесу
     itemTitleEng: State business support programs
