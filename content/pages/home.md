@@ -435,7 +435,8 @@ components:
         url: 'https://diia.gov.ua/services/kompensaciya-za-pracevlashtuvannya-vpo '
       - title: Державна допомога релокованому бізнесу
         titleEng: State aid to relocated businesses
-        url: 'https://prozorro.sale/marketplace_landing-page/'
+        url: >-
+          https://business.diia.gov.ua/news/kompensatsiia-vytrat-iz-relokatsii-dlia-vyrobnychykh-pidpryiemstv 
       - title: Урядова грантова програма єРобота
         titleEng: The government grant program eRobota
         url: 'https://diia.gov.ua/services/categories/biznesu/yerobota'
