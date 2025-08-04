@@ -381,13 +381,16 @@ components:
           description: '69089, м. Запоріжжя, вул. Розенталь, 7 (Верхня Хортиця)'
           descriptionEng: '69089, Zaporizhzhia, str. Rosenthal, 7 (Upper Khortytsia)'
     _template: UsefulInfo
-  - itemTitle: "Програми підтримки бізнесу\_ в Широківській громаді"
+  - itemTitle: "Програми підтримки бізнесу\_в Широківській громаді"
     itemTitleEng: Business support programs in Shyroke community
     itemNumber: '02'
     list:
       - title: >-
-          Програма місцевого економічного розвитку в Широківській
-          громадіелефонний довідник
+          Програма місцевого економічного розвитку в Широківській громаді.
+          Рішення №14 від 19 грудня 2024 року
+        titleEng: Program of local economic development in Shyroke community
+        url: 'https://shtg.gov.ua/current-programs'
+      - title: Програма місцевого економічного розвитку в Широківській громаді
         titleEng: Program of local economic development in Shyroke community
         link: /uploads/home/Prohrama-MER.docx
         url: 'https://shtg.gov.ua/current-programs'
