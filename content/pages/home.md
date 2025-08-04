@@ -402,6 +402,9 @@ components:
     itemTitleEng: State business support programs
     itemNumber: '03'
     list:
+      - title: Грант на власну справу
+        titleEng: Grant for your own business
+        url: 'https://www.dcz.gov.ua/people/micro'
       - title: Державна програма «Доступні кредити 5-7-9»
         titleEng: State program "Affordable loans 5-7-9"
         url: /
