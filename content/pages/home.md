@@ -415,14 +415,11 @@ components:
         titleEng: State program "Affordable loans 5-7-9"
         url: >-
           https://docs.google.com/document/d/15egAWY5aCi9KYIbv3n8VJUKnrgcn1G0b/edit?usp=sharing&ouid=109824710259249079500&rtpof=true&sd=true
-      - title: >-
-          Підтримка малого і середнього підприємництва на міжнародному рівні
-          (міжнародні кредитні лінії)
+      - title: Підтримка малого і середнього підприємництва на міжнародному рівні
         titleEng: >-
           Support of small and medium-sized enterprises at the international
-          level (international credit lines)
-        url: >-
-          https://www.me.gov.ua/Documents/Detail?lang=uk-UA&id=1606ea27-a3c5-429d-b164-7c5a8026ba67&title=PidtrimkaMalogoISerednogoPidprimnitstvaNaMizhnarodnomuRivni-mizhnarodniKreditniLinii-
+          level
+        url: 'https://ekatalog.cid.center/'
       - title: Послуги з розвитку бізнесу EU4Business
         titleEng: EU4Business business development services
         url: 'https://eu4business.org.ua/business-services-development/'
