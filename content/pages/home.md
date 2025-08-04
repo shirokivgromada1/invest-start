@@ -462,7 +462,19 @@ components:
     itemTitleEng: Vacant plots of land
     itemNumber: '05'
     list:
-      - {}
+      - title: Ставки в с.Червоний Яр
+        titleEng: Ponds in Chervonyi Yar village
+        descBlock: >-
+          Площа двох ставків справа від в'їзду в село: 4,7771 га та 6,6 га.
+          Площа лівого ставка  9,82 га. Відстань від центру м. Запоріжжя — 31
+          км. Відстань від траси — 1 км.  Поруч зі ставком є 16 га доступні під
+          рекреацію.
+        descBlockEng: >-
+          The area of the two ponds to the right of the entrance to the village:
+          4.7771 hectares and 6.6 hectares. The area of the left pond is 9.82
+          hectares. Distance from the center of Zaporizhzhia — 31 km. Distance
+          from the highway — 1 km. Next to the pond there are 16 hectares
+          available for recreation.
       - title: Ставок в с.Петропавлівка
         titleEng: Pond in Petropavlivka village
         descBlock: >-
