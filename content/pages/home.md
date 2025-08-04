@@ -549,8 +549,8 @@ components:
         descBlockEng: >-
           For the placement and permanent operation of bodies and subdivisions
           of the State Emergency Service.
-      - title: Ставок в с.Миколай-Поле
-        titleEng: Pond in the v.Mykolay-Pole
+      - title: Ставок в селі Миколай-Поле
+        titleEng: Pond in the Mykolay-Pole village
         kadastr: ''
         descBlock: >-
           26,7469 га. Відстань від центру м. Запоріжжя — 40 км, відстань від
