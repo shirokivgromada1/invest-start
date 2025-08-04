@@ -597,8 +597,8 @@ components:
         titleEng: Premises No. 2 Manufacturing building with outbuildings
         location: 'с. Миколай-Поле, вул. Центральна, 97'
         locationEng: 'v. Mykolay-Pole, str. Tsentralna, 97'
-        square: '80,3 кв.м.'
-        squareEng: 80.3 sq.m.
+        square: '77,7 кв.м.'
+        squareEng: 77.7 sq.m.
         repair: Потребує капітального ремонту
         repairEng: Needs major repairs
       - title: Житловий будинок
