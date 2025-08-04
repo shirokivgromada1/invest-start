@@ -573,14 +573,14 @@ components:
         squareEng: 53.6 sq.m.
         repair: Потребує капітального ремонту
         repairEng: Needs major repairs
-      - title: "Житловий будинок\_"
-        titleEng: Residential house
-        location: 'с. Августинівка, вул. Миру, 66'
-        locationEng: 'v. Augustynivka, st. Myru, 66'
-        square: '69,0 кв.м.'
-        squareEng: 69.0 sq.m.
-        repair: Потребує капітального ремонту
-        repairEng: Needs major repairs
+      - title: ''
+        titleEng: ''
+        location: ''
+        locationEng: ''
+        square: ''
+        squareEng: ''
+        repair: ''
+        repairEng: ''
       - title: Житловий будинок
         titleEng: Residential house
         location: "с. Августинівка, вул. Садова, 27\_"
