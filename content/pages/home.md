@@ -575,6 +575,7 @@ components:
           of placing a container for storing inventory.
       - title: Ставок в с.Петропавлівка
         titleEng: Pond in Petropavlivka village
+        url: 'https://maps.app.goo.gl/YZQqyHssE9wnZAow7'
         descBlock: >-
           9,6828 га. Відстань від центру м. Запоріжжя — 29 км, відстань від
           траси — 1 км. Рекреація, зелений туризм, риболовля. Ставок в центрі
