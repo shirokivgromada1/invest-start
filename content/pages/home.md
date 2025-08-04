@@ -563,12 +563,14 @@ components:
       - title: Ставок в с.Петропіль
         titleEng: Pond in Petropil village
         descBlock: >-
-          11,7213 га. Центр села, є пологий спуск у воду, грунтова під’їздна
+          11,7213 га. Відстань від центру м. Запоріжжя — 38 км, відстань від
+          траси — 2,7 км. Центр села, є пологий спуск у воду, грунтова під’їздна
           дорога, можливість поставити контейнер для зберігання інвентарю.
         descBlockEng: >-
-          11.7213 hectares. Village center, there is a gentle descent into the
-          water, a dirt access road, the possibility of placing a container for
-          storing inventory.
+          11.7213 hectares. The distance from the center of Zaporizhzhia is 38
+          km, the distance from the highway is 2.7 km. Village center, there is
+          a gentle descent into the water, a dirt access road, the possibility
+          of placing a container for storing inventory.
       - title: Ставок в с.Петропавлівка
         titleEng: Pond in Petropavlivka village
         descBlock: >-
