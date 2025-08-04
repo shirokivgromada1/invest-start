@@ -439,7 +439,7 @@ components:
           https://business.diia.gov.ua/news/kompensatsiia-vytrat-iz-relokatsii-dlia-vyrobnychykh-pidpryiemstv 
       - title: Урядова грантова програма єРобота
         titleEng: The government grant program eRobota
-        url: 'https://diia.gov.ua/services/categories/biznesu/yerobota'
+        url: 'https://diia.gov.ua/services/categories/biznesu/yerobota '
       - title: Маркетплейс фінансових можливостей на Дія
         titleEng: Marketplace of financial opportunities for Action
         url: 'https://business.diia.gov.ua/marketplace/finansuvanna'
