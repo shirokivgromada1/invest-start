@@ -549,7 +549,7 @@ components:
         descBlockEng: >-
           For the placement and permanent operation of bodies and subdivisions
           of the State Emergency Service.
-      - title: Ставок в селі Миколай-Поле
+      - title: Ставок в с.Миколай-Поле
         titleEng: Pond in the Mykolay-Pole village
         kadastr: ''
         descBlock: >-
