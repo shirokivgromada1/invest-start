@@ -390,6 +390,12 @@ components:
           Рішення №14 від 19 грудня 2024 року
         titleEng: Program of local economic development in Shyroke community
         url: 'https://shtg.gov.ua/current-programs'
+      - title: Гранти для розвитку бізнесу від Запорізької ОДА
+        titleEng: >-
+          Grants for business development from Zaporizhzhia Regional State
+          Administration
+        url: >-
+          https://www.zoda.gov.ua/news/75407/ogoloshennya-pro-provedennya-konkursnogo-vidboru--z-nadannya-grantovoji-pidtrimki-okremim-kategoriyam-naselennya-dlya-vidkrittya-i-rozvitku-vlasnoji-spravi.html
     _template: UsefulInfo2
   - itemTitle: Державні програми підтримки бізнесу
     itemTitleEng: State business support programs
