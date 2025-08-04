@@ -628,7 +628,7 @@ components:
       - title: Житловий будинок
         titleEng: Residential house
         location: 'с. Широке, вул. Садова, 1а'
-        locationEng: 'v. Shiroke, st. Sadova, 1a'
+        locationEng: 'v. Shyroke, st. Sadova, 1a'
         square: '52,9 кв.м.'
         squareEng: 52.9 sq.m.
         repair: Потребує капітального ремонту
@@ -644,7 +644,7 @@ components:
       - title: "Нежитлова будівля літ. А\_"
         titleEng: Non-residential building AND
         location: 'с. Червоний Яр, вул. Райдужна, 25б'
-        locationEng: 'v. Krasnyy Yar, str. Raiduzhna, 25b'
+        locationEng: 'v. Chervonyi Yar, str. Raiduzhna, 25b'
         square: '345,1 кв.м.'
         squareEng: 345.1 sq.m.
         repair: Потребує капітального ремонту
