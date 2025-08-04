@@ -381,10 +381,14 @@ components:
           description: '69089, м. Запоріжжя, вул. Розенталь, 7 (Верхня Хортиця)'
           descriptionEng: '69089, Zaporizhzhia, str. Rosenthal, 7 (Upper Khortytsia)'
     _template: UsefulInfo
-  - itemTitle: "Програми підтримки бізнесу\_в Широківській громаді"
+  - title: ''
+    itemTitle: "Програми підтримки бізнесу\_в Широківській громаді"
     itemTitleEng: Business support programs in Shyroke community
     itemNumber: '02'
     list:
+      - title: Грант на виробництво переробної промисловості
+        titleEng: Grant for manufacturing industry production
+        url: 'https://www.dcz.gov.ua/employer/pererobka '
       - title: Державні програми підтримки бізнесу - Грант на власну справу
         titleEng: State business support programs - Grant for your own business
         url: 'https://www.dcz.gov.ua/people/micro'
