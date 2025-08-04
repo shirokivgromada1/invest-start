@@ -61,9 +61,9 @@ components:
       міського життя, але при цьому залишатися в спокійному та зеленому
       передмісті.
     sub1Eng: >-
-      The Shyrokivska community is located to the north of Zaporizhzhia, which
-      makes it an ideal place for those who want to enjoy all the advantages of
-      city life, but at the same time remain in a calm and green suburb.
+      The Shyroke community is located to the north of Zaporizhzhia, which makes
+      it an ideal place for those who want to enjoy all the advantages of city
+      life, but at the same time remain in a calm and green suburb.
     sub2: ' Наша громада має потенціал стати економічним центром регіону завдяки сприятливим умовам для підприємництва, доступній робочій силі та підтримці малого і середнього бізнесу зі сторони місцевої влади.'
     sub2Eng: >-
       Our community has the potential to become the economic center of the
