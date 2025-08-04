@@ -807,7 +807,7 @@ components:
       - title: ''
         subtitle: ''
         position: ''
-        fullname: 'Дорожня карта: як взяти ставок в оренду'
+        fullname: ''
     _template: UsefulInfo6
 ---
 
