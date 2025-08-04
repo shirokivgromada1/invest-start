@@ -464,6 +464,7 @@ components:
     list:
       - {}
       - title: Ставок в с.Петропавлівка
+        titleEng: Pond in Petropavlivka village
         descBlock: >-
           9,6828 га. Рекреація, зелений туризм, риболовля. Ставок в центрі села,
           поруч є будівля під оренду і ремонт.
