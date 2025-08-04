@@ -461,15 +461,15 @@ components:
     itemTitleEng: Vacant plots of land
     itemNumber: '05'
     list:
-      - title: Ставок в с.Миколай-Поле
-        titleEng: Pond in the v.Mykolay-Pole
-        kadastr: ''
+      - title: Ставок в с.Петропіль
+        titleEng: Pond in Petropil village
         descBlock: >-
-          26,7469 га. Рекреація, риболовля. Центр села, є грунтова дорога
-          навколо.
+          11,7213 га. Центр села, є пологий спуск у воду, грунтова під’їздна
+          дорога, можливість поставити контейнер для зберігання інвентарю.
         descBlockEng: >-
-          26.7469 hectares. Recreation, fishing. Village center, there is a dirt
-          road around.
+          11.7213 hectares. Village center, there is a gentle descent into the
+          water, a dirt access road, the possibility of placing a container for
+          storing inventory.
       - title: '1. Ділянка 2,5 га'
         titleEng: 1. Plot of 2.5 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0003'
@@ -557,6 +557,15 @@ components:
         descBlockEng: >-
           For the placement and permanent operation of bodies and subdivisions
           of the State Emergency Service.
+      - title: Ставок в с.Миколай-Поле
+        titleEng: Pond in the v.Mykolay-Pole
+        kadastr: ''
+        descBlock: >-
+          26,7469 га. Рекреація, риболовля. Центр села, є грунтова дорога
+          навколо.
+        descBlockEng: >-
+          26.7469 hectares. Recreation, fishing. Village center, there is a dirt
+          road around.
     _template: UsefulInfo3
   - itemTitle: Оренда комунального майна
     itemTitleEng: Lease of communal property
