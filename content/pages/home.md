@@ -443,12 +443,9 @@ components:
       - title: Урядова грантова програма єРобота
         titleEng: The government grant program eRobota
         url: 'https://diia.gov.ua/services/categories/biznesu/yerobota '
-      - title: Маркетплейс фінансових можливостей на Дія
-        titleEng: Marketplace of financial opportunities for Action
-        url: 'https://business.diia.gov.ua/marketplace/finansuvanna'
-      - title: Фінансування українських експорті
+      - title: Фінансування українських експортів
         titleEng: Financing of Ukrainian exports
-        url: 'https://export.gov.ua/financing_of_exporters'
+        url: 'https://business.diia.gov.ua/exporters-handbook/countries '
     _template: UsefulInfo2
   - itemTitle: Місцеві податки та збори
     itemTitleEng: Local taxes and fees
