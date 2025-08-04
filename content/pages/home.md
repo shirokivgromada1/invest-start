@@ -385,6 +385,9 @@ components:
     itemTitleEng: Business support programs in Shyroke community
     itemNumber: '02'
     list:
+      - title: Державні програми підтримки бізнесу - Грант на власну справу
+        titleEng: State business support programs - Grant for your own business
+        url: 'https://www.dcz.gov.ua/people/micro'
       - title: >-
           Програма місцевого економічного розвитку в Широківській громаді.
           Рішення №14 від 19 грудня 2024 року
