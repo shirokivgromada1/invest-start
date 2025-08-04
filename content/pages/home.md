@@ -390,10 +390,6 @@ components:
           Рішення №14 від 19 грудня 2024 року
         titleEng: Program of local economic development in Shyroke community
         url: 'https://shtg.gov.ua/current-programs'
-      - title: Програма місцевого економічного розвитку в Широківській громаді
-        titleEng: Program of local economic development in Shyroke community
-        link: /uploads/home/Prohrama-MER.docx
-        url: 'https://shtg.gov.ua/current-programs'
     _template: UsefulInfo2
   - itemTitle: Державні програми підтримки бізнесу
     itemTitleEng: State business support programs
