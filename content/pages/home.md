@@ -402,6 +402,9 @@ components:
     itemTitleEng: State business support programs
     itemNumber: '03'
     list:
+      - title: Грант для ветеранів та членів їх сімей
+        titleEng: Grant for veterans and their family members
+        url: 'https://www.dcz.gov.ua/people/ubd'
       - title: Грант на виробництво переробної промисловості
         titleEng: Grant for manufacturing industry production
         url: 'https://www.dcz.gov.ua/employer/pererobka '
