@@ -553,7 +553,7 @@ components:
         titleEng: Pond in the Mykolay-Pole village
         kadastr: Розташування
         kadastrEng: Location
-        link: /uploads/Миколай-Поле.jpg
+        link: ''
         url: 'https://maps.app.goo.gl/6GUKvAezFrpy4NPH7'
         descBlock: >-
           26,7469 га. Відстань від центру м. Запоріжжя — 40 км, відстань від
