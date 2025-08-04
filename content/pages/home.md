@@ -402,6 +402,9 @@ components:
     itemTitleEng: State business support programs
     itemNumber: '03'
     list:
+      - title: Грант на виробництво переробної промисловості
+        titleEng: Grant for manufacturing industry production
+        url: 'https://www.dcz.gov.ua/employer/pererobka '
       - title: Грант на власну справу
         titleEng: Grant for your own business
         url: 'https://www.dcz.gov.ua/people/micro'
