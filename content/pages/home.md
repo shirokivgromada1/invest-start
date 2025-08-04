@@ -531,7 +531,7 @@ components:
         titleEng: 8. The plot is 1.89 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0004'
         kadastrEng: 'Cadastral number 2322188800:07:002:0004'
-        url: 'https://kadastr.live/parcel/2322188800:07:002:0004'
+        url: ''
         descBlock: >-
           Для розташування комплексу з надання послуг населенню територіальної
           громади по переробці сільськогосподарської продукції.
