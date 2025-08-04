@@ -425,7 +425,7 @@ components:
         url: 'https://business.diia.gov.ua/ '
       - title: Карта можливостей для малого та середнього бізнесу
         titleEng: Map of opportunities for small and medium-sized businesses
-        url: 'https://covid-19-ukraine.eu4business.eu/'
+        url: 'https://business.diia.gov.ua/home/development '
       - title: Бізнес-кейси для бажаючих відкрити власний бізнес
         titleEng: Business cases for those wishing to open their own business
         url: 'https://sbc.regulation.gov.ua/'
