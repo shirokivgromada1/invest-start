@@ -28,7 +28,7 @@ components:
   - title: 'Транспортна мережа загального користування: 237 км'
     titleEng: 'Public transport network: 237 km'
     settlements: 35
-    square: 477.4
+    square: 450
     population: 30000
     _template: TransportNetwork
   - stations:
