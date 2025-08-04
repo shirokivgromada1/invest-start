@@ -432,7 +432,7 @@ components:
           https://business.diia.gov.ua/history-of-success?filter=%7B%7D&currentPage=1&itemsPerPage=6&type=1 
       - title: Компенсація за працевлаштування ВПО
         titleEng: Compensation for employment of IDPs
-        url: 'https://diia.gov.ua/services/kompensaciya-za-pracevlashtuvannya-vpo'
+        url: 'https://diia.gov.ua/services/kompensaciya-za-pracevlashtuvannya-vpo '
       - title: Державна допомога релокованому бізнесу
         titleEng: State aid to relocated businesses
         url: 'https://prozorro.sale/marketplace_landing-page/'
