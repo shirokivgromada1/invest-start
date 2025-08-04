@@ -591,6 +591,8 @@ components:
           for rent and repair.
       - title: Ставки в с.Червоний Яр
         titleEng: Ponds in Chervonyi Yar village
+        kadastr: Розташування
+        kadastrEng: Location
         url: 'https://maps.app.goo.gl/Bo8YtXn3axFdjZQK8'
         descBlock: >-
           Площа двох ставків справа від в'їзду в село: 4,7771 га та 6,6 га.
