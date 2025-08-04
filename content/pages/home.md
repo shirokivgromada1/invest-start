@@ -402,6 +402,9 @@ components:
     itemTitleEng: State business support programs
     itemNumber: '03'
     list:
+      - title: Державні послуги для бізнесу на порталі ДІЯ
+        titleEng: Government services for business on the DIYA portal
+        url: 'https://diia.gov.ua/services '
       - title: Грант для ветеранів та членів їх сімей
         titleEng: Grant for veterans and their family members
         url: 'https://www.dcz.gov.ua/people/ubd'
