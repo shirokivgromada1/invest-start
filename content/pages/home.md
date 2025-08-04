@@ -798,5 +798,7 @@ components:
         contact2: (061)212-40-29
         contact3: (061)212-40-29
     _template: UsefulInfo6
+  - title: '08 Дорожня карта: як взяти ставок в оренду'
+    _template: UsefulInfo6
 ---
 
