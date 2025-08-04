@@ -420,9 +420,9 @@ components:
           Support of small and medium-sized enterprises at the international
           level
         url: 'https://ekatalog.cid.center/'
-      - title: Послуги з розвитку бізнесу EU4Business
-        titleEng: EU4Business business development services
-        url: 'https://eu4business.org.ua/business-services-development/'
+      - title: Послуги з розвитку бізнесу
+        titleEng: Business development services
+        url: 'https://business.diia.gov.ua/ '
       - title: Карта можливостей для малого та середнього бізнесу
         titleEng: Map of opportunities for small and medium-sized businesses
         url: 'https://covid-19-ukraine.eu4business.eu/'
