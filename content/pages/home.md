@@ -428,7 +428,8 @@ components:
         url: 'https://business.diia.gov.ua/home/development '
       - title: Бізнес-кейси для бажаючих відкрити власний бізнес
         titleEng: Business cases for those wishing to open their own business
-        url: 'https://sbc.regulation.gov.ua/'
+        url: >-
+          https://business.diia.gov.ua/history-of-success?filter=%7B%7D&currentPage=1&itemsPerPage=6&type=1 
       - title: Компенсація за працевлаштування ВПО
         titleEng: Compensation for employment of IDPs
         url: 'https://diia.gov.ua/services/kompensaciya-za-pracevlashtuvannya-vpo'
