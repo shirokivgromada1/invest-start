@@ -563,6 +563,7 @@ components:
           there is a dirt road around.
       - title: Ставок в с.Петропіль
         titleEng: Pond in Petropil village
+        url: 'https://maps.app.goo.gl/2KUSAWPBBikpMV899'
         descBlock: >-
           11,7213 га. Відстань від центру м. Запоріжжя — 38 км, відстань від
           траси — 2,7 км. Центр села, є пологий спуск у воду, грунтова під’їздна
