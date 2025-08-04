@@ -520,7 +520,7 @@ components:
         titleEng: 7. The plot is 0.1383 ha
         kadastr: 'Кадастровий номер 2322181600:09:003:1245'
         kadastrEng: 'Cadastral number 2322181600:09:003:1245'
-        url: 'https://kadastr.live/parcel/2322181600:09:003:1245'
+        url: ''
         descBlock: >-
           Для будівництва і обслуговування житлового будинку, господарських
           будівель і споруд (присадибна ділянка).
