@@ -461,6 +461,15 @@ components:
     itemTitleEng: Vacant plots of land
     itemNumber: '05'
     list:
+      - title: Ставок в с.Миколай-Поле
+        titleEng: Pond in the v.Mykolay-Pole
+        kadastr: ''
+        descBlock: >-
+          26,7469 га. Рекреація, риболовля. Центр села, є грунтова дорога
+          навколо.
+        descBlockEng: >-
+          26.7469 hectares. Recreation, fishing. Village center, there is a dirt
+          road around.
       - title: '1. Ділянка 2,5 га'
         titleEng: 1. Plot of 2.5 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0003'
@@ -553,6 +562,7 @@ components:
     itemTitleEng: Lease of communal property
     itemNumber: '06'
     list:
+      - {}
       - title: >-
           Нежитлова будівля літ А1 Виконавчого комітету Широківської сільської
           ради
