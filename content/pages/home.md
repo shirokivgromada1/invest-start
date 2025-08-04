@@ -702,10 +702,10 @@ components:
         subtitleEng: 'Zaporizhzhia, 12 Heroiv St., 37 Battalion'
         position: Начальниця відділу
         positionEng: Head of department
-        fullname: Головань Лариса Семенівна
-        fullnameEng: Larisa Semenivna Golovan
-        contact1: (099)044-97-64
-        contact2: (098)902-03-41
+        fullname: Ірина Колісник
+        fullnameEng: Iryna Kolisnyk
+        contact1: (093)958-44-73
+        contact2: ''
       - title: >-
           Запорізька державна податкова інспекція Головного управління ДПС у
           Запорізькій області
