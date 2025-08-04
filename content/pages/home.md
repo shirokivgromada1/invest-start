@@ -577,8 +577,8 @@ components:
         titleEng: Residential house
         location: "с. Августинівка, вул. Садова, 27\_"
         locationEng: 'v. Augustynivka, st. Sadova, 27'
-        square: '78,9 кв.м.'
-        squareEng: 78.9 sq.m.
+        square: '57,3 кв.м.'
+        squareEng: 57.3 sq.m.
         repair: Потребує капітального ремонту
         repairEng: Needs major repairs
       - title: >-
