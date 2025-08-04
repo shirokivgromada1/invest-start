@@ -574,11 +574,14 @@ components:
       - title: Ставок в с.Петропавлівка
         titleEng: Pond in Petropavlivka village
         descBlock: >-
-          9,6828 га. Рекреація, зелений туризм, риболовля. Ставок в центрі села,
-          поруч є будівля під оренду і ремонт.
+          9,6828 га. Відстань від центру м. Запоріжжя — 29 км, відстань від
+          траси — 1 км. Рекреація, зелений туризм, риболовля. Ставок в центрі
+          села, поруч є будівля під оренду і ремонт.
         descBlockEng: >-
-          9.6828 hectares. Recreation, green tourism, fishing. Pond in the
-          center of the village, nearby there is a building for rent and repair.
+          9.6828 hectares. The distance from the center of Zaporizhzhia is 29
+          km, the distance from the highway is 1 km. Recreation, green tourism,
+          fishing. Pond in the center of the village, nearby there is a building
+          for rent and repair.
       - title: Ставки в с.Червоний Яр
         titleEng: Ponds in Chervonyi Yar village
         descBlock: >-
