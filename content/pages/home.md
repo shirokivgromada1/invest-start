@@ -457,19 +457,19 @@ components:
         link: ''
         url: 'https://drive.google.com/file/d/129LrbQ8HIXLWAO97w-uGxr59rpyobAsN/view'
     _template: UsefulInfo2
-  - itemTitle: Вільні земельні ділянки
+  - title: ''
+    itemTitle: Вільні земельні ділянки
     itemTitleEng: Vacant plots of land
     itemNumber: '05'
     list:
-      - title: Ставок в с.Петропіль
-        titleEng: Pond in Petropil village
+      - {}
+      - title: Ставок в с.Петропавлівка
         descBlock: >-
-          11,7213 га. Центр села, є пологий спуск у воду, грунтова під’їздна
-          дорога, можливість поставити контейнер для зберігання інвентарю.
+          9,6828 га. Рекреація, зелений туризм, риболовля. Ставок в центрі села,
+          поруч є будівля під оренду і ремонт.
         descBlockEng: >-
-          11.7213 hectares. Village center, there is a gentle descent into the
-          water, a dirt access road, the possibility of placing a container for
-          storing inventory.
+          9.6828 hectares. Recreation, green tourism, fishing. Pond in the
+          center of the village, nearby there is a building for rent and repair.
       - title: '1. Ділянка 2,5 га'
         titleEng: 1. Plot of 2.5 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0003'
@@ -566,6 +566,15 @@ components:
         descBlockEng: >-
           26.7469 hectares. Recreation, fishing. Village center, there is a dirt
           road around.
+      - title: Ставок в с.Петропіль
+        titleEng: Pond in Petropil village
+        descBlock: >-
+          11,7213 га. Центр села, є пологий спуск у воду, грунтова під’їздна
+          дорога, можливість поставити контейнер для зберігання інвентарю.
+        descBlockEng: >-
+          11.7213 hectares. Village center, there is a gentle descent into the
+          water, a dirt access road, the possibility of placing a container for
+          storing inventory.
     _template: UsefulInfo3
   - itemTitle: Оренда комунального майна
     itemTitleEng: Lease of communal property
