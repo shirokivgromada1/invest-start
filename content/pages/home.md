@@ -5,7 +5,7 @@ components:
     titleEng: Shyroke community
     subtitle: Перспективне передмістя
     subtitleEng: Prospective suburb
-    video: 'https://www.youtube.com/watch?v=oumsFGJzE3E'
+    video: ''
     descBlock: >-
       Широківська громада була заснована 13 жовтня 2016 року та наразі об’єднує
       35 населених пунктів, що знаходяться на півночі Запорізької області
