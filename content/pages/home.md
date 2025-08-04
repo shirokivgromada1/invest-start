@@ -513,7 +513,7 @@ components:
         titleEng: 6. The plot is 0.91 ha
         kadastr: 'Кадастровий номер 2322188800:08:001:0015'
         kadastrEng: 'Cadastral number 2322188800:08:001:0015'
-        url: 'https://kadastr.live/parcel/2322188800:08:001:0015'
+        url: ''
         descBlock: Для розміщення станції технічного обслуговування.
         descBlockEng: To accommodate a maintenance station.
       - title: '7. Ділянка 0,1383 га'
