@@ -413,7 +413,8 @@ components:
         url: 'https://www.dcz.gov.ua/people/micro'
       - title: Державна програма «Доступні кредити 5-7-9»
         titleEng: State program "Affordable loans 5-7-9"
-        url: /
+        url: >-
+          https://docs.google.com/document/d/15egAWY5aCi9KYIbv3n8VJUKnrgcn1G0b/edit?usp=sharing&ouid=109824710259249079500&rtpof=true&sd=true
       - title: >-
           Підтримка малого і середнього підприємництва на міжнародному рівні
           (міжнародні кредитні лінії)
