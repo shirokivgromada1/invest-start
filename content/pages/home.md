@@ -702,8 +702,8 @@ components:
         subtitleEng: 'Zaporizhzhia, 12 Heroiv St., 37 Battalion'
         position: Начальниця відділу
         positionEng: Head of department
-        fullname: Ірина Колісник
-        fullnameEng: Iryna Kolisnyk
+        fullname: Колісник Ірина Юріївна
+        fullnameEng: Kolisnyk Iryna Yuriivna
         contact1: (093)958-44-73
         contact2: ''
       - title: >-
