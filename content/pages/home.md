@@ -874,5 +874,20 @@ components:
           The applicant only submits an application and waits for the completion
           of the documents by the government agency (ZODA).
     _template: UsefulInfo6
+  - title: >-
+      Алгоритм дій для потенційних орендарів/-торок земельних ділянок та
+      нерухомого майна
+    titleEng: ''
+    itemTitle: >-
+      Алгоритм дій для потенційних орендарів/-торок земельних ділянок та
+      нерухомого майна
+    itemTitleEng: >-
+      Algorithm of actions for potential tenants/buyers of land plots and real
+      estate
+    itemNumber: 09
+    list:
+      - title: 1. Обрати цікавий для себе об’єкт
+        titleEng: 1. Choose an object of interest to you
+    _template: UsefulInfo6
 ---
 
