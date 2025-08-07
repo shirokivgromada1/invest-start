@@ -627,21 +627,6 @@ components:
     itemTitleEng: Lease of communal property
     itemNumber: '06'
     list:
-      - title: 'Додаткові локації: '
-        titleEng: >-
-          Additional locations: Nadiya village: Chkalova st., 42-44. Lukasheve
-          village: Gagarina st., 36; Pershotravneva st., 26. Svitanok village:
-          Pershotravneva st., 30. Volodymyrivske village: Pidhirna st., building
-          73; Ukrainskaya st., 32. Pryvitne village: Verkhnia st., 13. Petropil
-          village: Molodizhna st., 66. Vidradne village: Likarnyanyi lane, 1a;
-          Profspilkova st., 7. Shyroke village: Shkilna st., 4.
-        location: >-
-          с. Надія: вул. Чкалова, 42-44. с. Лукашеве: вул. Гагаріна, 36; вул.
-          Першотравнева, 26. с. Світанок: вул. Першотравнева, 30. с.
-          Володимирівське: вул. Підгірна, буд. 73; вул. Українська, 32. с.
-          Привітне: вул. Верхня, 13. с. Петропіль: вул. Молодіжна, 66. сел.
-          Відрадне: провулок Лікарняний, 1а; вул. Профспілкова, 7. с. Широке:
-          вул. Шкільна, 4.
       - title: >-
           Нежитлова будівля літ А1 Виконавчого комітету Широківської сільської
           ради
@@ -745,6 +730,24 @@ components:
         square: '89,2 кв.м.'
         squareEng: 89.2 sq.m.
         repair: Потребує капітального ремонту
+        repairEng: Needs major repairs
+      - title: 'Додаткові локації: '
+        titleEng: 'Additional locations:'
+        location: >-
+          с. Надія: вул. Чкалова, 42-44. с. Лукашеве: вул. Гагаріна, 36; вул.
+          Першотравнева, 26. с. Світанок: вул. Першотравнева, 30. с.
+          Володимирівське: вул. Підгірна, буд. 73; вул. Українська, 32. с.
+          Привітне: вул. Верхня, 13. с. Петропіль: вул. Молодіжна, 66. сел.
+          Відрадне: провулок Лікарняний, 1а; вул. Профспілкова, 7. с. Широке:
+          вул. Шкільна, 4.
+        locationEng: >-
+          Nadiya village: Chkalova st., 42-44. Lukasheve village: Gagarina st.,
+          36; Pershotravneva st., 26. Svitanok village: Pershotravneva st., 30.
+          Volodymyrivske village: Pidhirna st., building 73; Ukrainskaya st.,
+          32. Pryvitne village: Verkhnia st., 13. Petropil village: Molodizhna
+          st., 66. Vidradne village: Likarnyanyi lane, 1a; Profspilkova st., 7.
+          Shyroke village: Shkilna st., 4.
+        repair: Потребують капітального ремонту
         repairEng: Needs major repairs
     _template: UsefulInfo5
   - itemTitle: Телефонний довідник
