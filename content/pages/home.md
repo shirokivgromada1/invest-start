@@ -841,6 +841,17 @@ components:
           formed plot). Extract from the State Register of Property Rights to
           the land plot. Extract from the technical documentation on the
           normative monetary valuation.
+      - title: 'Умови фінансування підготовки '
+        titleEng: Conditions for financing training
+        subtitle: >-
+          Якщо паспорта водного об’єкта або нормативної грошової оцінки немає,
+          їх виготовляє орган влади. Вартість документації після проведення
+          аукціону відшкодовується переможцем до бюджету.
+        subtitleEng: >-
+          If there is no water body passport or regulatory monetary valuation,
+          they are produced by the government body. The cost of the
+          documentation after the auction is reimbursed by the winner to the
+          budget.
     _template: UsefulInfo6
 ---
 
