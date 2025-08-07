@@ -898,6 +898,8 @@ components:
         subtitleEng: >-
           2. Register on any of the platforms authorized for the
           "Prozorro.Sales" system
+      - subtitle: 3. Подати заяву на оренду обраного об’єкта через ЕТС
+        subtitleEng: 3. Apply for a lease of the selected property through ETS
     _template: UsefulInfo6
 ---
 
