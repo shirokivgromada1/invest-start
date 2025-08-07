@@ -827,6 +827,20 @@ components:
           The authority to transfer land plots with water bodies for use (lease)
           belongs to regional state administrations (RSA). Preparation for the
           auction Lease is carried out only through land auctions (auction).
+      - title: 'Для оголошення аукціону необхідні такі документи: '
+        titleEng: 'The following documents are required to announce an auction:'
+        subtitle: >-
+          Паспорт водного об’єкта (погоджений з управлінням водного
+          господарства). Витяг з Державного земельного кадастру (за наявності
+          сформованої ділянки). Витяг з Державного реєстру речових прав на
+          земельну ділянку. Витяг з технічної документації про нормативну
+          грошову оцінку.
+        subtitleEng: >-
+          Passport of the water object (agreed with the water management
+          department). Extract from the State Land Cadastre (if there is a
+          formed plot). Extract from the State Register of Property Rights to
+          the land plot. Extract from the technical documentation on the
+          normative monetary valuation.
     _template: UsefulInfo6
 ---
 
