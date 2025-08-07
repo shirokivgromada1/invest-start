@@ -2,10 +2,10 @@
   "header": {
     "icon": "/uploads/header/logo.png",
     "links": {
-      "label1": "",
-      "label1Eng": "",
-      "label2": "Локальні бізнеси",
-      "label2Eng": "Local businesses",
+      "label1": "Локальні бізнеси",
+      "label1Eng": "Local businesses",
+      "label2": "",
+      "label2Eng": "",
       "href2": "/uploads/home/Prohrama-MER.docx",
       "label3": "Корисна інформація",
       "label3Eng": "Useful Information",
