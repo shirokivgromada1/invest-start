@@ -466,7 +466,7 @@ components:
         url: 'https://drive.google.com/file/d/1akJRlIF0ci1VaUIrQ9Z6PCx2IoOEGGJq/view'
       - title: Податок на нерухоме майно
         titleEng: Real estate tax
-        url: 'https://drive.google.com/file/d/1b4ijC3KSWhCpdD3wcQvbOtqWo3QFkiv8/view'
+        url: 'https://shtg.gov.ua/regulatory-acts'
       - title: Орендна плата за землю
         titleEng: Land rent
         link: ''
