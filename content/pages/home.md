@@ -900,6 +900,17 @@ components:
           "Prozorro.Sales" system
       - subtitle: 3. Подати заяву на оренду обраного об’єкта через ЕТС
         subtitleEng: 3. Apply for a lease of the selected property through ETS
+      - subtitle: >-
+          4. Після оприлюднення Широківською сільською радою оголошення про
+          проведення аукціону щодо об’єкта оренди, подати заяву на участь в
+          аукціоні через особистий кабінет на обраному електронному майданчику і
+          сплатити гарантійний та реєстраційні внески
+        subtitleEng: >-
+          4. After the Shyrokiv Village Council publishes an announcement about
+          holding an auction for the leased property, submit an application to
+          participate in the auction through your personal account on the
+          selected electronic platform and pay the guarantee and registration
+          fees.
     _template: UsefulInfo6
 ---
 
