@@ -820,6 +820,13 @@ components:
           objects that can be leased through an auction.
         position: ''
         fullname: ''
+      - title: Компетентний орган
+        titleEng: Competent authority
+        subtitle: ' Повноваження з передачі у користування (в оренду) земельних ділянок з водними об’єктами належать обласним державним адміністраціям (ОДА). Підготовка до аукціону Передача в оренду здійснюється лише через земельні торги (аукціон).'
+        subtitleEng: >-
+          The authority to transfer land plots with water bodies for use (lease)
+          belongs to regional state administrations (RSA). Preparation for the
+          auction Lease is carried out only through land auctions (auction).
     _template: UsefulInfo6
 ---
 
