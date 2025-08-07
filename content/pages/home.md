@@ -808,8 +808,16 @@ components:
     itemTitleEng: 'Roadmap: How to Rent a Pond'
     itemNumber: 08
     list:
-      - title: ''
-        subtitle: ''
+      - title: Подання ініціативи
+        titleEng: Submitting an initiative
+        subtitle: >-
+          Зацікавлена особа подає клопотання до органу місцевого самоврядування
+          з проханням включити відповідний водний об’єкт до переліку об’єктів,
+          які можуть бути передані в оренду через аукціон.
+        subtitleEng: >-
+          The interested person submits a petition to the local government body
+          with a request to include the relevant water body in the list of
+          objects that can be leased through an auction.
         position: ''
         fullname: ''
     _template: UsefulInfo6
