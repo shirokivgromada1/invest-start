@@ -915,6 +915,10 @@ components:
         subtitleEng: 5. Pass the qualification
       - subtitle: 6. Підписати протокол аукціону
         subtitleEng: 6. Sign the auction protocol
+      - subtitle: >-
+          7. Сплатити авансовий платіж, забезпечувальний депозит та укласти
+          договір оренди
+        subtitleEng: '7. Pay the down payment, security deposit and sign the lease agreement'
     _template: UsefulInfo6
 ---
 
