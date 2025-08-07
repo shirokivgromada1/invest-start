@@ -886,8 +886,10 @@ components:
       estate
     itemNumber: 09
     list:
-      - title: 1. Обрати цікавий для себе об’єкт
-        titleEng: 1. Choose an object of interest to you
+      - title: ''
+        titleEng: ''
+        subtitle: 1. Обрати цікавий для себе об’єкт
+        subtitleEng: 1. Choose an object of interest to you
       - title: ''
         titleEng: ''
         subtitle: >-
