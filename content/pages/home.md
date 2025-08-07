@@ -913,6 +913,8 @@ components:
           fees.
       - subtitle: 5. Пройти кваліфікацію
         subtitleEng: 5. Pass the qualification
+      - subtitle: 6. Підписати протокол аукціону
+        subtitleEng: 6. Sign the auction protocol
     _template: UsefulInfo6
 ---
 
