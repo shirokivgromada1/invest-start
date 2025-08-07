@@ -865,6 +865,14 @@ components:
           the agreement registered in the State Register of Property Rights,
           which records the right to use the water body together with the land
           plot.
+      - title: Роль заявника
+        titleEng: The role of the applicant
+        subtitle: >-
+          Заявник подає лише клопотання та очікує завершення оформлення
+          документів органом влади (ЗОДА).
+        subtitleEng: >-
+          The applicant only submits an application and waits for the completion
+          of the documents by the government agency (ZODA).
     _template: UsefulInfo6
 ---
 
