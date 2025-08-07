@@ -14,7 +14,7 @@ components:
       35 settlements located in the north of the Zaporizhzhia region
     _template: preview
   - title: Широківська громада
-    titleEng: Shyrokivska community
+    titleEng: Shyroke community
     subtitle: >-
       Має дуже вигідне географічне розташування, усі важливі логістичні об’єкти
       знаходяться в радіусі 50 км.  Також через громаду проходить автошлях
