@@ -852,6 +852,19 @@ components:
           they are produced by the government body. The cost of the
           documentation after the auction is reimbursed by the winner to the
           budget.
+      - title: Оформлення оренди
+        titleEng: Lease registration
+        subtitle: >-
+          Після проведення аукціону укладається договір оренди, який обов’язково
+          погоджується з управлінням водного господарства.  Лише після
+          погодження договір реєструється в Державному реєстрі речових прав, що
+          фіксує право користування водним об’єктом разом із земельною ділянкою.
+        subtitleEng: >-
+          After the auction, a lease agreement is concluded, which must be
+          approved by the water management department. Only after approval is
+          the agreement registered in the State Register of Property Rights,
+          which records the right to use the water body together with the land
+          plot.
     _template: UsefulInfo6
 ---
 
