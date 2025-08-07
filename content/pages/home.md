@@ -911,6 +911,8 @@ components:
           participate in the auction through your personal account on the
           selected electronic platform and pay the guarantee and registration
           fees.
+      - subtitle: 5. Пройти кваліфікацію
+        subtitleEng: 5. Pass the qualification
     _template: UsefulInfo6
 ---
 
