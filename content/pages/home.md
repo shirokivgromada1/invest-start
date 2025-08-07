@@ -888,10 +888,12 @@ components:
     list:
       - title: 1. Обрати цікавий для себе об’єкт
         titleEng: 1. Choose an object of interest to you
-      - title: >-
+      - title: ''
+        titleEng: ''
+        subtitle: >-
           2. Зареєструватись на будь-якому із авторизованих до системи
           «Prozorro.Продажі» майданчиків 
-        titleEng: >-
+        subtitleEng: >-
           2. Register on any of the platforms authorized for the
           "Prozorro.Sales" system
     _template: UsefulInfo6
