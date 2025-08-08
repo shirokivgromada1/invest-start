@@ -486,7 +486,7 @@ components:
         titleEng: 1. Plot of 2.5 hectares
         kadastr: 'Кадастровий номер 2322188800:07:002:0003'
         kadastrEng: 'Cadastral number 2322188800:07:002:0003'
-        url: ''
+        url: 'https://maps.app.goo.gl/tUuEE8KwJSzDNvPu9'
         descBlock: >-
           Для розташування та функціонування ремонтно-будівельної бази з
           будівництва об'єктів для сільського господарства.
