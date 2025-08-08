@@ -504,7 +504,7 @@ components:
         titleEng: 3. The plot is 4.5 ha
         kadastr: 'Кадастровий номер 2322188800:08:001:0016'
         kadastrEng: 'Cadastral number 2322188800:08:001:0016'
-        url: ''
+        url: 'https://maps.app.goo.gl/M8PCHToqhwavBwH58'
         descBlock: Для будівництва та функціонування салону по продажу автомобілів.
         descBlockEng: For the construction and operation of a car dealership.
       - title: 4. Ділянка 1 га
