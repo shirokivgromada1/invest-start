@@ -513,11 +513,9 @@ components:
         titleEng: 4. The plot is 1 ha
         kadastr: 'Кадастровий номер 2322181600:02:002:0461'
         kadastrEng: 'The plot is 1 hectare Cadastral number 2322181600:02:002:0461'
-        url: ''
-        descBlock: Для будівництва та функціонування промислово-торгівельного центру.
-        descBlockEng: >-
-          For the construction and operation of the industrial and commercial
-          center.
+        url: 'https://maps.app.goo.gl/ZGd9mPMT9JVLo5Fs9'
+        descBlock: 'Землі промисловості, енергетики, транспорту та іншого призначення'
+        descBlockEng: 'Land for industry, energy, transport and other purposes'
       - title: '5. Ділянка 0,981 га'
         titleEng: 5. The plot is 0.981 ha
         kadastr: 'Кадастровий номер 2322188800:07:001:0165'
