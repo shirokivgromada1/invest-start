@@ -507,8 +507,10 @@ components:
         url: 'https://maps.app.goo.gl/vtNRPeXo7bFNPNEm6'
         descBlock: >-
           Для розміщення та постійної діяльності інших, створених відповідно до
-          законів України військових формувань.
-        descBlockEng: For the construction and operation of a car dealership.
+          законів України військових формувань
+        descBlockEng: >-
+          For the placement and permanent operation of other military formations
+          created in accordance with the laws of Ukraine
       - title: 4. Ділянка 1 га
         titleEng: 4. The plot is 1 ha
         kadastr: 'Кадастровий номер 2322181600:02:002:0461'
