@@ -489,10 +489,10 @@ components:
         url: 'https://maps.app.goo.gl/tUuEE8KwJSzDNvPu9'
         descBlock: >-
           Для розташування та функціонування ремонтно-будівельної бази з
-          будівництва об'єктів для сільського господарства.
+          будівництва об'єктів для сільського господарства
         descBlockEng: >-
           For the location and functioning of the repair and construction base
-          for the construction of objects for agriculture.
+          for the construction of objects for agriculture
       - title: '2. Ділянка 2,44 га'
         titleEng: 2. Plot of 2.44 ha
         kadastr: 'Кадастровий номер 2322188800:07:001:0062'
