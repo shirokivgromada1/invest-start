@@ -516,8 +516,8 @@ components:
         url: 'https://maps.app.goo.gl/ZGd9mPMT9JVLo5Fs9'
         descBlock: 'Землі промисловості, енергетики, транспорту та іншого призначення'
         descBlockEng: 'Land for industry, energy, transport and other purposes'
-      - title: '6. Ділянка 0,91 га'
-        titleEng: 6. The plot is 0.91 ha
+      - title: '5. Ділянка 0,91 га'
+        titleEng: 5. The plot is 0.91 ha
         kadastr: 'Кадастровий номер 2322188800:08:001:0015'
         kadastrEng: 'Cadastral number 2322188800:08:001:0015'
         url: 'https://maps.app.goo.gl/GLpNdKA93r1b7cGv9'
@@ -527,39 +527,6 @@ components:
         descBlockEng: >-
           For the placement and operation of buildings and structures for
           additional transportation services and auxiliary operations
-      - title: '7. Ділянка 0,1383 га'
-        titleEng: 7. The plot is 0.1383 ha
-        kadastr: 'Кадастровий номер 2322181600:09:003:1245'
-        kadastrEng: 'Cadastral number 2322181600:09:003:1245'
-        url: ''
-        descBlock: >-
-          Для будівництва і обслуговування житлового будинку, господарських
-          будівель і споруд (присадибна ділянка).
-        descBlockEng: >-
-          For the construction and maintenance of a residential building, farm
-          buildings and structures (homestead).
-      - title: '8. Ділянка 1,89 га'
-        titleEng: 8. The plot is 1.89 hectares
-        kadastr: 'Кадастровий номер 2322188800:07:002:0004'
-        kadastrEng: 'Cadastral number 2322188800:07:002:0004'
-        url: ''
-        descBlock: >-
-          Для розташування комплексу з надання послуг населенню територіальної
-          громади по переробці сільськогосподарської продукції.
-        descBlockEng: >-
-          For the location of the complex for the provision of services to the
-          population of the territorial community for the processing of
-          agricultural products.
-      - title: '9. Ділянка 0,49 га'
-        titleEng: 9. The plot is 0.49 ha
-        kadastr: 'Кадастровий номер 2322181300:08:001:0043'
-        kadastrEng: 'Cadastral number 2322181300:08:001:0043'
-        url: >-
-          https://www.google.com/maps/place/48%C2%B000'54.8%22N+34%C2%B057'05.7%22E/@48.01523,34.951588,17z/data=!3m1!4b1!4m4!3m3!8m2!3d48.01523!4d34.951588?entry=ttu
-        descBlock: Для розміщення та постійної діяльності органів і підрозділів ДСНС.
-        descBlockEng: >-
-          For the placement and permanent operation of bodies and subdivisions
-          of the State Emergency Service.
       - title: Ставок в с.Миколай-Поле
         titleEng: Pond in the Mykolay-Pole village
         kadastr: Розташування
