@@ -529,6 +529,15 @@ components:
         descBlockEng: >-
           For the placement and operation of buildings and structures for
           additional transportation services and auxiliary operations
+      - title: '6. Ділянка 9,8 га, з них прибережно-захисна зона 5,02 га'
+        titleEng: >-
+          6. Site area 9.8 hectares, of which coastal protection zone 5.02
+          hectares
+        kadastr: '2322181300:02:002:0119'
+        kadastrEng: '2322181300:02:002:0119'
+        url: 'https://maps.app.goo.gl/HNC3CHQHQzbEFyat5'
+        descBlock: 'Землі водного фонду, прибережно-захисна смуга'
+        descBlockEng: 'Water fund lands, coastal protection strip'
       - title: Ставок в с.Миколай-Поле
         titleEng: Pond in the Mykolay-Pole village
         kadastr: Розташування
