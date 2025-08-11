@@ -516,26 +516,17 @@ components:
         url: 'https://maps.app.goo.gl/ZGd9mPMT9JVLo5Fs9'
         descBlock: 'Землі промисловості, енергетики, транспорту та іншого призначення'
         descBlockEng: 'Land for industry, energy, transport and other purposes'
-      - title: '5. Ділянка 0,981 га'
-        titleEng: 5. The plot is 0.981 ha
-        kadastr: 'Кадастровий номер 2322188800:07:001:0165'
-        kadastrEng: 'Cadastral number 2322188800:07:001:0165'
-        url: ''
-        descBlock: >-
-          Для будівництва та експлуатації багатофункціонального
-          торгівельно-виставочного та логістичного комплексу (об'єкту
-          пов'язаного з обслуговуванням жителів територіальної громади району).
-        descBlockEng: >-
-          For the construction and operation of a multifunctional
-          trade-exhibition and logistics complex (an object related to the
-          service of residents of the territorial community of the district).
       - title: '6. Ділянка 0,91 га'
         titleEng: 6. The plot is 0.91 ha
         kadastr: 'Кадастровий номер 2322188800:08:001:0015'
         kadastrEng: 'Cadastral number 2322188800:08:001:0015'
-        url: 'https://maps.app.goo.gl/UchmFAjBLTLprRxA6'
-        descBlock: Для розміщення станції технічного обслуговування.
-        descBlockEng: To accommodate a maintenance station.
+        url: 'https://maps.app.goo.gl/GLpNdKA93r1b7cGv9'
+        descBlock: >-
+          Для розміщення та експлуатації будівель і споруд додаткових
+          транспортних послуг та допоміжних операцій
+        descBlockEng: >-
+          For the placement and operation of buildings and structures for
+          additional transportation services and auxiliary operations
       - title: '7. Ділянка 0,1383 га'
         titleEng: 7. The plot is 0.1383 ha
         kadastr: 'Кадастровий номер 2322181600:09:003:1245'
