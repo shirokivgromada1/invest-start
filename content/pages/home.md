@@ -497,7 +497,7 @@ components:
         titleEng: 2. Plot of 2.44 ha
         kadastr: 'Кадастровий номер 2322188800:07:001:0062'
         kadastrEng: 'Cadastral number 2322188800:07:001:0062'
-        url: ''
+        url: 'https://maps.app.goo.gl/KT2yQWqEbzRbWKwM9'
         descBlock: Для будівництва та обслуговування торговельно-складського комплексу.
         descBlockEng: For the construction and maintenance of a trade and warehouse complex.
       - title: '3. Ділянка 4,5 га'
